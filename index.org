@@ -198,7 +198,7 @@ input {
 
 ** =~/.config/hypr/hypr.d/general.conf=
 :PROPERTIES:
-:header-args: :tangle .config/hypr/hypr.d/group.conf :mkdirp t
+:header-args: :tangle .config/hypr/hypr.d/general.conf :mkdirp t
 :END:
 
 #+begin_src conf
