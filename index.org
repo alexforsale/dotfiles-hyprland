@@ -202,28 +202,23 @@ input {
 :END:
 
 #+begin_src conf
-group {
-    insert_after_current = true
-    focus_removed_window = true
-    col.border_active = 0x66ffff00
-    col.border_inactive = 0x66777700
-    col.border_locked_active = 0x66ff5500
-    col.border_locked_inactive = 0x66775500
-    groupbar {
-        enabled = true
-        font_family = "JetBrainsMonoNL Nerd Font Mono 10"
-        font_size = 10
-        gradients = true
-        height = 14
-        priority = 3
-        render_titles = true
-        scrolling = true
-        text_color = 0xffeceff4 # white
-        col.active = 0x665e81ac
-        col.inactive = 0x662e3440
-        col.locked_active = 0x66ebcb8b
-        col.locked_inactive = 0x66d08770
-    }
+general {
+    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+
+    gaps_in = 5
+    gaps_out = 5
+    border_size = 2
+    #col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+    col.active_border = rgba(88c0d0ff) rgba(b48eadff) rgba(ebcb8bff) rgba(a3be8cff) 45deg
+    #col.inactive_border = rgba(595959aa)
+    col.inactive_border=0xff434c5e
+    col.nogroup_border=0xff89dceb
+    col.nogroup_border_active=0xfff9e2af
+
+    layout = dwindle
+
+    # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+    allow_tearing = false
 }
 #+end_src
 
@@ -308,6 +303,36 @@ gestures {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
     workspace_swipe = true
     workspace_swipe_fingers = 3
+}
+#+end_src
+** =~/.config/hypr/hypr.d/groups.conf=
+:PROPERTIES:
+:header-args: :tangle .config/hypr/hypr.d/groups.conf :mkdirp t
+:END:
+
+#+begin_src conf
+group {
+    insert_after_current = true
+    focus_removed_window = true
+    col.border_active = 0x66ffff00
+    col.border_inactive = 0x66777700
+    col.border_locked_active = 0x66ff5500
+    col.border_locked_inactive = 0x66775500
+    groupbar {
+        enabled = true
+        font_family = "JetBrainsMonoNL Nerd Font Mono 10"
+        font_size = 10
+        gradients = true
+        height = 14
+        priority = 3
+        render_titles = true
+        scrolling = true
+        text_color = 0xffeceff4 # white
+        col.active = 0x665e81ac
+        col.inactive = 0x662e3440
+        col.locked_active = 0x66ebcb8b
+        col.locked_inactive = 0x66d08770
+    }
 }
 #+end_src
 ** =~/.config/hypr/hypr.d/binds.conf=
