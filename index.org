@@ -13,7 +13,7 @@
 #+creator: Emacs 29.2 (Org mode 9.6.15)
 #+cite_export:
 #+property: EXPORT_FILE_NAME: index.html
-#+startup: content
+#+startup: content indent
 #+setupfile: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 * Hyprland
 ** =~/.config/hypr/hypland.conf=
@@ -1555,4 +1555,38 @@ input-field {
     valign = bottom
 }
 
+#+end_src
+* hypridle
+:PROPERTIES:
+:header-args: :tangle .config/hypr/hypridle.conf :mkdirp t
+:END:
+
+#+begin_src conf
+general {
+    lock_cmd = pidof hyprlock || hyprlock       # avoid starting multiple hyprlock instances.
+    before_sleep_cmd = loginctl lock-session    # lock before suspend.
+    # after_sleep_cmd = hyprctl dispatch dpms on  # to avoid having to press a key twice to turn on the display.
+}
+
+listener {
+   timeout = 150
+   on-timeout = brightnessctl -s set 10         # set monitor backlight to minimum, avoid 0 on OLED monitor.
+   on-resume = brightnessctl -r                 # monitor backlight restore.
+}
+
+# listener {
+#     timeout = 300
+#     on-timeout = loginctl lock-session            # lock screen when timeout has passed
+# }
+
+listener {
+    timeout = 600
+    on-timeout = hyprctl dispatch dpms off        # screen off when timeout has passed
+    on-resume = hyprctl dispatch dpms on          # screen on when activity is detected after timeout has fired.
+}
+
+listener {
+   timeout = 1800                                # 30min
+   on-timeout = systemctl suspend                # suspend pc
+}
 #+end_src
