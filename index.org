@@ -519,7 +519,10 @@ windowrulev2 = pin, class:(showmethekey-gtk), title:(Floating Window - Show Me T
 windowrulev2 = size 100% 10%, class:(showmethekey-gtk), title:(Floating Window - Show Me The Key)
 windowrulev2 = move 0 90%, class:(showmethekey-gtk), title:(Floating Window - Show Me The Key)
 #+end_src
-
+*** =screenkey= 
+#+begin_src conf
+windowrulev2 = float, class:(screenkey)
+#+end_src
 ** =~/.config/hypr/hypr.d/workspaces.conf=
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/workspaces.conf :mkdirp t
@@ -643,6 +646,12 @@ bindl = , XF86AudioMute, exec, ~/.local/bin/dunst-volume -t
 bind = , XF86AudioPlay, exec, playerctl play-pause
 bind = , XF86AudioNext, exec, playerctl next
 bind = , XF86AudioPrev, exec, playerctl previous
+
+# for keyboard with no fn keys
+bind = $mainMod Control, Up, exec, playerctl play-pause
+bind = $mainMod Control, Down, exec, playerctl stop
+bind = $mainMod Control, Right, exec, playerctl next
+bind = $mainMod Control, Left, exec, playerctl previous
 
 # binde = , XF86MonBrightnessUp, exec, brightnessctl set +1%
 binde = , XF86MonBrightnessUp, exec, ~/.local/bin/dunst-backlight +1%
