@@ -61,7 +61,7 @@ monitor=DP-4,preferred,auto,1
 monitor=DP-5,preferred,auto,1
 
 # laptop
-monitor = HDMI-A-1, highres, auto, 1
+monitor = HDMI-A-1, preferred, auto, 1
 #+end_src
 
 These are the monitors I used across all my machines.
@@ -522,6 +522,10 @@ windowrulev2 = move 0 90%, class:(showmethekey-gtk), title:(Floating Window - Sh
 *** =screenkey= 
 #+begin_src conf
 windowrulev2 = float, class:(screenkey)
+#+end_src
+*** steam
+#+begin_src conf
+windowrulev2 = float, class:(steam) title:(SimCity 4 Deluxe)
 #+end_src
 ** =~/.config/hypr/hypr.d/workspaces.conf=
 :PROPERTIES:
