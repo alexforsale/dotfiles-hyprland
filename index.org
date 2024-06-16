@@ -134,7 +134,7 @@ Required packages(=archlinux=):
 #+begin_src conf
 $terminal = alacritty
 $fileManager = thunar
-$menu = rofi -show drun -theme apps
+$menu = rofi -show drun -theme hyprland-menu
 $editor = emacsclient -c -a emacs
 $mail = thunderbird
 $browser = firefox
@@ -564,7 +564,7 @@ bind = $mainMod, Return, exec, $terminal
 bind = $mainMod, E, exec, $fileManager
 bind = $mainMod, F4, killactive,
 bind = ALT, F4, killactive,
-bind = $mainMod, Q, exec, ~/.local/bin/rofi-logout
+bind = $mainMod, Q, exec, ~/.local/bin/rofi-logout hyprland-logout
 bind = $mainMod Alt, Q, exec, hyprlock
 bind = $mainMod, D, exec, $menu
 bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "clipboard" | cliphist decode | wl-copy
@@ -1627,4 +1627,66 @@ listener {
    timeout = 1800                                # 30min
    on-timeout = systemctl suspend                # suspend pc
 }
+#+end_src
+* Rofi configuration
+** hyprland-menu
+:PROPERTIES:
+:header-args: :tangle .config/rofi/themes/hyprland-menu.rasi :mkdirp t
+:END:
+This is the theme used when running ~rofi -show drun~.
+
+#+begin_src css -n
+  /* -*-css -*- */
+  @theme "nord"
+
+  window {
+      location: southwest;
+      anchor: center;
+      width: 40%;
+      x-offset: 1%;
+      y-offset: -2%;
+      /* padding-right: 25px; */
+  }
+
+  listview {
+      columns: 2;
+      lines: 6;
+  }
+
+  /* inputbar { */
+  /*     children: [textbox-prompt]; */
+  /* } */
+
+  /* textbox-prompt { */
+  /*     str: "Apps"; */
+  /*     text-color: inherit; */
+  /* } */
+#+end_src
+** hyprland-logout
+:PROPERTIES:
+:header-args: :tangle .config/rofi/themes/hyprland-logout.rasi :mkdirp t
+:END:
+#+begin_src css -n
+  /* -*-css -*- */
+  @theme "nord"
+
+  window {
+      location: northeast;
+      anchor:   center;
+      transparency: "screenshot";
+      width: 10%;
+      padding: 10px;
+      border:  0px;
+      border-radius: 6px;
+      x-offset: -1%;
+      y-offset: 1%;
+      spacing: 0;
+      children: [mainbox];
+  }
+
+  listview {
+      columns: 1;
+      lines: 4;
+  }
+
 #+end_src
