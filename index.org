@@ -567,7 +567,7 @@ bind = ALT, F4, killactive,
 bind = $mainMod, Q, exec, ~/.local/bin/rofi-logout hyprland-logout
 bind = $mainMod Alt, Q, exec, hyprlock
 bind = $mainMod, D, exec, $menu
-bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "clipboard" | cliphist decode | wl-copy
+bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
 bind = $mainMod, Comma, exec, rofi -show emoji
 bind = $mainMod Shift, V, exec, pavucontrol
 
@@ -1645,22 +1645,13 @@ This is the theme used when running ~rofi -show drun~.
       width: 40%;
       x-offset: 1%;
       y-offset: -2%;
-      /* padding-right: 25px; */
   }
 
   listview {
       columns: 2;
       lines: 6;
+      spacing: 5px;
   }
-
-  /* inputbar { */
-  /*     children: [textbox-prompt]; */
-  /* } */
-
-  /* textbox-prompt { */
-  /*     str: "Apps"; */
-  /*     text-color: inherit; */
-  /* } */
 #+end_src
 ** hyprland-logout
 :PROPERTIES:
@@ -1688,5 +1679,29 @@ This is the theme used when running ~rofi -show drun~.
       columns: 1;
       lines: 4;
   }
+#+end_src
+** hyprland-clipboard
+:PROPERTIES:
+:header-args: :tangle .config/rofi/themes/hyprland-clipboard.rasi :mkdirp t
+:END:
 
+#+begin_src css -n
+  /* -*-css -*- */
+  @theme "nord"
+
+  window {
+      location: center;
+      anchor: center;
+      width: 40%;
+      x-offset: 1%;
+      y-offset: -2%;
+      /* padding-right: 25px; */
+  }
+
+  listview {
+      lines: 4;
+      dynamic: true;
+      cycle: true;
+      layout: vertical;
+  }
 #+end_src
