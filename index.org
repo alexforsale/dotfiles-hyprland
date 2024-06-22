@@ -525,7 +525,8 @@ windowrulev2 = float, class:(screenkey)
 #+end_src
 *** steam
 #+begin_src conf
-windowrulev2 = float, class:(steam) title:(SimCity 4 Deluxe)
+windowrulev2 = opacity 1, class:(steam) initialTitle:(.*)
+windowrulev2 = float, class:(steam) initialTitle:(.*)
 #+end_src
 ** =~/.config/hypr/hypr.d/workspaces.conf=
 :PROPERTIES:
