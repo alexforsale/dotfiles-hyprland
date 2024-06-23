@@ -528,6 +528,10 @@ windowrulev2 = float, class:(screenkey)
 windowrulev2 = opacity 1, class:(steam) initialTitle:(.*)
 windowrulev2 = float, class:(steam) initialTitle:(.*)
 #+end_src
+**** Mount & Blade Warband
+#+begin_src conf
+windowrulev2 = opacity 1, class:(mb_warband_linux) initialTitle:(mb_warband_linux)
+#+end_src
 ** =~/.config/hypr/hypr.d/workspaces.conf=
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/workspaces.conf :mkdirp t
