@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-06-22 Sat 14:54 -->
+<!-- 2024-06-23 Sun 08:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hyprland and Hyprland-related configuration files</title>
@@ -23,59 +23,59 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf11f970">Hyprland</a>
+<li><a href="#orgd22b689">Hyprland</a>
 <ul>
-<li><a href="#org0d34fd5"><code>~/.config/hypr/hypland.conf</code></a></li>
-<li><a href="#orgc58f5a5"><code>~/.config/hypr/hypr.d/monitors.conf</code></a></li>
-<li><a href="#orgaee3083"><code>~/.config/hypr/hypr.d/autostart.conf</code></a></li>
-<li><a href="#org0a6c34f"><code>~/.config/hypr/hypr.d/variables.conf</code></a></li>
-<li><a href="#org18332e6"><code>~/.config/hypr/hypr.d/input.conf</code></a></li>
-<li><a href="#org9c8f11b"><code>~/.config/hypr/hypr.d/general.conf</code></a></li>
-<li><a href="#org3e1bedc"><code>~/.config/hypr/hypr.d/decoration.conf</code></a></li>
-<li><a href="#orgf4c499e"><code>~/.config/hypr/hypr.d/animations.conf</code></a></li>
-<li><a href="#org6f0b23d"><code>~/.config/hypr/hypr.d/dwindle.conf</code></a></li>
-<li><a href="#orge8c4a4b"><code>~/.config/hypr/hypr.d/master.conf</code></a></li>
-<li><a href="#org85e498e"><code>~/.config/hypr/hypr.d/gestures.conf</code></a></li>
-<li><a href="#orgb57f6fe"><code>~/.config/hypr/hypr.d/groups.conf</code></a></li>
-<li><a href="#org15f1f42"><code>~/.config/hypr/hypr.d/binds.conf</code></a></li>
-<li><a href="#org983ad77"><code>~/.config/hypr/hypr.d/misc.conf</code></a></li>
-<li><a href="#orga622cf9"><code>~/.config/hypr/hypr.d/devices.conf</code></a></li>
-<li><a href="#orgf5ad956"><code>~/.config/hypr/hypr.d/windowrule.conf</code></a></li>
-<li><a href="#org3555b42"><code>~/.config/hypr/hypr.d/workspaces.conf</code></a></li>
-<li><a href="#org73e83c4"><code>~/.config/hypr/hypr.d/keybindings.conf</code></a></li>
+<li><a href="#org8290919"><code>~/.config/hypr/hypland.conf</code></a></li>
+<li><a href="#org2e0273b"><code>~/.config/hypr/hypr.d/monitors.conf</code></a></li>
+<li><a href="#org8252153"><code>~/.config/hypr/hypr.d/autostart.conf</code></a></li>
+<li><a href="#orgddca7a0"><code>~/.config/hypr/hypr.d/variables.conf</code></a></li>
+<li><a href="#org4256baa"><code>~/.config/hypr/hypr.d/input.conf</code></a></li>
+<li><a href="#org135eae2"><code>~/.config/hypr/hypr.d/general.conf</code></a></li>
+<li><a href="#orgf2c9913"><code>~/.config/hypr/hypr.d/decoration.conf</code></a></li>
+<li><a href="#org82e211b"><code>~/.config/hypr/hypr.d/animations.conf</code></a></li>
+<li><a href="#orgd646ed8"><code>~/.config/hypr/hypr.d/dwindle.conf</code></a></li>
+<li><a href="#org28f2ac2"><code>~/.config/hypr/hypr.d/master.conf</code></a></li>
+<li><a href="#org5abad62"><code>~/.config/hypr/hypr.d/gestures.conf</code></a></li>
+<li><a href="#orgdcda1ba"><code>~/.config/hypr/hypr.d/groups.conf</code></a></li>
+<li><a href="#orgf29ac60"><code>~/.config/hypr/hypr.d/binds.conf</code></a></li>
+<li><a href="#orgf94596d"><code>~/.config/hypr/hypr.d/misc.conf</code></a></li>
+<li><a href="#orgaecda61"><code>~/.config/hypr/hypr.d/devices.conf</code></a></li>
+<li><a href="#org2659308"><code>~/.config/hypr/hypr.d/windowrule.conf</code></a></li>
+<li><a href="#orgcb42e3c"><code>~/.config/hypr/hypr.d/workspaces.conf</code></a></li>
+<li><a href="#org434e22e"><code>~/.config/hypr/hypr.d/keybindings.conf</code></a></li>
 </ul>
 </li>
-<li><a href="#org8c33c4a">waybar</a>
+<li><a href="#org14a97f1">waybar</a>
 <ul>
-<li><a href="#orgdf498f1"><code>~/.config/waybar/config</code></a></li>
-<li><a href="#org73dfb69"><code>~/.config/waybar/style.css</code></a></li>
+<li><a href="#orgef98c66"><code>~/.config/waybar/config</code></a></li>
+<li><a href="#org627a41f"><code>~/.config/waybar/style.css</code></a></li>
 </ul>
 </li>
-<li><a href="#org203186d">hyprpaper</a></li>
-<li><a href="#org5d2fd58">hyprshade</a></li>
-<li><a href="#org344b9e5">hyprlock</a></li>
-<li><a href="#org1aa3cc5">hypridle</a></li>
-<li><a href="#orgc4bfbb2">Rofi configuration</a>
+<li><a href="#org306148a">hyprpaper</a></li>
+<li><a href="#org8322642">hyprshade</a></li>
+<li><a href="#org14ce5ee">hyprlock</a></li>
+<li><a href="#org18737a6">hypridle</a></li>
+<li><a href="#orgf75c4e1">Rofi configuration</a>
 <ul>
-<li><a href="#orgab03020">hyprland-menu</a></li>
-<li><a href="#org1ae1f0c">hyprland-logout</a></li>
-<li><a href="#org48e4202">hyprland-clipboard</a></li>
+<li><a href="#orgb7cfa01">hyprland-menu</a></li>
+<li><a href="#orge9e38b2">hyprland-logout</a></li>
+<li><a href="#org40db5cf">hyprland-clipboard</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf11f970" class="outline-2">
-<h2 id="orgf11f970">Hyprland</h2>
-<div class="outline-text-2" id="text-orgf11f970">
+<div id="outline-container-orgd22b689" class="outline-2">
+<h2 id="orgd22b689">Hyprland</h2>
+<div class="outline-text-2" id="text-orgd22b689">
 </div>
-<div id="outline-container-org0d34fd5" class="outline-3">
-<h3 id="org0d34fd5"><code>~/.config/hypr/hypland.conf</code></h3>
-<div class="outline-text-3" id="text-org0d34fd5">
+<div id="outline-container-org8290919" class="outline-3">
+<h3 id="org8290919"><code>~/.config/hypr/hypland.conf</code></h3>
+<div class="outline-text-3" id="text-org8290919">
 </div>
 <ul class="org-ul">
-<li><a id="org0508332"></a>Modular configuration files<br />
-<div class="outline-text-4" id="text-org0508332">
+<li><a id="orga763682"></a>Modular configuration files<br />
+<div class="outline-text-4" id="text-orga763682">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">source</span> = ./hypr.d/monitors.conf
 <span style="color: #b8860b;">source</span> = ./hypr.d/autostart.conf
@@ -100,9 +100,9 @@
 </li>
 </ul>
 </div>
-<div id="outline-container-orgc58f5a5" class="outline-3">
-<h3 id="orgc58f5a5"><code>~/.config/hypr/hypr.d/monitors.conf</code></h3>
-<div class="outline-text-3" id="text-orgc58f5a5">
+<div id="outline-container-org2e0273b" class="outline-3">
+<h3 id="org2e0273b"><code>~/.config/hypr/hypr.d/monitors.conf</code></h3>
+<div class="outline-text-3" id="text-org2e0273b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Monitors/</span>
 <span style="color: #b8860b;">monitor</span>=,highrr,auto,1
@@ -123,9 +123,9 @@ These are the monitors I used across all my machines.
 </p>
 </div>
 </div>
-<div id="outline-container-orgaee3083" class="outline-3">
-<h3 id="orgaee3083"><code>~/.config/hypr/hypr.d/autostart.conf</code></h3>
-<div class="outline-text-3" id="text-orgaee3083">
+<div id="outline-container-org8252153" class="outline-3">
+<h3 id="org8252153"><code>~/.config/hypr/hypr.d/autostart.conf</code></h3>
+<div class="outline-text-3" id="text-org8252153">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME
 <span style="color: #b8860b;">exec-once</span> = dbus-update-activation-environment --systemd --all &amp;
@@ -169,8 +169,8 @@ Required packages(<code>archlinux</code>):
 </div>
 
 <ul class="org-ul">
-<li><a id="org061b19f"></a>Additional GTK Settings<br />
-<div class="outline-text-4" id="text-org061b19f">
+<li><a id="orga74d35a"></a>Additional GTK Settings<br />
+<div class="outline-text-4" id="text-orga74d35a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = gsettings set org.gnome.desktop.interface font-name <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono 10"</span>
 <span style="color: #b8860b;">exec-once</span> = gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic
@@ -198,14 +198,14 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 
-<div id="outline-container-org0a6c34f" class="outline-3">
-<h3 id="org0a6c34f"><code>~/.config/hypr/hypr.d/variables.conf</code></h3>
-<div class="outline-text-3" id="text-org0a6c34f">
+<div id="outline-container-orgddca7a0" class="outline-3">
+<h3 id="orgddca7a0"><code>~/.config/hypr/hypr.d/variables.conf</code></h3>
+<div class="outline-text-3" id="text-orgddca7a0">
 </div>
 
 <ul class="org-ul">
-<li><a id="orga23239f"></a>Applications<br />
-<div class="outline-text-4" id="text-orga23239f">
+<li><a id="org9ec6afa"></a>Applications<br />
+<div class="outline-text-4" id="text-org9ec6afa">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$terminal</span> = alacritty
 <span style="color: #b8860b;">$fileManager</span> = thunar
@@ -218,8 +218,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgdeda5f8"></a>Environment Variables<br />
-<div class="outline-text-4" id="text-orgdeda5f8">
+<li><a id="org70a757d"></a>Environment Variables<br />
+<div class="outline-text-4" id="text-org70a757d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">env</span> = QT_QPA_PLATFORM,xcb
 <span style="color: #b8860b;">env</span> = QT_QPA_PLATFORMTHEME,qt5ct <span style="color: #b22222;"># </span><span style="color: #b22222;">change to qt6ct if you have that</span>
@@ -236,8 +236,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org7b364f6"></a>Wallpapers<br />
-<div class="outline-text-4" id="text-org7b364f6">
+<li><a id="org6edef84"></a>Wallpapers<br />
+<div class="outline-text-4" id="text-org6edef84">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$w1</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/ign_duaAnime.png"</span>
 <span style="color: #b8860b;">$w2</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/ign_chainsaw-man.png"</span>
@@ -256,9 +256,9 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 
-<div id="outline-container-org18332e6" class="outline-3">
-<h3 id="org18332e6"><code>~/.config/hypr/hypr.d/input.conf</code></h3>
-<div class="outline-text-3" id="text-org18332e6">
+<div id="outline-container-org4256baa" class="outline-3">
+<h3 id="org4256baa"><code>~/.config/hypr/hypr.d/input.conf</code></h3>
+<div class="outline-text-3" id="text-org4256baa">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">input</span> {
     <span style="color: #b8860b;">kb_layout</span> = us
@@ -285,9 +285,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-org9c8f11b" class="outline-3">
-<h3 id="org9c8f11b"><code>~/.config/hypr/hypr.d/general.conf</code></h3>
-<div class="outline-text-3" id="text-org9c8f11b">
+<div id="outline-container-org135eae2" class="outline-3">
+<h3 id="org135eae2"><code>~/.config/hypr/hypr.d/general.conf</code></h3>
+<div class="outline-text-3" id="text-org135eae2">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">general</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -312,9 +312,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-org3e1bedc" class="outline-3">
-<h3 id="org3e1bedc"><code>~/.config/hypr/hypr.d/decoration.conf</code></h3>
-<div class="outline-text-3" id="text-org3e1bedc">
+<div id="outline-container-orgf2c9913" class="outline-3">
+<h3 id="orgf2c9913"><code>~/.config/hypr/hypr.d/decoration.conf</code></h3>
+<div class="outline-text-3" id="text-orgf2c9913">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">decoration</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -339,9 +339,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-orgf4c499e" class="outline-3">
-<h3 id="orgf4c499e"><code>~/.config/hypr/hypr.d/animations.conf</code></h3>
-<div class="outline-text-3" id="text-orgf4c499e">
+<div id="outline-container-org82e211b" class="outline-3">
+<h3 id="org82e211b"><code>~/.config/hypr/hypr.d/animations.conf</code></h3>
+<div class="outline-text-3" id="text-org82e211b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">animations</span> {
     <span style="color: #b8860b;">enabled</span> = true
@@ -361,9 +361,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org6f0b23d" class="outline-3">
-<h3 id="org6f0b23d"><code>~/.config/hypr/hypr.d/dwindle.conf</code></h3>
-<div class="outline-text-3" id="text-org6f0b23d">
+<div id="outline-container-orgd646ed8" class="outline-3">
+<h3 id="orgd646ed8"><code>~/.config/hypr/hypr.d/dwindle.conf</code></h3>
+<div class="outline-text-3" id="text-orgd646ed8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">dwindle</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more</span>
@@ -375,9 +375,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orge8c4a4b" class="outline-3">
-<h3 id="orge8c4a4b"><code>~/.config/hypr/hypr.d/master.conf</code></h3>
-<div class="outline-text-3" id="text-orge8c4a4b">
+<div id="outline-container-org28f2ac2" class="outline-3">
+<h3 id="org28f2ac2"><code>~/.config/hypr/hypr.d/master.conf</code></h3>
+<div class="outline-text-3" id="text-org28f2ac2">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">master</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Master-Layout/ for more</span>
@@ -387,9 +387,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org85e498e" class="outline-3">
-<h3 id="org85e498e"><code>~/.config/hypr/hypr.d/gestures.conf</code></h3>
-<div class="outline-text-3" id="text-org85e498e">
+<div id="outline-container-org5abad62" class="outline-3">
+<h3 id="org5abad62"><code>~/.config/hypr/hypr.d/gestures.conf</code></h3>
+<div class="outline-text-3" id="text-org5abad62">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">gestures</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -400,9 +400,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orgb57f6fe" class="outline-3">
-<h3 id="orgb57f6fe"><code>~/.config/hypr/hypr.d/groups.conf</code></h3>
-<div class="outline-text-3" id="text-orgb57f6fe">
+<div id="outline-container-orgdcda1ba" class="outline-3">
+<h3 id="orgdcda1ba"><code>~/.config/hypr/hypr.d/groups.conf</code></h3>
+<div class="outline-text-3" id="text-orgdcda1ba">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">group</span> {
     <span style="color: #b8860b;">insert_after_current</span> = true
@@ -431,9 +431,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org15f1f42" class="outline-3">
-<h3 id="org15f1f42"><code>~/.config/hypr/hypr.d/binds.conf</code></h3>
-<div class="outline-text-3" id="text-org15f1f42">
+<div id="outline-container-orgf29ac60" class="outline-3">
+<h3 id="orgf29ac60"><code>~/.config/hypr/hypr.d/binds.conf</code></h3>
+<div class="outline-text-3" id="text-orgf29ac60">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">binds</span> {
     <span style="color: #b8860b;">workspace_back_and_forth</span> = false
@@ -444,9 +444,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-org983ad77" class="outline-3">
-<h3 id="org983ad77"><code>~/.config/hypr/hypr.d/misc.conf</code></h3>
-<div class="outline-text-3" id="text-org983ad77">
+<div id="outline-container-orgf94596d" class="outline-3">
+<h3 id="orgf94596d"><code>~/.config/hypr/hypr.d/misc.conf</code></h3>
+<div class="outline-text-3" id="text-orgf94596d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">misc</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -462,9 +462,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orga622cf9" class="outline-3">
-<h3 id="orga622cf9"><code>~/.config/hypr/hypr.d/devices.conf</code></h3>
-<div class="outline-text-3" id="text-orga622cf9">
+<div id="outline-container-orgaecda61" class="outline-3">
+<h3 id="orgaecda61"><code>~/.config/hypr/hypr.d/devices.conf</code></h3>
+<div class="outline-text-3" id="text-orgaecda61">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">device</span> {
     <span style="color: #b8860b;">name</span> = epic-mouse-v1
@@ -474,13 +474,13 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orgf5ad956" class="outline-3">
-<h3 id="orgf5ad956"><code>~/.config/hypr/hypr.d/windowrule.conf</code></h3>
-<div class="outline-text-3" id="text-orgf5ad956">
+<div id="outline-container-org2659308" class="outline-3">
+<h3 id="org2659308"><code>~/.config/hypr/hypr.d/windowrule.conf</code></h3>
+<div class="outline-text-3" id="text-org2659308">
 </div>
 <ul class="org-ul">
-<li><a id="org7bb43fc"></a>For all windows<br />
-<div class="outline-text-4" id="text-org7bb43fc">
+<li><a id="orgf0fd5fa"></a>For all windows<br />
+<div class="outline-text-4" id="text-orgf0fd5fa">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = suppressevent maximize, class:.* <span style="color: #b22222;"># </span><span style="color: #b22222;">You'll probably like this.</span>
 <span style="color: #b8860b;">windowrulev2</span> = opacity 0.8, class:.*
@@ -489,8 +489,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org60ab64c"></a><code>pavucontrol</code><br />
-<div class="outline-text-4" id="text-org60ab64c">
+<li><a id="org461572e"></a><code>pavucontrol</code><br />
+<div class="outline-text-4" id="text-org461572e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:^(pavucontrol)$
 <span style="color: #b8860b;">windowrulev2</span> = size 50%,class:^(pavucontrol)$
@@ -499,8 +499,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgbe93d63"></a><code>polkit-kde-agent</code><br />
-<div class="outline-text-4" id="text-orgbe93d63">
+<li><a id="orgc685b0c"></a><code>polkit-kde-agent</code><br />
+<div class="outline-text-4" id="text-orgc685b0c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(org.kde.polkit-kde-authentication-agent-1)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(org.kde.polkit-kde-authentication-agent-1)
@@ -509,8 +509,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org98cf4ae"></a><code>blueman</code><br />
-<div class="outline-text-4" id="text-org98cf4ae">
+<li><a id="org46c4700"></a><code>blueman</code><br />
+<div class="outline-text-4" id="text-org46c4700">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(blueman)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(blueman)
@@ -520,8 +520,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orga834360"></a><code>thunderbird</code><br />
-<div class="outline-text-4" id="text-orga834360">
+<li><a id="org5d696b8"></a><code>thunderbird</code><br />
+<div class="outline-text-4" id="text-org5d696b8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(status)
 <span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(.*)(Reminders)
@@ -536,8 +536,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgeded602"></a><code>firefox</code><br />
-<div class="outline-text-4" id="text-orgeded602">
+<li><a id="orge43a5e8"></a><code>firefox</code><br />
+<div class="outline-text-4" id="text-orge43a5e8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = idleinhibit always, class:firefox title:(.*)(- YouTube)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:firefox title:(.*)(- YouTube)
@@ -546,8 +546,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org149b2de"></a><code>Qtpass</code><br />
-<div class="outline-text-4" id="text-org149b2de">
+<li><a id="orgc5a002f"></a><code>Qtpass</code><br />
+<div class="outline-text-4" id="text-orgc5a002f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(QtPass)
 </pre>
@@ -555,8 +555,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org2a2fa5a"></a><code>zoom</code><br />
-<div class="outline-text-4" id="text-org2a2fa5a">
+<li><a id="org4d9cd84"></a><code>zoom</code><br />
+<div class="outline-text-4" id="text-org4d9cd84">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(zoom)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(zoom)
@@ -568,8 +568,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org4ae4580"></a><code>file-roller</code><br />
-<div class="outline-text-4" id="text-org4ae4580">
+<li><a id="org8f2d660"></a><code>file-roller</code><br />
+<div class="outline-text-4" id="text-org8f2d660">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(file-roller)
 </pre>
@@ -577,8 +577,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orge3087a8"></a><code>ncmpcpp</code><br />
-<div class="outline-text-4" id="text-orge3087a8">
+<li><a id="orgfcabd26"></a><code>ncmpcpp</code><br />
+<div class="outline-text-4" id="text-orgfcabd26">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(ncmpcpp)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(ncmpcpp)
@@ -588,8 +588,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org956bd19"></a><code>khal</code><br />
-<div class="outline-text-4" id="text-org956bd19">
+<li><a id="org1572119"></a><code>khal</code><br />
+<div class="outline-text-4" id="text-org1572119">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(khal)
 <span style="color: #b8860b;">windowrulev2</span> = size 40%, class:(khal)
@@ -599,8 +599,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org43f72b9"></a><code>astroid</code><br />
-<div class="outline-text-4" id="text-org43f72b9">
+<li><a id="org6cdbae4"></a><code>astroid</code><br />
+<div class="outline-text-4" id="text-org6cdbae4">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 4, class:(astroid)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(astroid)
@@ -609,8 +609,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org5845ffa"></a><code>vlc</code><br />
-<div class="outline-text-4" id="text-org5845ffa">
+<li><a id="org0eedefa"></a><code>vlc</code><br />
+<div class="outline-text-4" id="text-org0eedefa">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 7,class:(vlc)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1,class:(vlc)
@@ -620,8 +620,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgcda2027"></a><code>remmina</code><br />
-<div class="outline-text-4" id="text-orgcda2027">
+<li><a id="org36f7b2d"></a><code>remmina</code><br />
+<div class="outline-text-4" id="text-org36f7b2d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, workspace 8, class:(org.remmina.Remmina)
 </pre>
@@ -629,8 +629,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgff9caa8"></a><code>transmission</code><br />
-<div class="outline-text-4" id="text-orgff9caa8">
+<li><a id="org2d1b27c"></a><code>transmission</code><br />
+<div class="outline-text-4" id="text-org2d1b27c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 9,class:^(com.transmissionbt.transmission).*
 <span style="color: #b8860b;">windowrulev2</span> = float,title:(Torrent.*)
@@ -639,8 +639,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org02e32ab"></a><code>thunar</code><br />
-<div class="outline-text-4" id="text-org02e32ab">
+<li><a id="org6ce4d9f"></a><code>thunar</code><br />
+<div class="outline-text-4" id="text-org6ce4d9f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, title:(File Operation Progress)
 <span style="color: #b8860b;">windowrulev2</span> = float, class:(thunar),title:(Confirm to replace files)
@@ -649,8 +649,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org81b9415"></a><code>htop</code><br />
-<div class="outline-text-4" id="text-org81b9415">
+<li><a id="orge49d8ea"></a><code>htop</code><br />
+<div class="outline-text-4" id="text-orge49d8ea">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(htop)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 40%, class:(htop)
@@ -660,8 +660,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org961a35a"></a><code>nmtui</code><br />
-<div class="outline-text-4" id="text-org961a35a">
+<li><a id="orgcf800f5"></a><code>nmtui</code><br />
+<div class="outline-text-4" id="text-orgcf800f5">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(nmtui)
 </pre>
@@ -669,8 +669,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org958392d"></a><code>vim</code><br />
-<div class="outline-text-4" id="text-org958392d">
+<li><a id="org33f0c45"></a><code>vim</code><br />
+<div class="outline-text-4" id="text-org33f0c45">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(vim)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(vim)
@@ -679,8 +679,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org9cae867"></a><code>Emacs</code> (in terminal mode)<br />
-<div class="outline-text-4" id="text-org9cae867">
+<li><a id="orgdfb6cd8"></a><code>Emacs</code> (in terminal mode)<br />
+<div class="outline-text-4" id="text-orgdfb6cd8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = maximize, class:(nw-emacs)
 </pre>
@@ -688,8 +688,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org61169c3"></a><code>showmethekey</code><br />
-<div class="outline-text-4" id="text-org61169c3">
+<li><a id="org433ed95"></a><code>showmethekey</code><br />
+<div class="outline-text-4" id="text-org433ed95">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(one.alynx.showmethekey), title:(Show Me The Key)
 <span style="color: #b8860b;">windowrulev2</span> = nofocus, class:(showmethekey-gtk), title:(Floating Window - Show Me The Key)
@@ -703,28 +703,38 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org497f131"></a><code>screenkey</code><br />
-<div class="outline-text-4" id="text-org497f131">
+<li><a id="orgebfffe2"></a><code>screenkey</code><br />
+<div class="outline-text-4" id="text-orgebfffe2">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(screenkey)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgc63142b"></a>steam<br />
-<div class="outline-text-4" id="text-orgc63142b">
+<li><a id="org9a2f607"></a>steam<br />
+<div class="outline-text-4" id="text-org9a2f607">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(steam) initialTitle:(.*)
 <span style="color: #b8860b;">windowrulev2</span> = float, class:(steam) initialTitle:(.*)
 </pre>
 </div>
 </div>
+<ul class="org-ul">
+<li><a id="org0e24b72"></a>Mount &amp; Blade Warband<br />
+<div class="outline-text-5" id="text-org0e24b72">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(mb_warband_linux) initialTitle:(mb_warband_linux)
+</pre>
+</div>
+</div>
+</li>
+</ul>
 </li>
 </ul>
 </div>
-<div id="outline-container-org3555b42" class="outline-3">
-<h3 id="org3555b42"><code>~/.config/hypr/hypr.d/workspaces.conf</code></h3>
-<div class="outline-text-3" id="text-org3555b42">
+<div id="outline-container-orgcb42e3c" class="outline-3">
+<h3 id="orgcb42e3c"><code>~/.config/hypr/hypr.d/workspaces.conf</code></h3>
+<div class="outline-text-3" id="text-orgcb42e3c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">workspace</span> = 1, name:terminal, monitor:eDP-1 <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:alacritty</span>
 <span style="color: #b8860b;">workspace</span> = 2, name:code, monitor:eDP-1 <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:emacsclient -c -a emacs</span>
@@ -741,15 +751,15 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org73e83c4" class="outline-3">
-<h3 id="org73e83c4"><code>~/.config/hypr/hypr.d/keybindings.conf</code></h3>
-<div class="outline-text-3" id="text-org73e83c4">
+<div id="outline-container-org434e22e" class="outline-3">
+<h3 id="org434e22e"><code>~/.config/hypr/hypr.d/keybindings.conf</code></h3>
+<div class="outline-text-3" id="text-org434e22e">
 </div>
 
 
 <ul class="org-ul">
-<li><a id="orgd1b4d98"></a>Set the <code>mainMod</code> variable<br />
-<div class="outline-text-4" id="text-orgd1b4d98">
+<li><a id="org6769c3d"></a>Set the <code>mainMod</code> variable<br />
+<div class="outline-text-4" id="text-org6769c3d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Keywords/ for more</span>
 <span style="color: #b8860b;">$mainMod</span> = SUPER
@@ -758,8 +768,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgfc6793c"></a>Apps keybindings<br />
-<div class="outline-text-4" id="text-orgfc6793c">
+<li><a id="org042bc5f"></a>Apps keybindings<br />
+<div class="outline-text-4" id="text-org042bc5f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, Return, exec, $terminal
@@ -796,8 +806,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org34fdd53"></a>window<br />
-<div class="outline-text-4" id="text-org34fdd53">
+<li><a id="org0322e8a"></a>window<br />
+<div class="outline-text-4" id="text-org0322e8a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, F, fullscreen, 0
 <span style="color: #b8860b;">bind</span> = $mainMod Shift, F, fullscreen, 1
@@ -842,8 +852,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orga47f91e"></a>Mouse<br />
-<div class="outline-text-4" id="text-orga47f91e">
+<li><a id="orga07bf14"></a>Mouse<br />
+<div class="outline-text-4" id="text-orga07bf14">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Move/resize windows with mainMod + LMB/RMB and dragging</span>
 <span style="color: #b8860b;">bindm</span> = $mainMod, mouse:272, movewindow
@@ -852,8 +862,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org9607688"></a>Media keys<br />
-<div class="outline-text-4" id="text-org9607688">
+<li><a id="org0a3d907"></a>Media keys<br />
+<div class="outline-text-4" id="text-org0a3d907">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">binde</span> = , XF86AudioRaiseVolume, exec, ~/.local/bin/dunst-volume -i 1
 <span style="color: #b8860b;">binde</span> = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -1%
@@ -883,8 +893,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgefcd3a2"></a><code>dunst</code><br />
-<div class="outline-text-4" id="text-orgefcd3a2">
+<li><a id="orgbcdf429"></a><code>dunst</code><br />
+<div class="outline-text-4" id="text-orgbcdf429">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, grave, exec, dunstctl history-pop
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, grave, exec, dunstctl context
@@ -894,10 +904,10 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org556109b"></a>Groups<br />
+<li><a id="org0511e94"></a>Groups<br />
 <ul class="org-ul">
-<li><a id="orgb760290"></a>Group management<br />
-<div class="outline-text-5" id="text-orgb760290">
+<li><a id="orgb69fb56"></a>Group management<br />
+<div class="outline-text-5" id="text-orgb69fb56">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, G, submap, group
 <span style="color: #b8860b;">submap</span> = group
@@ -949,8 +959,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgd6e1799"></a>Window Resize<br />
-<div class="outline-text-5" id="text-orgd6e1799">
+<li><a id="org73863b3"></a>Window Resize<br />
+<div class="outline-text-5" id="text-org73863b3">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Resize</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, R, submap, resize
@@ -974,8 +984,8 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </li>
-<li><a id="org48cf488"></a>Hyprland<br />
-<div class="outline-text-4" id="text-org48cf488">
+<li><a id="org424f559"></a>Hyprland<br />
+<div class="outline-text-4" id="text-org424f559">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, P, pseudo, <span style="color: #b22222;"># </span><span style="color: #b22222;">dwindle</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, S, togglesplit, <span style="color: #b22222;"># </span><span style="color: #b22222;">dwindle</span>
@@ -984,8 +994,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgfb08521"></a>Master layout<br />
-<div class="outline-text-5" id="text-orgfb08521">
+<li><a id="org906ebe6"></a>Master layout<br />
+<div class="outline-text-5" id="text-org906ebe6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">master</span>
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, TAB, layoutmsg, swapwithmaster auto
@@ -1002,8 +1012,8 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </li>
-<li><a id="orgf909524"></a>Workspaces<br />
-<div class="outline-text-4" id="text-orgf909524">
+<li><a id="org46c67a4"></a>Workspaces<br />
+<div class="outline-text-4" id="text-org46c67a4">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Switch workspaces with mainMod + [0-9]</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, 1, workspace, 1
@@ -1079,13 +1089,13 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 </div>
-<div id="outline-container-org8c33c4a" class="outline-2">
-<h2 id="org8c33c4a">waybar</h2>
-<div class="outline-text-2" id="text-org8c33c4a">
+<div id="outline-container-org14a97f1" class="outline-2">
+<h2 id="org14a97f1">waybar</h2>
+<div class="outline-text-2" id="text-org14a97f1">
 </div>
-<div id="outline-container-orgdf498f1" class="outline-3">
-<h3 id="orgdf498f1"><code>~/.config/waybar/config</code></h3>
-<div class="outline-text-3" id="text-orgdf498f1">
+<div id="outline-container-orgef98c66" class="outline-3">
+<h3 id="orgef98c66"><code>~/.config/waybar/config</code></h3>
+<div class="outline-text-3" id="text-orgef98c66">
 <div class="org-src-container">
 <pre class="src src-js">{
   <span style="color: #bc8f8f;">"layer"</span>: <span style="color: #bc8f8f;">"top"</span>, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar at top layer</span>
@@ -1099,8 +1109,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org7aaaff7"></a>Left Modules<br />
-<div class="outline-text-4" id="text-org7aaaff7">
+<li><a id="orgf5dbe58"></a>Left Modules<br />
+<div class="outline-text-4" id="text-orgf5dbe58">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-left"</span>: [
   <span style="color: #bc8f8f;">"hyprland/workspaces"</span>,
@@ -1112,8 +1122,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgb6b2e1b"></a>Center Modules<br />
-<div class="outline-text-4" id="text-orgb6b2e1b">
+<li><a id="orge9b2063"></a>Center Modules<br />
+<div class="outline-text-4" id="text-orge9b2063">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-center"</span>: [
   <span style="color: #bc8f8f;">"hyprland/window"</span>
@@ -1122,8 +1132,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org2697178"></a>Right Modules<br />
-<div class="outline-text-4" id="text-org2697178">
+<li><a id="orgefb2a9f"></a>Right Modules<br />
+<div class="outline-text-4" id="text-orgefb2a9f">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-right"</span>: [
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"mpd",</span>
@@ -1147,10 +1157,10 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org1766fe0"></a>Modules Configuration<br />
+<li><a id="orgfed2697"></a>Modules Configuration<br />
 <ul class="org-ul">
-<li><a id="orge921372"></a>mpris<br />
-<div class="outline-text-5" id="text-orge921372">
+<li><a id="org24cc58c"></a>mpris<br />
+<div class="outline-text-5" id="text-org24cc58c">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"mpris"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{player_icon} {title}"</span>,
@@ -1167,8 +1177,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org15a219b"></a>backlight<br />
-<div class="outline-text-5" id="text-org15a219b">
+<li><a id="orgc2e09b4"></a>backlight<br />
+<div class="outline-text-5" id="text-orgc2e09b4">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"backlight"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61829; {percent}%"</span>,
@@ -1180,8 +1190,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orga07875b"></a>hyprland/workspaces<br />
-<div class="outline-text-5" id="text-orga07875b">
+<li><a id="org1521329"></a>hyprland/workspaces<br />
+<div class="outline-text-5" id="text-org1521329">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/workspaces"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{id}: {icon}"</span>,
@@ -1203,8 +1213,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org47c3e4d"></a>hyprland/languages<br />
-<div class="outline-text-5" id="text-org47c3e4d">
+<li><a id="orgd5c622b"></a>hyprland/languages<br />
+<div class="outline-text-5" id="text-orgd5c622b">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/language"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1215,8 +1225,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgc7f37c1"></a>hyprland/window<br />
-<div class="outline-text-5" id="text-orgc7f37c1">
+<li><a id="orgecca115"></a>hyprland/window<br />
+<div class="outline-text-5" id="text-orgecca115">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/window"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1230,8 +1240,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org8096923"></a>hyprland/submap<br />
-<div class="outline-text-5" id="text-org8096923">
+<li><a id="orgc6cd6c1"></a>hyprland/submap<br />
+<div class="outline-text-5" id="text-orgc6cd6c1">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/submap"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1242,8 +1252,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgcf80c90"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-orgcf80c90">
+<li><a id="org2e1f81a"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org2e1f81a">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"keyboard-state"</span>: {
   <span style="color: #bc8f8f;">"numlock"</span>: <span style="color: #5f9ea0;">false</span>,
@@ -1258,8 +1268,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgbfea892"></a>mpd<br />
-<div class="outline-text-5" id="text-orgbfea892">
+<li><a id="org929a9a9"></a>mpd<br />
+<div class="outline-text-5" id="text-org929a9a9">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"mpd"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) &#11816;{songPosition}|{queueLength}&#11817; {volume}% &#61441;",</span>
@@ -1292,8 +1302,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org3333ccc"></a>idle_inhibitor<br />
-<div class="outline-text-5" id="text-org3333ccc">
+<li><a id="org93b3d97"></a>idle_inhibitor<br />
+<div class="outline-text-5" id="text-org93b3d97">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"idle_inhibitor"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon}"</span>,
@@ -1306,8 +1316,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgd826a6f"></a>tray<br />
-<div class="outline-text-5" id="text-orgd826a6f">
+<li><a id="org7ccd4fa"></a>tray<br />
+<div class="outline-text-5" id="text-org7ccd4fa">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"tray"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"icon-size": 21,</span>
@@ -1317,8 +1327,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org4a442a2"></a>clock<br />
-<div class="outline-text-5" id="text-org4a442a2">
+<li><a id="org7e62a46"></a>clock<br />
+<div class="outline-text-5" id="text-org7e62a46">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"clock#date"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"timezone": "America/New_York",</span>
@@ -1336,8 +1346,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orge6b5b9b"></a>cpu<br />
-<div class="outline-text-5" id="text-orge6b5b9b">
+<li><a id="orgeae1264"></a>cpu<br />
+<div class="outline-text-5" id="text-orgeae1264">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"cpu"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{usage}% &#62171;"</span>,
@@ -1347,8 +1357,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org2b43729"></a>memory<br />
-<div class="outline-text-5" id="text-org2b43729">
+<li><a id="org8f3b3a1"></a>memory<br />
+<div class="outline-text-5" id="text-org8f3b3a1">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"memory"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}% &#61641;"</span>
@@ -1357,8 +1367,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org845662d"></a>temperature<br />
-<div class="outline-text-5" id="text-org845662d">
+<li><a id="orgd4ad754"></a>temperature<br />
+<div class="outline-text-5" id="text-orgd4ad754">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"temperature"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"thermal-zone": 2,</span>
@@ -1372,8 +1382,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org148428b"></a>battery<br />
-<div class="outline-text-5" id="text-org148428b">
+<li><a id="org07fdf0b"></a>battery<br />
+<div class="outline-text-5" id="text-org07fdf0b">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"battery"</span>: {
   <span style="color: #bc8f8f;">"states"</span>: {
@@ -1396,8 +1406,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org850b046"></a>network<br />
-<div class="outline-text-5" id="text-org850b046">
+<li><a id="org5fdd39b"></a>network<br />
+<div class="outline-text-5" id="text-org5fdd39b">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"network"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"interface": "wlp2*", // (Optional) To force the use of this interface</span>
@@ -1413,8 +1423,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org16a82be"></a>wireplumber<br />
-<div class="outline-text-5" id="text-org16a82be">
+<li><a id="orgf950dfb"></a>wireplumber<br />
+<div class="outline-text-5" id="text-orgf950dfb">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"wireplumber"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon} {volume}%"</span>,
@@ -1428,8 +1438,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org5140b56"></a>pulseaudio<br />
-<div class="outline-text-5" id="text-org5140b56">
+<li><a id="orgc6d8b75"></a>pulseaudio<br />
+<div class="outline-text-5" id="text-orgc6d8b75">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"pulseaudio"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"scroll-step": 1, // %, can be a float</span>
@@ -1454,8 +1464,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org090844a"></a>custom/pacman<br />
-<div class="outline-text-5" id="text-org090844a">
+<li><a id="org1c734dd"></a>custom/pacman<br />
+<div class="outline-text-5" id="text-org1c734dd">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/pacman"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61538; {} update available"</span>,
@@ -1468,8 +1478,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org182ba63"></a>custom/media<br />
-<div class="outline-text-5" id="text-org182ba63">
+<li><a id="org13022f6"></a>custom/media<br />
+<div class="outline-text-5" id="text-org13022f6">
 <div class="org-src-container">
 <pre class="src src-js">  <span style="color: #bc8f8f;">"custom/media"</span>: {
     <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon} {}"</span>,
@@ -1492,13 +1502,13 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </div>
-<div id="outline-container-org73dfb69" class="outline-3">
-<h3 id="org73dfb69"><code>~/.config/waybar/style.css</code></h3>
-<div class="outline-text-3" id="text-org73dfb69">
+<div id="outline-container-org627a41f" class="outline-3">
+<h3 id="org627a41f"><code>~/.config/waybar/style.css</code></h3>
+<div class="outline-text-3" id="text-org627a41f">
 </div>
 <ul class="org-ul">
-<li><a id="org42d4f93"></a>definitions<br />
-<div class="outline-text-4" id="text-org42d4f93">
+<li><a id="orgee57f27"></a>definitions<br />
+<div class="outline-text-4" id="text-orgee57f27">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b22222;">/* </span><span style="color: #b22222;">Nord </span><span style="color: #b22222;">*/</span>
 <span style="color: #00008b;">@define-color</span> background <span style="color: #ffffff; background-color: #2e3440;">rgba(46, 52, 64, 1)</span>;
@@ -1550,8 +1560,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgb51b321"></a>global<br />
-<div class="outline-text-4" id="text-orgb51b321">
+<li><a id="orgf2fbd89"></a>global<br />
+<div class="outline-text-4" id="text-orgf2fbd89">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">* </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">`otf-font-awesome` is required to be installed for icons </span><span style="color: #b22222;">*/</span>
@@ -1562,8 +1572,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgfcbb7f6"></a>keyframes<br />
-<div class="outline-text-4" id="text-orgfcbb7f6">
+<li><a id="org9679384"></a>keyframes<br />
+<div class="outline-text-4" id="text-org9679384">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #00008b;">@keyframes</span> blink {
     <span style="color: #0000ff;">to </span>{
@@ -1575,8 +1585,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org3a60c39"></a>window<br />
-<div class="outline-text-4" id="text-org3a60c39">
+<li><a id="org97db59e"></a>window<br />
+<div class="outline-text-4" id="text-org97db59e">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">window#waybar </span>{
     <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@background2</span>;
@@ -1604,8 +1614,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org2634c40"></a>button<br />
-<div class="outline-text-4" id="text-org2634c40">
+<li><a id="orga2e6e8a"></a>button<br />
+<div class="outline-text-4" id="text-orga2e6e8a">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">button </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">Use box-shadow instead of border so the text isn't offset </span><span style="color: #b22222;">*/</span>
@@ -1624,8 +1634,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgf25463e"></a>tooltip<br />
-<div class="outline-text-4" id="text-orgf25463e">
+<li><a id="org26e52e9"></a>tooltip<br />
+<div class="outline-text-4" id="text-org26e52e9">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">tooltip </span>{
     <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@background</span>;
@@ -1643,10 +1653,10 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgf758c58"></a>modules<br />
+<li><a id="org81e72e1"></a>modules<br />
 <ul class="org-ul">
-<li><a id="org0d77c42"></a>global<br />
-<div class="outline-text-5" id="text-org0d77c42">
+<li><a id="org77fa68e"></a>global<br />
+<div class="outline-text-5" id="text-org77fa68e">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#clock,</span>
 <span style="color: #0000ff;">#battery,</span>
@@ -1678,8 +1688,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org464482f"></a>modules-left<br />
-<div class="outline-text-5" id="text-org464482f">
+<li><a id="orgf0826a8"></a>modules-left<br />
+<div class="outline-text-5" id="text-orgf0826a8">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">.modules-left &gt; widget:first-child &gt; #workspaces </span>{
     <span style="color: #4169e1;">margin-left</span>: 0;
@@ -1688,8 +1698,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgeb3a3ed"></a>modules-right<br />
-<div class="outline-text-5" id="text-orgeb3a3ed">
+<li><a id="org75680ad"></a>modules-right<br />
+<div class="outline-text-5" id="text-org75680ad">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">.modules-right &gt; widget:last-child &gt; #workspaces </span>{
     <span style="color: #4169e1;">margin-right</span>: 0;
@@ -1698,8 +1708,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org9e999e1"></a>mpris<br />
-<div class="outline-text-5" id="text-org9e999e1">
+<li><a id="org282bc24"></a>mpris<br />
+<div class="outline-text-5" id="text-org282bc24">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#mpris </span>{
     <span style="color: #4169e1;">padding</span>: 0 4px;
@@ -1710,8 +1720,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org39f0937"></a>idle_inhibitor<br />
-<div class="outline-text-5" id="text-org39f0937">
+<li><a id="org8b28230"></a>idle_inhibitor<br />
+<div class="outline-text-5" id="text-org8b28230">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#idle_inhibitor </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@blue</span>;
@@ -1724,8 +1734,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orga0124cb"></a>backlight<br />
-<div class="outline-text-5" id="text-orga0124cb">
+<li><a id="org89e877a"></a>backlight<br />
+<div class="outline-text-5" id="text-org89e877a">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#backlight</span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
@@ -1734,8 +1744,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org3a48883"></a>pulseaudio<br />
-<div class="outline-text-5" id="text-org3a48883">
+<li><a id="orgba860e9"></a>pulseaudio<br />
+<div class="outline-text-5" id="text-orgba860e9">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#pulseaudio </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2; </span><span style="color: #b22222;">*/</span>
@@ -1745,8 +1755,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org117e261"></a>wireplumber<br />
-<div class="outline-text-5" id="text-org117e261">
+<li><a id="orgc71c47d"></a>wireplumber<br />
+<div class="outline-text-5" id="text-orgc71c47d">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#wireplumber </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2; </span><span style="color: #b22222;">*/</span>
@@ -1756,8 +1766,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org50f23a1"></a>network<br />
-<div class="outline-text-5" id="text-org50f23a1">
+<li><a id="org6371151"></a>network<br />
+<div class="outline-text-5" id="text-org6371151">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#network </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @cyan2; </span><span style="color: #b22222;">*/</span>
@@ -1766,8 +1776,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org42146d1"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-org42146d1">
+<li><a id="orgf351ff7"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-orgf351ff7">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#keyboard-state </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@keyboard</span>;
@@ -1776,8 +1786,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org19878a0"></a>battery<br />
-<div class="outline-text-5" id="text-org19878a0">
+<li><a id="org2b6bdf2"></a>battery<br />
+<div class="outline-text-5" id="text-org2b6bdf2">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#battery </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@battery</span>;
@@ -1812,8 +1822,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org8b54d3e"></a>custom/pacman<br />
-<div class="outline-text-5" id="text-org8b54d3e">
+<li><a id="org3ae84b9"></a>custom/pacman<br />
+<div class="outline-text-5" id="text-org3ae84b9">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#custom-pacman </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @black; </span><span style="color: #b22222;">*/</span>
@@ -1823,8 +1833,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgbcc1ad4"></a>clock<br />
-<div class="outline-text-5" id="text-orgbcc1ad4">
+<li><a id="org6fa7096"></a>clock<br />
+<div class="outline-text-5" id="text-org6fa7096">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#clock.date </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@date</span>;
@@ -1838,8 +1848,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org9c671fd"></a>network<br />
-<div class="outline-text-5" id="text-org9c671fd">
+<li><a id="org7929c7f"></a>network<br />
+<div class="outline-text-5" id="text-org7929c7f">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#network </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@network</span>;
@@ -1866,8 +1876,8 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </li>
-<li><a id="orgbed80d4"></a>workspaces<br />
-<div class="outline-text-4" id="text-orgbed80d4">
+<li><a id="orge5bd5cb"></a>workspaces<br />
+<div class="outline-text-4" id="text-orge5bd5cb">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#workspaces </span>{
     <span style="color: #4169e1;">margin</span>: 0px;
@@ -1908,8 +1918,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org2cc6754"></a>mode<br />
-<div class="outline-text-4" id="text-org2cc6754">
+<li><a id="orgfecfb57"></a>mode<br />
+<div class="outline-text-4" id="text-orgfecfb57">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#mode </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@mode</span>;
@@ -1920,8 +1930,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org34a12f2"></a>submap<br />
-<div class="outline-text-4" id="text-org34a12f2">
+<li><a id="orgbdee6cc"></a>submap<br />
+<div class="outline-text-4" id="text-orgbdee6cc">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#submap </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
@@ -1930,8 +1940,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org875a0e9"></a>tray<br />
-<div class="outline-text-4" id="text-org875a0e9">
+<li><a id="orgb7e57bd"></a>tray<br />
+<div class="outline-text-4" id="text-orgb7e57bd">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#tray &gt; .passive </span>{
     -gtk-icon-effect: dim;
@@ -1948,9 +1958,9 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 </div>
-<div id="outline-container-org203186d" class="outline-2">
-<h2 id="org203186d">hyprpaper</h2>
-<div class="outline-text-2" id="text-org203186d">
+<div id="outline-container-org306148a" class="outline-2">
+<h2 id="org306148a">hyprpaper</h2>
+<div class="outline-text-2" id="text-org306148a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/manga/Sora-no-Otoshimono/kazane_hiyori_angel_by_sakurakiel_d4cnyy6.png
 <span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/nord_scenary.png
@@ -1977,9 +1987,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org5d2fd58" class="outline-2">
-<h2 id="org5d2fd58">hyprshade</h2>
-<div class="outline-text-2" id="text-org5d2fd58">
+<div id="outline-container-org8322642" class="outline-2">
+<h2 id="org8322642">hyprshade</h2>
+<div class="outline-text-2" id="text-org8322642">
 <div class="org-src-container">
 <pre class="src src-toml">[[shades]]
 name = "vibrance"
@@ -1993,9 +2003,9 @@ end_time = 06:00:00   # optional if you have more than one shade with start_time
 </div>
 </div>
 </div>
-<div id="outline-container-org344b9e5" class="outline-2">
-<h2 id="org344b9e5">hyprlock</h2>
-<div class="outline-text-2" id="text-org344b9e5">
+<div id="outline-container-org14ce5ee" class="outline-2">
+<h2 id="org14ce5ee">hyprlock</h2>
+<div class="outline-text-2" id="text-org14ce5ee">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">background</span> {
     <span style="color: #b8860b;">monitor</span> =
@@ -2052,9 +2062,9 @@ end_time = 06:00:00   # optional if you have more than one shade with start_time
 </div>
 </div>
 </div>
-<div id="outline-container-org1aa3cc5" class="outline-2">
-<h2 id="org1aa3cc5">hypridle</h2>
-<div class="outline-text-2" id="text-org1aa3cc5">
+<div id="outline-container-org18737a6" class="outline-2">
+<h2 id="org18737a6">hypridle</h2>
+<div class="outline-text-2" id="text-org18737a6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">general</span> {
     <span style="color: #b8860b;">lock_cmd</span> = pidof hyprlock || hyprlock       <span style="color: #b22222;"># </span><span style="color: #b22222;">avoid starting multiple hyprlock instances.</span>
@@ -2087,13 +2097,13 @@ end_time = 06:00:00   # optional if you have more than one shade with start_time
 </div>
 </div>
 </div>
-<div id="outline-container-orgc4bfbb2" class="outline-2">
-<h2 id="orgc4bfbb2">Rofi configuration</h2>
-<div class="outline-text-2" id="text-orgc4bfbb2">
+<div id="outline-container-orgf75c4e1" class="outline-2">
+<h2 id="orgf75c4e1">Rofi configuration</h2>
+<div class="outline-text-2" id="text-orgf75c4e1">
 </div>
-<div id="outline-container-orgab03020" class="outline-3">
-<h3 id="orgab03020">hyprland-menu</h3>
-<div class="outline-text-3" id="text-orgab03020">
+<div id="outline-container-orgb7cfa01" class="outline-3">
+<h3 id="orgb7cfa01">hyprland-menu</h3>
+<div class="outline-text-3" id="text-orgb7cfa01">
 <p>
 This is the theme used when running <code>rofi -show drun</code>.
 </p>
@@ -2119,9 +2129,9 @@ This is the theme used when running <code>rofi -show drun</code>.
 </div>
 </div>
 </div>
-<div id="outline-container-org1ae1f0c" class="outline-3">
-<h3 id="org1ae1f0c">hyprland-logout</h3>
-<div class="outline-text-3" id="text-org1ae1f0c">
+<div id="outline-container-orge9e38b2" class="outline-3">
+<h3 id="orge9e38b2">hyprland-logout</h3>
+<div class="outline-text-3" id="text-orge9e38b2">
 <div class="org-src-container">
 <pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #b22222;">/* </span><span style="color: #b22222;">-*-css -*- </span><span style="color: #b22222;">*/</span>
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
@@ -2148,9 +2158,9 @@ This is the theme used when running <code>rofi -show drun</code>.
 </div>
 </div>
 </div>
-<div id="outline-container-org48e4202" class="outline-3">
-<h3 id="org48e4202">hyprland-clipboard</h3>
-<div class="outline-text-3" id="text-org48e4202">
+<div id="outline-container-org40db5cf" class="outline-3">
+<h3 id="org40db5cf">hyprland-clipboard</h3>
+<div class="outline-text-3" id="text-org40db5cf">
 <div class="org-src-container">
 <pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #b22222;">/* </span><span style="color: #b22222;">-*-css -*- </span><span style="color: #b22222;">*/</span>
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
@@ -2179,7 +2189,7 @@ This is the theme used when running <code>rofi -show drun</code>.
 <div id="postamble" class="status">
 <p class="date">Date: 2024-03-23 Sat 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2024-06-22 Sat 14:54</p>
+<p class="date">Created: 2024-06-23 Sun 08:51</p>
 </div>
 </body>
 </html>
