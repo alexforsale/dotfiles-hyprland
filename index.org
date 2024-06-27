@@ -290,7 +290,6 @@ dwindle {
 #+begin_src conf
 master {
     # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
-    new_is_master = true
 }
 #+end_src
 ** =~/.config/hypr/hypr.d/gestures.conf=
