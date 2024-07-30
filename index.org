@@ -45,6 +45,7 @@ Enable the =rainbow-mode= minor-mode for /Emacs/ in this file.
   source = ./hypr.d/workspaces.conf
   source = ./hypr.d/keybindings.conf
 #+end_src
+I split the configuration file into sections, based on the section from the [[https://wiki.hyprland.org/Configuring/Variables/][configuration variables]].
 ** =~/.config/hypr/hypr.d/monitors.conf=
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/monitors.conf :mkdirp t
@@ -63,7 +64,6 @@ Enable the =rainbow-mode= minor-mode for /Emacs/ in this file.
   # laptop
   monitor = HDMI-A-1, preferred, auto, 1
 #+end_src
-
 These are the monitors I used across all my machines.
 ** =~/.config/hypr/hypr.d/autostart.conf=
 :PROPERTIES:
@@ -690,8 +690,6 @@ Required packages(=archlinux=):
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/keybindings.conf :mkdirp t
 :END:
-
-
 *** Set the =mainMod= variable
 #+begin_src conf
   # See https://wiki.hyprland.org/Configuring/Keywords/ for more
