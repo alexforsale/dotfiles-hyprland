@@ -54,7 +54,7 @@ I split the configuration file into sections, based on the section from the [[ht
 #+begin_src conf
   # See https://wiki.hyprland.org/Configuring/Monitors/
   monitor=,highrr,auto,1
-  monitor=eDP-1,1920x1080@60,auto,1
+  # monitor=,1920x1080@60,auto,1
   monitor=DP-1,preferred,auto,1
   monitor=DP-2,preferred,auto,1
   monitor=DP-3,preferred,auto,1
@@ -131,13 +131,13 @@ Required packages(=archlinux=):
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/variables.conf :mkdirp t
 :END:
-
 *** Applications
 #+begin_src conf
   $terminal = alacritty
   $fileManager = thunar
   $menu = rofi -show drun -theme hyprland-menu
   $editor = emacsclient -c -a emacs
+  $editor_term = emacsclient -t -a ""
   $mail = thunderbird
   $browser = firefox
 #+end_src
@@ -160,17 +160,21 @@ Required packages(=archlinux=):
 #+end_src
 
 *** Wallpapers
+This will set the wallpaper for each workspaces. The one I used is stored at my gitlab [[https://gitlab.com/alexforsale/wallpapers][repository]].
+:PROPERTIES:
+:ID:       0aa9f011-8ece-41b9-bb18-7ab04c0f436c
+:END:
 #+begin_src conf
-  $w1 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/ign_duaAnime.png"
-  $w2 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/ign_chainsaw-man.png"
-  $w3 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/ign_animeGirlSleeping.png"
-  $w4 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/ign_girlWithHeadphones.png"
-  $w5 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/manga/Sora-no-Otoshimono/kazane_hiyori_angel_by_sakurakiel_d4cnyy6.png"
-  $w6 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/nord_scenary.png"
-  $w7 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/wild.png"
-  $w8 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/waves.jpg"
-  $w9 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/subtle_ferns.jpg"
-  $w10 = hyprctl hyprpaper wallpaper "eDP-1,~/.local/share/wallpapers/nord/street_blues.png"
+  $w1 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/linux-friends-4k.png"
+  $w2 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/linux-friends-4k.png"
+  $w3 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/keyboard.png"
+  $w4 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/keyboard.png"
+  $w5 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/nord_alone_tree.png"
+  $w6 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/nord_alone_tree.png"
+  $w7 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/wild.png"
+  $w8 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/wild.jpg"
+  $w9 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/nord_buildings.png"
+  $w10 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/nord_buildings.png"
 #+end_src
 
 ** =~/.config/hypr/hypr.d/input.conf=
@@ -441,7 +445,7 @@ Required packages(=archlinux=):
 #+begin_src conf
   windowrule = noblur,.*
   windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
-  windowrulev2 = opacity 0.8, class:.*
+  windowrulev2 = opacity 0.99, class:.*
 #+end_src
 
 *** =pavucontrol=
@@ -511,7 +515,7 @@ Required packages(=archlinux=):
 #+begin_src conf
   windowrulev2 = float, class:(khal)
   windowrulev2 = size 40%, class:(khal)
-  windowrulev2 = move onscreen cursor 50% 10%, class:(khal)
+  windowrulev2 = move onscreen cursor 50% 5%, class:(khal)
 #+end_src
 
 *** =astroid=
@@ -672,25 +676,40 @@ Required packages(=archlinux=):
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/workspaces.conf :mkdirp t
 :END:
-
+*** Normal Workspaces
+These workspaces are just standard workspaces, the way I set them is to have dedicated workspaces for each applications, such as web browsers, terminal emulators, etc.
 #+begin_src conf
-  workspace = 1, name:terminal, monitor:eDP-1 #, on-created-empty:alacritty
-  workspace = 2, name:code, monitor:eDP-1 #, on-created-empty:emacsclient -c -a emacs
-  workspace = 3, name:web, monitor:eDP-1 #, on-created-empty:firefox
-  workspace = 4, name:message, monitor:eDP-1
+  workspace = 1, name:terminal, monitor: #, on-created-empty:alacritty
+  workspace = 2, name:code, monitor: #, on-created-empty:emacsclient -c -a emacs
+  workspace = 3, name:web, monitor: #, on-created-empty:firefox
+  workspace = 4, name:message, monitor:
   workspace = 5, name:file, monitor:HDMI-A-1, monitor:DP-1, default:true
   workspace = 6, name:office, monitor:HDMI-A-1
   workspace = 7, name:fun, monitor:HDMI-A-1
   workspace = 8, name:remote, monitor:HDMI-A-1
   workspace = 9, name:torrent, monitor:HDMI-A-1
   workspace = 10, name:zoom, monitor:HDMI-A-1
-  workspace = special:scratchpad
+#+end_src
+*** Special workspaces
+In other window managers, a special workspace is often called /scratchpad/. The difference is in /Hyprland/ we can have up to 97 of them, each with different names. The way I use it is to have one special workspace for an application, usually one that needs to always run in the background, like a music player, calculator and other. What I like from /Hyprland/ (though I'm sure other /WM/ also have), is the ability to only start the application when the workspace is opened. See the keybindings section for the detail.
+
+Also to conserve resource, I tend to only have terminal based application in these workspaces.
+#+begin_src conf
+  workspace = special:music, on-created-empty:[tiled] $terminal --class ncmpcpp -e ncmpcpp
+  workspace = special:khal, on-created-empty:[tiled] $terminal --class khal -e khal interactive
+  workspace = special:proc, on-created-empty:[tiled] $terminal --class htop -e htop
+  workspace = special:emacs, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term
+  workspace = special:notmuch, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term -e '(notmuch)'
+  workspace = special:dired, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term -e '(dired (getenv "HOME"))'
+  workspace = special:keys, on-created-empty:[float] showmethekey-gtk
+  workspace = special:nvim, on-created-empty:$terminal --class vim -e nvim
 #+end_src
 ** =~/.config/hypr/hypr.d/keybindings.conf=
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/keybindings.conf :mkdirp t
 :END:
 *** Set the =mainMod= variable
+~Super~, (or ~WIN~) key, is a more common mod key for window manager anyway.
 #+begin_src conf
   # See https://wiki.hyprland.org/Configuring/Keywords/ for more
   $mainMod = SUPER
@@ -711,17 +730,17 @@ Required packages(=archlinux=):
   bind = $mainMod Shift, V, exec, pavucontrol
   bind = $mainMod, V, exec, easyeffects
 
-  bind = $mainMod Alt, M, exec, alacritty --class ncmpcpp -e ncmpcpp
-  bind = $mainMod Alt, H, exec, alacritty --class htop -e htop
-  bind = $mainMod Alt, W, exec, alacritty --class nmtui -e nmtui
-  bind = $mainMod Alt, K, exec, alacritty --class khal -e khal interactive
-  bind = $mainMod Alt, V, exec, alacritty --class vim -e vim
-  bind = $mainMod Shift Alt, N, exec, alacritty --class nw-emacs -e emacsclient -t -a emacs
-  bind = $mainMod Alt, E, exec, emacsclient -c -a emacs -e '(dired (getenv "HOME"))'
+  # bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp
+  # bind = $mainMod Alt, H, exec, alacritty --class htop -e htop
+  # bind = $mainMod Alt, W, exec, [float] alacritty --class nmtui -e nmtui
+  # bind = $mainMod Alt, K, exec, alacritty --class khal -e khal interactive
+  # bind = $mainMod Alt, V, exec, alacritty --class vim -e vim
+  # bind = $mainMod Shift Alt, N, exec, alacritty --class nw-emacs -e emacsclient -t -a emacs
+  # bind = $mainMod Alt, E, exec, emacsclient -c -a emacs -e '(dired (getenv "HOME"))'
   bind = $mainMod Alt, N, exec, $editor
   bind = $mainMod Alt, T, exec, $mail
   bind = $mainMod Alt, P, exec, rofi-pass
-  bind = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort -theme calculator
+  # bind = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort -theme calculator
   bind = $mainMod Alt, B, exec, rofi-rbw
   bind = $mainMod Alt, f, exec, firefox
   bind = $mainMod Alt, S, exec, [workspace 10; silent; float] showmethekey-gtk
@@ -729,13 +748,16 @@ Required packages(=archlinux=):
 
   # tesseract
   bind = SuperShift,T,exec,grim -g "$(slurp -d -c D1E5F4BB -b 1B232866 -s 00000000)" "tmp.png" && tesseract -l eng "tmp.png" - | wl-copy && rm "tmp.png"
+
+  # restart waybar
+  bind = $mainMod Shift, R, exec, killall waybar && waybar &
 #+end_src
 
 *** window
 #+begin_src conf
   bind = $mainMod, F, fullscreen, 0
   bind = $mainMod Shift, F, fullscreen, 1
-  bind = $mainMod Control, F, fakefullscreen, 0
+  bind = $mainMod Control, F, fullscreenstate, -1 -1
   bind = $mainMod, Space, togglefloating,
 
   # Move focus with mainMod + arrow keys
@@ -924,14 +946,10 @@ Required packages(=archlinux=):
   bind = $mainMod, 0, workspace, 10
   bind = $mainMod, 0, exec, $w10
   bind = $mainMod, TAB, workspace, previous
-
-  # bind = $mainMod, BackSpace, workspace, special
-  bind = $mainMod Shift, Backspace, movetoworkspacesilent, special
-  bind = $mainMod Alt, Backspace, togglespecialworkspace
-  # Scroll through existing workspaces with mainMod + scroll
-  bind = $mainMod, mouse_down, workspace, e+1
-  bind = $mainMod, mouse_up, workspace, e-1
-
+#+end_src
+I set the bindings for workspace to have multiple bindings, the first one is to move to the intended workspace, but also to set the wallpaper to the variable set at the [[id:0aa9f011-8ece-41b9-bb18-7ab04c0f436c::Wallpapers][variables.conf]] file.
+**** Workspace movement
+#+begin_src conf
   # Move active window to a workspace with mainMod + SHIFT + [0-9]
   bind = $mainMod SHIFT, 1, movetoworkspace, 1
   bind = $mainMod SHIFT, 2, movetoworkspace, 2
@@ -955,42 +973,78 @@ Required packages(=archlinux=):
   bind = $mainMod Control, K, movecurrentworkspacetomonitor, u
   bind = $mainMod Control, L, movecurrentworkspacetomonitor, r
 
-  bind = $mainMod, O, toggleopaque
+  # bind = $mainMod, O, toggleopaque
 
   bind = Alt, Tab, alterzorder, top
   bind = Alt Shift, Tab, bringactivetotop,
   bind = Alt Control, TAB, bringactivetotop,
   bind = Alt Control Shift, Tab, bringactivetotop,
-
+#+end_src
+**** Laptops
+#+begin_src conf
   # lid switch
   # trigger when the switch is toggled
   bindl=,switch:Lid Switch,exec,hyprlock
   # trigger when the switch is turning on
-  #bindl=,switch:on:[switch name],exec,hyprctl keyword monitor "eDP-1, 2560x1600, 0x0, 1"
+  #bindl=,switch:on:[switch name],exec,hyprctl keyword monitor ", 2560x1600, 0x0, 1"
   # trigger when the switch is turning off
-  #bindl=,switch:off:[switch name],exec,hyprctl keyword monitor "eDP-1, disable"
+  #bindl=,switch:off:[switch name],exec,hyprctl keyword monitor ", disable"
+#+end_src
+**** special workspace
+#+begin_src conf
+  # 0 is fn+m (music) in my laptop
+  bind = $mainMod Alt, 0, togglespecialworkspace, music
+  # 1 is for htop
+  bind = $mainMod Alt, 1, togglespecialworkspace, proc
+  # 2 is fn+k (khal)
+  bind = $mainMod Alt, 2, togglespecialworkspace, khal
+  # 3 is for terminal emacsclient
+  bind = $mainMod Alt, 3, togglespecialworkspace, emacs
+  # 4 is for terminal notmuch (using emacsclient)
+  bind = $mainMod Alt, 4, togglespecialworkspace, notmuch
+  # 5 is for dired
+  bind = $mainMod Alt, 5, togglespecialworkspace, dired
+  # 6 is for nvim
+  bind = $mainMod Alt, 6, togglespecialworkspace, nvim
+  # 7 is for org-agenda (emacsclient)
+  # bind = $mainMod Alt, 7, togglespecialworkspace, agenda
+  # 0 is for showmethekey-gtk
+  bind = $mainMod Alt, 9, togglespecialworkspace, keys
+#+end_src
+**** mouse
+#+begin_src conf
+
+  # Scroll through existing workspaces with mainMod + scroll
+  bind = $mainMod, mouse_down, workspace, e+1
+  bind = $mainMod, mouse_up, workspace, e-1
 #+end_src
 * waybar
 ** =~/.config/waybar/config=
 :PROPERTIES:
 :header-args: :tangle .config/waybar/config :mkdirp t
 :END:
+*** start config
 #+begin_src js
   {
-    "layer": "top", // Waybar at top layer
-    "output": ["eDP-1", "DP-1", "DP-2", "DP-3", "DP-4", "DP-5", "HDMI-A-1"],
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 34, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+#+end_src
+*** General
+#+begin_src js
+
+  "layer": "top", // Waybar at top layer
+  "output": ["eDP-1", "DP-1", "DP-2", "DP-3", "DP-4", "DP-5", "HDMI-A-1"],
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 34, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  // Choose the order of the modules
 #+end_src
 *** Left Modules
 #+begin_src js
   "modules-left": [
+    "custom/launcher",
     "hyprland/workspaces",
-    "hyprland/submap",
-    "mpris"
+    "hyprland/submap"
+    // "mpris"
     // "custom/media"
   ],
 #+end_src
@@ -1004,21 +1058,22 @@ Required packages(=archlinux=):
 #+begin_src js
   "modules-right": [
     // "mpd",
-    "idle_inhibitor",
+    // "idle_inhibitor",
     "backlight",
     "pulseaudio",
     // "wireplumber",
     "network",
-    // "cpu",
-    // "memory",
-    // "temperature",
+    "cpu",
+    "memory",
+    "temperature",
     "keyboard-state",
     // "hyprland/language",
     "battery",
     "custom/pacman",
     "clock#date",
     "clock#time",
-    "tray"
+    "tray",
+    "custom/power"
   ],
 #+end_src
 *** Modules Configuration 
@@ -1048,19 +1103,20 @@ Required packages(=archlinux=):
 **** hyprland/workspaces
 #+begin_src js
   "hyprland/workspaces": {
-    "format": "{id}: {icon}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "󰖟",
-      "4": "󰺻",
-      "5": "󰈔",
-      "6": "󰦑",
-      "7": "",
-      "8": "󰑔",
-      "9": "",
-      "10": ""
-    },
+    "num-tags": 6,
+    // "format": "{id}: {icon}",
+    // "format-icons": {
+    //   "1": "",
+    //   "2": "",
+    //   "3": "󰖟",
+    //   "4": "󰺻",
+    //   "5": "󰈔",
+    //   "6": "󰦑",
+    //   "7": "",
+    //   "8": "󰑔",
+    //   "9": "",
+    //   "10": ""
+    // },
     "active-only": false
   },
 #+end_src
@@ -1075,11 +1131,12 @@ Required packages(=archlinux=):
 **** hyprland/window
 #+begin_src js
   "hyprland/window": {
-    "format": "{}",
+    "format": "{title}",
     "rewrite": {
       "(.*) — Mozilla Firefox": "🌎 $1",
       "(.*) - (GNU Emacs at.*)": "$1"
     },
+    "max-length": 80,
     "separate-outputs": true
   },
 #+end_src
@@ -1169,13 +1226,17 @@ Required packages(=archlinux=):
 #+begin_src js
   "cpu": {
     "format": "{usage}% ",
-    "tooltip": false
+    // "format": " {}%",
+    "tooltip": true,
+    "interval": 15
   },
 #+end_src
 **** memory
 #+begin_src js
   "memory": {
+    "interval": 30,
     "format": "{}% "
+    // "max-length": 50
   },
 #+end_src
 **** temperature
@@ -1252,7 +1313,7 @@ Required packages(=archlinux=):
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "pavucontrol"
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
 #+end_src
 **** custom/pacman
@@ -1263,6 +1324,23 @@ Required packages(=archlinux=):
     "exec-if": "test $(checkupdates | wc -l) -ne 0",
     "interval": 3600,
     "on-click": "checkupdates; pkill -SIGRTMIN+8 waybar"
+  },
+#+end_src
+**** custom/launcher
+#+begin_src js
+  "custom/launcher":{
+    "format": " ",
+    "tooltip": false,
+    "on-click": "rofi -show drun -theme hyprland-menu",
+    "on-click-right": "killall rofi"
+  },
+#+end_src
+**** custom/power
+#+begin_src js
+  "custom/power":{
+    "format": " ",
+    "tooltip": false,
+    "on-click": "~/.local/bin/rofi-logout hyprland-logout"
   },
 #+end_src
 **** custom/media
@@ -1279,6 +1357,9 @@ Required packages(=archlinux=):
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   }
+#+end_src
+*** End config
+#+begin_src js
   }
 #+end_src
 ** =~/.config/waybar/style.css=
@@ -1295,7 +1376,7 @@ Required packages(=archlinux=):
   @define-color red rgba(191, 97, 106, 1);
   @define-color red2 rgba(191, 97, 106, 0.6);
   @define-color foreground rgba(216, 222, 233, 1);
-  @define-color black rgba(59, 66, 82, 1);
+  @define-color black #161320;
   @define-color green rgba(163, 190, 140, 1);
   @define-color green2 rgba(163, 190, 140, 0.3);
   @define-color yellow rgba(235, 203, 139, 1);
@@ -1315,6 +1396,7 @@ Required packages(=archlinux=):
   /*@define-color workspaces @nord_dark_font;*/
   /*@define-color workspacesfocused #434C5E;*/
   @define-color workspacebutton @white;
+  @define-color launcher rgba(94, 129, 172, 1);
   @define-color tray @workspacesfocused;
   @define-color sound #EBCB8B;
   @define-color network #5D7096;
@@ -1338,40 +1420,50 @@ Required packages(=archlinux=):
 #+begin_src css
   ,* {
       /* `otf-font-awesome` is required to be installed for icons */
+      border: none;
+      border-radius: 10px;
       font-family: FontAwesome, JetBrainsMonoNL Nerd Font Mono;
-      font-size: 13px;
+      font-size: 12px;
+      min-height: 10px;
   }
 #+end_src
 *** keyframes
 #+begin_src css
   @keyframes blink {
       to {
-          background-color: @white;
-          color: @black;
+          background-color: @red;
+          color: @cyan;
       }
   }
 #+end_src
 *** window
 #+begin_src css
   window#waybar {
-      background-color: @background2;
-      /* background-color: transparent; */
+      /* background-color: @background2; */
+      background-color: transparent;
       /* border-bottom: 3px solid @cyan; */
-      color: @white;
-      transition-property: background-color;
-      transition-duration: .5s;
+      /* color: @white; */
+      /* transition-property: background-color; */
+      /* transition-duration: .5s; */
   }
 
   window#waybar.hidden {
       opacity: 0.2;
   }
 
-  #waybar.empty #window {
-      /* background-color: transparent; */
+  window#waybar.empty #window {
+      background-color: transparent;
   }
 
   #window {
-      margin: 0px;
+      margin-top: 6px;
+      margin-left: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 10px;
+      transition: none;
+      color: @black;
+      background-color: @white;
       font-size:14px;
       font-weight: bold;
   }
@@ -1408,43 +1500,70 @@ Required packages(=archlinux=):
   }
 #+end_src
 *** modules
-**** global
+**** cpu
 #+begin_src css
-  #clock,
-  #battery,
-  #cpu,
-  #memory,
-  #disk,
-  #temperature,
-  #backlight,
-  #network,
-  #pulseaudio,
-  #wireplumber,
-  #pulseaudio,
-  #custom-media,
-  #tray,
-  #mode,
-  #idle_inhibitor,
-  #scratchpad,
-  #keyboard-state,
-  #mode,
-  #submap,
-  #mpd {
-      margin: 2px;
-      padding-left: 4px;
-      padding-right: 4px;
-      background-color: transparent;
-      color: @white;
+  #cpu {
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	margin-bottom: 0px;
+  	padding-right: 10px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @cyan2;
+  }
+#+end_src
+**** memory
+#+begin_src css
+  #memory {
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	margin-bottom: 0px;
+  	padding-right: 10px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @magenta;
+  }
+#+end_src
+**** keyboard-state
+#+begin_src css
+  #keyboard-state {
+    	margin-top: 6px;
+    	margin-left: 8px;
+    	padding-left: 10px;
+    	margin-bottom: 0px;
+    	padding-right: 10px;
+    	border-radius: 10px;
+    	transition: none;
+    	color: @black;
+    	background: @magenta;
+  }
+#+end_src
+**** temperature
+#+begin_src css
+  #temperature {
+    	margin-top: 6px;
+    	margin-left: 8px;
+    	padding-left: 10px;
+    	margin-bottom: 0px;
+    	padding-right: 10px;
+    	border-radius: 10px;
+    	transition: none;
+    	color: @black;
+    	background: @red;
   }
 #+end_src
 **** modules-left
-#+begin_src css
+#+begin_src css :tangle no
   .modules-left > widget:first-child > #workspaces {
       margin-left: 0;
   }
 #+end_src
 **** modules-right
-#+begin_src css
+#+begin_src css :tangle no
   .modules-right > widget:last-child > #workspaces {
       margin-right: 0;
   }
@@ -1452,9 +1571,18 @@ Required packages(=archlinux=):
 **** mpris
 #+begin_src css
   #mpris {
-      padding: 0 4px;
-      font-size: 9px;
-      color: @warning;
+      /* padding: 0 4px; */
+      /* font-size: 9px; */
+      /* color: @warning; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @blue;
   }
 #+end_src
 **** idle_inhibitor
@@ -1464,66 +1592,97 @@ Required packages(=archlinux=):
   }
 
   #idle_inhibitor.activated {
-      color: @foreground;
+      color: @black;
   }
 #+end_src
 **** backlight
 #+begin_src css
   #backlight{
-      color: @yellow;
+      /* color: @yellow; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @yellow;
   }
 #+end_src
 **** pulseaudio
 #+begin_src css
   #pulseaudio {
       /* background-color: @magenta2; */
-      color: @wireplumber;
+      /* color: @wireplumber; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @blue;
   }
 #+end_src
 **** wireplumber
 #+begin_src css
   #wireplumber {
       /* background-color: @magenta2; */
-      color: @wireplumber;
-  }
-#+end_src
-**** network
-#+begin_src css
-  #network {
-      /* background-color: @cyan2; */
+      color: @black;
   }
 #+end_src
 **** keyboard-state
 #+begin_src css
   #keyboard-state {
-      color: @keyboard;
+      background: @green;
+      color: @black;
   }
 #+end_src
 **** battery
 #+begin_src css
   #battery {
-      color: @battery;
+      /* color: @battery; */
       /* background-color: @yellow2; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @magenta;
   }
 
   #battery.charging, #battery.plugged {
       /* color: @yellow; */
-      background-color: @background;
+      /* background-color: @background; */
+  	color: @black;
+      background-color: @magenta;
   }
 
-  #battery.warning:not(.charging) {
-      /* background: @red; */
-      /* color: @white; */
-      animation-name: blink;
-      animation-duration: 0.5s;
-      animation-timing-function: steps(12);
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-  }
+  /* #battery.warning:not(.charging) { */
+  /*     /\* background: @red; *\/ */
+  /*     /\* color: @white; *\/ */
+  /*     animation-name: blink; */
+  /*     animation-duration: 0.5s; */
+  /*     animation-timing-function: steps(12); */
+  /*     animation-iteration-count: infinite; */
+  /*     animation-direction: alternate; */
+  /* } */
 
   #battery.critical:not(.charging) {
-      background-color: @red;
-      color: @white;
+      /* background-color: @red; */
+      /* color: @white; */
+      /* animation-name: blink; */
+      /* animation-duration: 0.5s; */
+      /* animation-timing-function: linear; */
+      /* animation-iteration-count: infinite; */
+      /* animation-direction: alternate; */
+      background-color: @magenta;
+      color: @black;
       animation-name: blink;
       animation-duration: 0.5s;
       animation-timing-function: linear;
@@ -1536,73 +1695,169 @@ Required packages(=archlinux=):
   #custom-pacman {
       /* color: @black; */
       /* background-color: @green2; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @yellow;
   }
 #+end_src
 **** clock
 #+begin_src css
   #clock.date {
-      color: @date;
+      /* color: @date; */
       /* background-color: @magenta2; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @green;
   }
 
   #clock.time {
-      color: @time;
+      /* color: @time; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @yellow;
   }
 #+end_src
 **** network
 #+begin_src css
   #network {
-      color: @network;
+      /* color: @network; */
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @magenta;
   }
 
   #network.wifi {
+  	color: @black;
+      background: @yellow;
   }
 
   #network.ethernet {
-      color: @green;
+  	color: @black;
+      background: @blue;
   }
 
   #network.linked {
-      color: @yellow;
+  	color: @black;
+      background: @green;
   }
 
   #network.disconnected {
       color: @red;
+      background: @black;
   }
-
+#+end_src
+**** custom-launcher
+#+begin_src css
+  #custom-launcher {
+  	font-size: 24px;
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 5px;
+  	border-radius: 10px;
+  	transition: none;
+      color: @black;
+      background: @blue;
+  }
+#+end_src
+**** custom-power
+#+begin_src css
+  #custom-power {
+    	font-size: 24px;
+    	margin-top: 6px;
+    	margin-left: 8px;
+    	padding-left: 10px;
+    	padding-right: 5px;
+    	border-radius: 10px;
+    	transition: none;
+        color: @black;
+        background: @blue;
+  }
 #+end_src
 *** workspaces
 #+begin_src css
   #workspaces {
-      margin: 0px;
+  	margin-top: 6px;
+      margin-left: 12px;
+      font-size: 4px;
+      margin-bottom: 0px;
+      border-radius: 10px;
+      background: @green;
+      transition: none;
   }
 
   #workspaces button {
-      color: @nord_light;
+      /* color: @nord_light; */
       /* padding: 0 4px; */
-      color: @workspacebutton;
-      font-size: 14px;
-      font-weight: bold;
+      /* color: @workspacebutton; */
+      /* font-size: 14px; */
+      /* font-weight: bold; */
+  	transition: none;
+  	color: @black;
+  	background: transparent;
+  	font-size: 16px;
+  	border-radius: 2px;
+  }
+
+  #workspaces button.occupied {
+  	transition: none;
+  	color: @blue;
+  	background: transparent;
+  	font-size: 4px;
   }
 
   #workspaces button.empty {
-      /* color: @cyan; */
+      color: @cyan;
   }
 
   #workspaces button.active {
-      background: inherit;
-      border-top: 2px solid @magenta;
       font-weight: bold;
-      color: @magenta;
+      color: @white;
   }
 
   #workspaces button:hover {
+  	transition: none;
+  	/* box-shadow: inherit; */
+  	/* text-shadow: inherit; */
+  	color: @yellow;
+      /* border-color: @red; */
   }
 
   #workspaces button.focused {
       /* background-color: @black; */
-      color: @red;
+      /* color: @red; */
       /* border-top: 2px solid @red; */
+  	color: @green;
+      /* border-top: 2px solid @green; */
+      /* border-bottom: 2px solid @green; */
+  }
+
+  #workspaces button.focused:hover {
+      color: @red;
   }
 
   #workspaces button.urgent {
@@ -1610,21 +1865,31 @@ Required packages(=archlinux=):
   }
 #+end_src
 *** mode
-#+begin_src css
+#+begin_src css :tangle no
   #mode {
-      color: @mode;
-      /* background-color: @black; */
-      /* border-bottom: 3px solid @white; */
+      color: @black;
   }
 #+end_src
 *** submap
-#+begin_src css
+#+begin_src css :tangle no
   #submap {
       color: @yellow;
   }
 #+end_src
 *** tray
 #+begin_src css
+  #tray {
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @white;
+  	background: @blue;
+  }
+
   #tray > .passive {
       -gtk-icon-effect: dim;
   }
@@ -1639,20 +1904,13 @@ Required packages(=archlinux=):
 :header-args: :tangle .config/hypr/hyprpaper.conf :mkdirp t
 :END:
 #+begin_src conf
-  preload = ~/.local/share/wallpapers/manga/Sora-no-Otoshimono/kazane_hiyori_angel_by_sakurakiel_d4cnyy6.png
-  preload = ~/.local/share/wallpapers/nord/nord_scenary.png
+  preload = ~/.local/share/wallpapers/nord/linux-friends-4k.png
+  preload = ~/.local/share/wallpapers/nord/keyboard.png
   preload = ~/.local/share/wallpapers/nord/wild.png
-  preload = ~/.local/share/wallpapers/nord/waves.jpg
-  preload = ~/.local/share/wallpapers/nord/subtle_ferns.jpg
-  preload = ~/.local/share/wallpapers/nord/street_blues.png
-  preload = ~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  preload = ~/.local/share/wallpapers/nord/ign_duaAnime.png
-  preload = ~/.local/share/wallpapers/nord/ign_chainsaw-man.png
-  preload = ~/.local/share/wallpapers/nord/ign_animeGirlSleeping.png
-  preload = ~/.local/share/wallpapers/nord/ign_girlWithHeadphones.png
+  preload = ~/.local/share/wallpapers/nord/nord_alone_tree.png
+  preload = ~/.local/share/wallpapers/nord/nord_buildings.png
   splash = false
 
-  wallpaper = ,~/.local/share/wallpapers/nord/ign_duaAnime.png
   wallpaper = eDP1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
   wallpaper = DP-1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
   wallpaper = DP-2,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
@@ -1660,6 +1918,7 @@ Required packages(=archlinux=):
   wallpaper = DP-4,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
   wallpaper = DP-5,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
   wallpaper = HDMI-A-1,~/.local/share/wallpapers/nord/ign_duaAnime.png
+  wallpaper = ,~/.local/share/wallpapers/nord/linux-friends-4k.png
 #+end_src
 * hyprshade 
 :PROPERTIES:
@@ -1811,17 +2070,59 @@ This is the theme used when running ~rofi -show drun~.
   @theme "nord"
 
   window {
-      location: southwest;
+      transparency: "real";
+      location: northwest;
       anchor: center;
-      width: 40%;
-      x-offset: 1%;
-      y-offset: -2%;
+      width: 25%;
+      x-offset: 0%;
+      y-offset: 0%;
+      fullscreen: false;
+      margin: 0px;
+      padding: 0px;
   }
 
   listview {
-      columns: 2;
+      columns: 1;
       lines: 6;
       spacing: 5px;
+      cycle: true;
+      dynamic: true;
+      scrollbar: false;
+      layout: vertical;
+      reverse: false;
+      fixed-height: true;
+      fixed-width: true;
+  }
+
+  element {
+      spacing: 10px;
+      margin: 0px;
+      padding: 6px;
+      border: 0px solid;
+      border-radius: 0px;
+      cursor: pointer;
+  }
+
+  element-icon {
+      background: transparent;
+      text-color: inherit;
+      size: 16px;
+      cursor: inherit;
+  }
+
+  element-text {
+      background: transparent;
+      text-color: inherit;
+      highlight: inherit;
+      cursor: inherit;
+      /* vertical-align: 0.5; */
+      /* horizontal-align: 0.5; */
+  }
+
+  textbox {
+      vertical-align: 0.5;
+      horizontal-align: 0.0;
+      highlight: none;
   }
 #+end_src
 ** hyprland-logout
