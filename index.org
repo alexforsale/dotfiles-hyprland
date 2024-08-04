@@ -91,6 +91,7 @@ These are the monitors I used across all my machines.
   exec-once = hyprshade auto &
   # exec-once = thunar --daemon &
   exec-once = hypridle
+  exec-once = emacs --daemon &
 #+end_src
 
 Required packages(=archlinux=):
@@ -804,7 +805,7 @@ Also to conserve resource, I tend to only have terminal based application in the
 *** Media keys
 #+begin_src conf
   binde = , XF86AudioRaiseVolume, exec, ~/.local/bin/dunst-volume -i 1
-  binde = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -1%
+  # binde = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -1%
   binde = , XF86AudioLowerVolume, exec, ~/.local/bin/dunst-volume -d 1
   bindl = , XF86AudioMute, exec, ~/.local/bin/dunst-volume -t
   # bindl = , XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle
