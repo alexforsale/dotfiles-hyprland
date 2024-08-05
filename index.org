@@ -1914,13 +1914,13 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
   preload = ~/.local/share/wallpapers/nord/nord_buildings.png
   splash = false
 
-  wallpaper = eDP1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  wallpaper = DP-1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  wallpaper = DP-2,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  wallpaper = DP-3,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  wallpaper = DP-4,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  wallpaper = DP-5,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-  wallpaper = HDMI-A-1,~/.local/share/wallpapers/nord/ign_duaAnime.png
+  # wallpaper = eDP1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
+  #wallpaper = DP-1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
+  #wallpaper = DP-2,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
+  #wallpaper = DP-3,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
+  #wallpaper = DP-4,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
+  #wallpaper = DP-5,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
+  #wallpaper = HDMI-A-1,~/.local/share/wallpapers/nord/ign_duaAnime.png
   wallpaper = ,~/.local/share/wallpapers/nord/linux-friends-4k.png
 #+end_src
 * hyprshade 
