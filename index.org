@@ -730,7 +730,8 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
   bind = $mainMod, Comma, exec, rofi -show emoji
   bind = $mainMod Shift, V, exec, pavucontrol
-  bind = $mainMod, V, exec, easyeffects
+  bind = $mainMod Alt, V, exec, easyeffects
+  bind = $mainMod Alt, B, exec, blueman-manager
 
   # bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp
   # bind = $mainMod Alt, H, exec, alacritty --class htop -e htop
@@ -743,7 +744,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod Alt, T, exec, $mail
   bind = $mainMod Alt, P, exec, rofi-pass
   # bind = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort -theme calculator
-  bind = $mainMod Alt, B, exec, rofi-rbw
+  bind = $mainMod Shift, P, exec, rofi-rbw
   bind = $mainMod Alt, f, exec, firefox
   bind = $mainMod Alt, S, exec, [workspace 10; silent; float] showmethekey-gtk
   bind = $mainMod Alt, A, exec, hyprshade toggle
