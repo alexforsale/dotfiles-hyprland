@@ -73,14 +73,9 @@ These are the monitors I used across all my machines.
 #+begin_src conf
   exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME SSH_AUTH_SOCK
   exec-once = dbus-update-activation-environment --systemd --all &
-  exec-once = blueman-applet &
-  exec-once = nm-applet --indicator &
   exec-once = /usr/lib/polkit-kde-authentication-agent-1 &
   exec-once = gnome-keyring-daemon --components=pkcs11,secrets,ssh -r -d &
-  exec-once = dbus-launch --sh-syntax --exit-with-session udiskie -t &
   exec-once = dbus-launch --sh-syntax --exit-with-session dunst -conf ~/.config/dunst/dunstrc &
-  exec-once = /usr/lib/kdeconnectd &
-  exec-once = kdeconnect-indicator &
   exec-once = hypridle
   exec-once = waybar &
   exec-once = hyprpaper &
@@ -92,6 +87,12 @@ These are the monitors I used across all my machines.
   # exec-once = thunar --daemon &
   exec-once = hypridle
   exec-once = emacs --daemon &
+  exec-once = blueman-applet &
+  exec-once = blueman-tray &
+  exec-once = nm-applet --indicator
+  # exec-once = /usr/lib/kdeconnectd
+  # exec-once = kdeconnect-indicator
+  exec-once = udiskie -t
 #+end_src
 
 Required packages(=archlinux=):
