@@ -950,7 +950,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, 0, exec, $w10
   bind = $mainMod, TAB, workspace, previous
 #+end_src
-I set the bindings for workspace to have multiple bindings, the first one is to move to the intended workspace, but also to set the wallpaper to the variable set at the [[id:0aa9f011-8ece-41b9-bb18-7ab04c0f436c::Wallpapers][variables.conf]] file.
+I set the bindings for workspace to have multiple bindings, the first one is to move to the intended workspace, but also to set the wallpaper to the variable set at the /variables.conf/ file.
 **** Workspace movement
 #+begin_src conf
   # Move active window to a workspace with mainMod + SHIFT + [0-9]
