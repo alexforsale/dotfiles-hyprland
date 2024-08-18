@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-07-30 Tue 02:51 -->
+<!-- 2024-08-18 Sun 01:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hyprland and Hyprland-related configuration files</title>
@@ -23,59 +23,59 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbf2c271">Hyprland</a>
+<li><a href="#orgc689356">Hyprland</a>
 <ul>
-<li><a href="#orga7a439a"><code>~/.config/hypr/hypland.conf</code></a></li>
-<li><a href="#org39584bb"><code>~/.config/hypr/hypr.d/monitors.conf</code></a></li>
-<li><a href="#org2a508da"><code>~/.config/hypr/hypr.d/autostart.conf</code></a></li>
-<li><a href="#orgdd2efd4"><code>~/.config/hypr/hypr.d/variables.conf</code></a></li>
-<li><a href="#orgd796aa6"><code>~/.config/hypr/hypr.d/input.conf</code></a></li>
-<li><a href="#orgd99620f"><code>~/.config/hypr/hypr.d/general.conf</code></a></li>
-<li><a href="#org470a3e9"><code>~/.config/hypr/hypr.d/decoration.conf</code></a></li>
-<li><a href="#org115bb68"><code>~/.config/hypr/hypr.d/animations.conf</code></a></li>
-<li><a href="#orgc83b0dd"><code>~/.config/hypr/hypr.d/dwindle.conf</code></a></li>
-<li><a href="#org234ad86"><code>~/.config/hypr/hypr.d/master.conf</code></a></li>
-<li><a href="#orge020da4"><code>~/.config/hypr/hypr.d/gestures.conf</code></a></li>
-<li><a href="#org75ce128"><code>~/.config/hypr/hypr.d/groups.conf</code></a></li>
-<li><a href="#org8549136"><code>~/.config/hypr/hypr.d/binds.conf</code></a></li>
-<li><a href="#org8c30f35"><code>~/.config/hypr/hypr.d/misc.conf</code></a></li>
-<li><a href="#orgca6791c"><code>~/.config/hypr/hypr.d/devices.conf</code></a></li>
-<li><a href="#orgc4410b8"><code>~/.config/hypr/hypr.d/windowrule.conf</code></a></li>
-<li><a href="#orgc8bf982"><code>~/.config/hypr/hypr.d/workspaces.conf</code></a></li>
-<li><a href="#org628ca65"><code>~/.config/hypr/hypr.d/keybindings.conf</code></a></li>
+<li><a href="#org6121d56"><code>~/.config/hypr/hypland.conf</code></a></li>
+<li><a href="#orgcb950fd"><code>~/.config/hypr/hypr.d/monitors.conf</code></a></li>
+<li><a href="#orgb6fff7f"><code>~/.config/hypr/hypr.d/autostart.conf</code></a></li>
+<li><a href="#org9253ad0"><code>~/.config/hypr/hypr.d/variables.conf</code></a></li>
+<li><a href="#org14ca359"><code>~/.config/hypr/hypr.d/input.conf</code></a></li>
+<li><a href="#orgf3ccb31"><code>~/.config/hypr/hypr.d/general.conf</code></a></li>
+<li><a href="#org533e76e"><code>~/.config/hypr/hypr.d/decoration.conf</code></a></li>
+<li><a href="#org51e1075"><code>~/.config/hypr/hypr.d/animations.conf</code></a></li>
+<li><a href="#orgae4f94a"><code>~/.config/hypr/hypr.d/dwindle.conf</code></a></li>
+<li><a href="#org1ca0dfc"><code>~/.config/hypr/hypr.d/master.conf</code></a></li>
+<li><a href="#orgf162cb0"><code>~/.config/hypr/hypr.d/gestures.conf</code></a></li>
+<li><a href="#org3ca66c2"><code>~/.config/hypr/hypr.d/groups.conf</code></a></li>
+<li><a href="#org7d48717"><code>~/.config/hypr/hypr.d/binds.conf</code></a></li>
+<li><a href="#orga301610"><code>~/.config/hypr/hypr.d/misc.conf</code></a></li>
+<li><a href="#orgc31505f"><code>~/.config/hypr/hypr.d/devices.conf</code></a></li>
+<li><a href="#org9731320"><code>~/.config/hypr/hypr.d/windowrule.conf</code></a></li>
+<li><a href="#orga337fd2"><code>~/.config/hypr/hypr.d/workspaces.conf</code></a></li>
+<li><a href="#orgbbdff90"><code>~/.config/hypr/hypr.d/keybindings.conf</code></a></li>
 </ul>
 </li>
-<li><a href="#org503d43e">waybar</a>
+<li><a href="#org8e376b0">waybar</a>
 <ul>
-<li><a href="#org2e5f95e"><code>~/.config/waybar/config</code></a></li>
-<li><a href="#orga74a76f"><code>~/.config/waybar/style.css</code></a></li>
+<li><a href="#orga5a729b"><code>~/.config/waybar/config</code></a></li>
+<li><a href="#org8c96e79"><code>~/.config/waybar/style.css</code></a></li>
 </ul>
 </li>
-<li><a href="#org8e46f5c">hyprpaper</a></li>
-<li><a href="#orgda2f366">hyprshade</a></li>
-<li><a href="#org0678cd3">hyprlock</a></li>
-<li><a href="#orgbbab3ee">hypridle</a></li>
-<li><a href="#org54e9545">Rofi configuration</a>
+<li><a href="#org60446e6">hyprpaper</a></li>
+<li><a href="#org4fb7aed">hyprshade</a></li>
+<li><a href="#org33f30ea">hyprlock</a></li>
+<li><a href="#org2426b0b">hypridle</a></li>
+<li><a href="#org280d0e9">Rofi configuration</a>
 <ul>
-<li><a href="#orgbe6161e">hyprland-menu</a></li>
-<li><a href="#org655490d">hyprland-logout</a></li>
-<li><a href="#org088ae30">hyprland-clipboard</a></li>
+<li><a href="#org4ecbdcd">hyprland-menu</a></li>
+<li><a href="#org0d4a0b1">hyprland-logout</a></li>
+<li><a href="#org3679aba">hyprland-clipboard</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbf2c271" class="outline-2">
-<h2 id="orgbf2c271">Hyprland</h2>
-<div class="outline-text-2" id="text-orgbf2c271">
+<div id="outline-container-orgc689356" class="outline-2">
+<h2 id="orgc689356">Hyprland</h2>
+<div class="outline-text-2" id="text-orgc689356">
 </div>
-<div id="outline-container-orga7a439a" class="outline-3">
-<h3 id="orga7a439a"><code>~/.config/hypr/hypland.conf</code></h3>
-<div class="outline-text-3" id="text-orga7a439a">
+<div id="outline-container-org6121d56" class="outline-3">
+<h3 id="org6121d56"><code>~/.config/hypr/hypland.conf</code></h3>
+<div class="outline-text-3" id="text-org6121d56">
 </div>
 <ul class="org-ul">
-<li><a id="org97cff2f"></a>Modular configuration files<br />
-<div class="outline-text-4" id="text-org97cff2f">
+<li><a id="org0413c5c"></a>Modular configuration files<br />
+<div class="outline-text-4" id="text-org0413c5c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">source</span> = ./hypr.d/monitors.conf
 <span style="color: #b8860b;">source</span> = ./hypr.d/autostart.conf
@@ -96,17 +96,20 @@
 <span style="color: #b8860b;">source</span> = ./hypr.d/keybindings.conf
 </pre>
 </div>
+<p>
+I split the configuration file into sections, based on the section from the <a href="https://wiki.hyprland.org/Configuring/Variables/">configuration variables</a>.
+</p>
 </div>
 </li>
 </ul>
 </div>
-<div id="outline-container-org39584bb" class="outline-3">
-<h3 id="org39584bb"><code>~/.config/hypr/hypr.d/monitors.conf</code></h3>
-<div class="outline-text-3" id="text-org39584bb">
+<div id="outline-container-orgcb950fd" class="outline-3">
+<h3 id="orgcb950fd"><code>~/.config/hypr/hypr.d/monitors.conf</code></h3>
+<div class="outline-text-3" id="text-orgcb950fd">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Monitors/</span>
 <span style="color: #b8860b;">monitor</span>=,highrr,auto,1
-<span style="color: #b8860b;">monitor</span>=eDP-1,1920x1080@60,auto,1
+<span style="color: #b22222;"># </span><span style="color: #b22222;">monitor=,1920x1080@60,auto,1</span>
 <span style="color: #b8860b;">monitor</span>=DP-1,preferred,auto,1
 <span style="color: #b8860b;">monitor</span>=DP-2,preferred,auto,1
 <span style="color: #b8860b;">monitor</span>=DP-3,preferred,auto,1
@@ -117,26 +120,20 @@
 <span style="color: #b8860b;">monitor</span> = HDMI-A-1, preferred, auto, 1
 </pre>
 </div>
-
 <p>
 These are the monitors I used across all my machines.
 </p>
 </div>
 </div>
-<div id="outline-container-org2a508da" class="outline-3">
-<h3 id="org2a508da"><code>~/.config/hypr/hypr.d/autostart.conf</code></h3>
-<div class="outline-text-3" id="text-org2a508da">
+<div id="outline-container-orgb6fff7f" class="outline-3">
+<h3 id="orgb6fff7f"><code>~/.config/hypr/hypr.d/autostart.conf</code></h3>
+<div class="outline-text-3" id="text-orgb6fff7f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME SSH_AUTH_SOCK
 <span style="color: #b8860b;">exec-once</span> = dbus-update-activation-environment --systemd --all &amp;
-<span style="color: #b8860b;">exec-once</span> = blueman-applet &amp;
-<span style="color: #b8860b;">exec-once</span> = nm-applet --indicator &amp;
 <span style="color: #b8860b;">exec-once</span> = /usr/lib/polkit-kde-authentication-agent-1 &amp;
 <span style="color: #b8860b;">exec-once</span> = gnome-keyring-daemon --components=pkcs11,secrets,ssh -r -d &amp;
-<span style="color: #b8860b;">exec-once</span> = dbus-launch --sh-syntax --exit-with-session udiskie -t &amp;
 <span style="color: #b8860b;">exec-once</span> = dbus-launch --sh-syntax --exit-with-session dunst -conf ~/.config/dunst/dunstrc &amp;
-<span style="color: #b8860b;">exec-once</span> = /usr/lib/kdeconnectd &amp;
-<span style="color: #b8860b;">exec-once</span> = kdeconnect-indicator &amp;
 <span style="color: #b8860b;">exec-once</span> = hypridle
 <span style="color: #b8860b;">exec-once</span> = waybar &amp;
 <span style="color: #b8860b;">exec-once</span> = hyprpaper &amp;
@@ -147,6 +144,13 @@ These are the monitors I used across all my machines.
 <span style="color: #b8860b;">exec-once</span> = hyprshade auto &amp;
 <span style="color: #b22222;"># </span><span style="color: #b22222;">exec-once = thunar --daemon &amp;</span>
 <span style="color: #b8860b;">exec-once</span> = hypridle
+<span style="color: #b8860b;">exec-once</span> = emacs --daemon &amp;
+<span style="color: #b8860b;">exec-once</span> = blueman-applet &amp;
+<span style="color: #b8860b;">exec-once</span> = blueman-tray &amp;
+<span style="color: #b8860b;">exec-once</span> = nm-applet --indicator
+<span style="color: #b22222;"># </span><span style="color: #b22222;">exec-once = /usr/lib/kdeconnectd</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">exec-once = kdeconnect-indicator</span>
+<span style="color: #b8860b;">exec-once</span> = udiskie -t
 </pre>
 </div>
 
@@ -171,8 +175,8 @@ Required packages(<code>archlinux</code>):
 </div>
 
 <ul class="org-ul">
-<li><a id="org67e5603"></a>Additional GTK Settings<br />
-<div class="outline-text-4" id="text-org67e5603">
+<li><a id="orgdd3ba89"></a>Additional GTK Settings<br />
+<div class="outline-text-4" id="text-orgdd3ba89">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = gsettings set org.gnome.desktop.interface font-name <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono 10"</span>
 <span style="color: #b8860b;">exec-once</span> = gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic
@@ -200,19 +204,19 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 
-<div id="outline-container-orgdd2efd4" class="outline-3">
-<h3 id="orgdd2efd4"><code>~/.config/hypr/hypr.d/variables.conf</code></h3>
-<div class="outline-text-3" id="text-orgdd2efd4">
+<div id="outline-container-org9253ad0" class="outline-3">
+<h3 id="org9253ad0"><code>~/.config/hypr/hypr.d/variables.conf</code></h3>
+<div class="outline-text-3" id="text-org9253ad0">
 </div>
-
 <ul class="org-ul">
-<li><a id="org6e1251c"></a>Applications<br />
-<div class="outline-text-4" id="text-org6e1251c">
+<li><a id="org2d1a5b5"></a>Applications<br />
+<div class="outline-text-4" id="text-org2d1a5b5">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$terminal</span> = alacritty
 <span style="color: #b8860b;">$fileManager</span> = thunar
 <span style="color: #b8860b;">$menu</span> = rofi -show drun -theme hyprland-menu
 <span style="color: #b8860b;">$editor</span> = emacsclient -c -a emacs
+<span style="color: #b8860b;">$editor_term</span> = emacsclient -t -a <span style="color: #bc8f8f;">""</span>
 <span style="color: #b8860b;">$mail</span> = thunderbird
 <span style="color: #b8860b;">$browser</span> = firefox
 </pre>
@@ -220,8 +224,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orga25b18b"></a>Environment Variables<br />
-<div class="outline-text-4" id="text-orga25b18b">
+<li><a id="orged2a838"></a>Environment Variables<br />
+<div class="outline-text-4" id="text-orged2a838">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">env</span> = QT_QPA_PLATFORM,wayland
 <span style="color: #b8860b;">env</span> = QT_QPA_PLATFORMTHEME,qt5ct <span style="color: #b22222;"># </span><span style="color: #b22222;">change to qt6ct if you have that</span>
@@ -241,19 +245,25 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org9c94b54"></a>Wallpapers<br />
-<div class="outline-text-4" id="text-org9c94b54">
+<li><a id="org88b9496"></a>Wallpapers<br />
+<div class="outline-text-4" id="text-org88b9496">
+<p>
+This will set the wallpaper for each workspaces. The one I used is stored at my gitlab <a href="https://gitlab.com/alexforsale/wallpapers">repository</a>.
+</p>
+<p>
+:ID:       0aa9f011-8ece-41b9-bb18-7ab04c0f436c
+</p>
 <div class="org-src-container">
-<pre class="src src-conf"><span style="color: #b8860b;">$w1</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/ign_duaAnime.png"</span>
-<span style="color: #b8860b;">$w2</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/ign_chainsaw-man.png"</span>
-<span style="color: #b8860b;">$w3</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/ign_animeGirlSleeping.png"</span>
-<span style="color: #b8860b;">$w4</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/ign_girlWithHeadphones.png"</span>
-<span style="color: #b8860b;">$w5</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/manga/Sora-no-Otoshimono/kazane_hiyori_angel_by_sakurakiel_d4cnyy6.png"</span>
-<span style="color: #b8860b;">$w6</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/nord_scenary.png"</span>
-<span style="color: #b8860b;">$w7</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/wild.png"</span>
-<span style="color: #b8860b;">$w8</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/waves.jpg"</span>
-<span style="color: #b8860b;">$w9</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/subtle_ferns.jpg"</span>
-<span style="color: #b8860b;">$w10</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">"eDP-1,~/.local/share/wallpapers/nord/street_blues.png"</span>
+<pre class="src src-conf"><span style="color: #b8860b;">$w1</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/linux-friends-4k.png"</span>
+<span style="color: #b8860b;">$w2</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/linux-friends-4k.png"</span>
+<span style="color: #b8860b;">$w3</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/keyboard.png"</span>
+<span style="color: #b8860b;">$w4</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/keyboard.png"</span>
+<span style="color: #b8860b;">$w5</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/nord_alone_tree.png"</span>
+<span style="color: #b8860b;">$w6</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/nord_alone_tree.png"</span>
+<span style="color: #b8860b;">$w7</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/wild.png"</span>
+<span style="color: #b8860b;">$w8</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/wild.jpg"</span>
+<span style="color: #b8860b;">$w9</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/nord_buildings.png"</span>
+<span style="color: #b8860b;">$w10</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/nord_buildings.png"</span>
 </pre>
 </div>
 </div>
@@ -261,9 +271,9 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 
-<div id="outline-container-orgd796aa6" class="outline-3">
-<h3 id="orgd796aa6"><code>~/.config/hypr/hypr.d/input.conf</code></h3>
-<div class="outline-text-3" id="text-orgd796aa6">
+<div id="outline-container-org14ca359" class="outline-3">
+<h3 id="org14ca359"><code>~/.config/hypr/hypr.d/input.conf</code></h3>
+<div class="outline-text-3" id="text-org14ca359">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">input</span> {
 <span style="color: #b8860b;">kb_layout</span> = us
@@ -294,9 +304,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-orgd99620f" class="outline-3">
-<h3 id="orgd99620f"><code>~/.config/hypr/hypr.d/general.conf</code></h3>
-<div class="outline-text-3" id="text-orgd99620f">
+<div id="outline-container-orgf3ccb31" class="outline-3">
+<h3 id="orgf3ccb31"><code>~/.config/hypr/hypr.d/general.conf</code></h3>
+<div class="outline-text-3" id="text-orgf3ccb31">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">general</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -322,9 +332,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-org470a3e9" class="outline-3">
-<h3 id="org470a3e9"><code>~/.config/hypr/hypr.d/decoration.conf</code></h3>
-<div class="outline-text-3" id="text-org470a3e9">
+<div id="outline-container-org533e76e" class="outline-3">
+<h3 id="org533e76e"><code>~/.config/hypr/hypr.d/decoration.conf</code></h3>
+<div class="outline-text-3" id="text-org533e76e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">decoration</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -361,9 +371,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-org115bb68" class="outline-3">
-<h3 id="org115bb68"><code>~/.config/hypr/hypr.d/animations.conf</code></h3>
-<div class="outline-text-3" id="text-org115bb68">
+<div id="outline-container-org51e1075" class="outline-3">
+<h3 id="org51e1075"><code>~/.config/hypr/hypr.d/animations.conf</code></h3>
+<div class="outline-text-3" id="text-org51e1075">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">animations</span> {
 <span style="color: #b8860b;">enabled</span> = true
@@ -403,9 +413,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orgc83b0dd" class="outline-3">
-<h3 id="orgc83b0dd"><code>~/.config/hypr/hypr.d/dwindle.conf</code></h3>
-<div class="outline-text-3" id="text-orgc83b0dd">
+<div id="outline-container-orgae4f94a" class="outline-3">
+<h3 id="orgae4f94a"><code>~/.config/hypr/hypr.d/dwindle.conf</code></h3>
+<div class="outline-text-3" id="text-orgae4f94a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">dwindle</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more</span>
@@ -418,9 +428,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org234ad86" class="outline-3">
-<h3 id="org234ad86"><code>~/.config/hypr/hypr.d/master.conf</code></h3>
-<div class="outline-text-3" id="text-org234ad86">
+<div id="outline-container-org1ca0dfc" class="outline-3">
+<h3 id="org1ca0dfc"><code>~/.config/hypr/hypr.d/master.conf</code></h3>
+<div class="outline-text-3" id="text-org1ca0dfc">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">master</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Master-Layout/ for more</span>
@@ -429,9 +439,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orge020da4" class="outline-3">
-<h3 id="orge020da4"><code>~/.config/hypr/hypr.d/gestures.conf</code></h3>
-<div class="outline-text-3" id="text-orge020da4">
+<div id="outline-container-orgf162cb0" class="outline-3">
+<h3 id="orgf162cb0"><code>~/.config/hypr/hypr.d/gestures.conf</code></h3>
+<div class="outline-text-3" id="text-orgf162cb0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">gestures</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -448,9 +458,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org75ce128" class="outline-3">
-<h3 id="org75ce128"><code>~/.config/hypr/hypr.d/groups.conf</code></h3>
-<div class="outline-text-3" id="text-org75ce128">
+<div id="outline-container-org3ca66c2" class="outline-3">
+<h3 id="org3ca66c2"><code>~/.config/hypr/hypr.d/groups.conf</code></h3>
+<div class="outline-text-3" id="text-org3ca66c2">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">group</span> {
 <span style="color: #b8860b;">insert_after_current</span> = true
@@ -479,9 +489,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-org8549136" class="outline-3">
-<h3 id="org8549136"><code>~/.config/hypr/hypr.d/binds.conf</code></h3>
-<div class="outline-text-3" id="text-org8549136">
+<div id="outline-container-org7d48717" class="outline-3">
+<h3 id="org7d48717"><code>~/.config/hypr/hypr.d/binds.conf</code></h3>
+<div class="outline-text-3" id="text-org7d48717">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">binds</span> {
 <span style="color: #b8860b;">workspace_back_and_forth</span> = false
@@ -493,9 +503,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 
-<div id="outline-container-org8c30f35" class="outline-3">
-<h3 id="org8c30f35"><code>~/.config/hypr/hypr.d/misc.conf</code></h3>
-<div class="outline-text-3" id="text-org8c30f35">
+<div id="outline-container-orga301610" class="outline-3">
+<h3 id="orga301610"><code>~/.config/hypr/hypr.d/misc.conf</code></h3>
+<div class="outline-text-3" id="text-orga301610">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">misc</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -520,9 +530,9 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orgca6791c" class="outline-3">
-<h3 id="orgca6791c"><code>~/.config/hypr/hypr.d/devices.conf</code></h3>
-<div class="outline-text-3" id="text-orgca6791c">
+<div id="outline-container-orgc31505f" class="outline-3">
+<h3 id="orgc31505f"><code>~/.config/hypr/hypr.d/devices.conf</code></h3>
+<div class="outline-text-3" id="text-orgc31505f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">device</span> {
 <span style="color: #b8860b;">name</span> = epic-mouse-v1
@@ -532,24 +542,24 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </div>
-<div id="outline-container-orgc4410b8" class="outline-3">
-<h3 id="orgc4410b8"><code>~/.config/hypr/hypr.d/windowrule.conf</code></h3>
-<div class="outline-text-3" id="text-orgc4410b8">
+<div id="outline-container-org9731320" class="outline-3">
+<h3 id="org9731320"><code>~/.config/hypr/hypr.d/windowrule.conf</code></h3>
+<div class="outline-text-3" id="text-org9731320">
 </div>
 <ul class="org-ul">
-<li><a id="org5c7e2c8"></a>For all windows<br />
-<div class="outline-text-4" id="text-org5c7e2c8">
+<li><a id="orgaf92be1"></a>For all windows<br />
+<div class="outline-text-4" id="text-orgaf92be1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span> = noblur,.*
 <span style="color: #b8860b;">windowrulev2</span> = suppressevent maximize, class:.* <span style="color: #b22222;"># </span><span style="color: #b22222;">You'll probably like this.</span>
-<span style="color: #b8860b;">windowrulev2</span> = opacity 0.8, class:.*
+<span style="color: #b8860b;">windowrulev2</span> = opacity 0.99, class:.*
 </pre>
 </div>
 </div>
 </li>
 
-<li><a id="org8e1a030"></a><code>pavucontrol</code><br />
-<div class="outline-text-4" id="text-org8e1a030">
+<li><a id="orgd88a107"></a><code>pavucontrol</code><br />
+<div class="outline-text-4" id="text-orgd88a107">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:^(pavucontrol)$
 <span style="color: #b8860b;">windowrulev2</span> = size 50%,class:^(pavucontrol)$
@@ -558,8 +568,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgf923c26"></a><code>polkit-kde-agent</code><br />
-<div class="outline-text-4" id="text-orgf923c26">
+<li><a id="org85bd88b"></a><code>polkit-kde-agent</code><br />
+<div class="outline-text-4" id="text-org85bd88b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(org.kde.polkit-kde-authentication-agent-1)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(org.kde.polkit-kde-authentication-agent-1)
@@ -568,8 +578,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgc135aef"></a><code>blueman</code><br />
-<div class="outline-text-4" id="text-orgc135aef">
+<li><a id="orga8cb258"></a><code>blueman</code><br />
+<div class="outline-text-4" id="text-orga8cb258">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(blueman)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(blueman)
@@ -579,8 +589,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org7365cac"></a><code>thunderbird</code><br />
-<div class="outline-text-4" id="text-org7365cac">
+<li><a id="orgf2e9c89"></a><code>thunderbird</code><br />
+<div class="outline-text-4" id="text-orgf2e9c89">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(status)
 <span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(.*)(Reminders)
@@ -595,8 +605,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgf1d6ec2"></a><code>firefox</code><br />
-<div class="outline-text-4" id="text-orgf1d6ec2">
+<li><a id="org4beb45b"></a><code>firefox</code><br />
+<div class="outline-text-4" id="text-org4beb45b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = idleinhibit always, class:firefox title:(.*)(- YouTube)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:firefox title:(.*)(- YouTube)
@@ -605,8 +615,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgb5d0df3"></a><code>Qtpass</code><br />
-<div class="outline-text-4" id="text-orgb5d0df3">
+<li><a id="org2de899b"></a><code>Qtpass</code><br />
+<div class="outline-text-4" id="text-org2de899b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(QtPass)
 </pre>
@@ -614,8 +624,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orga68e3a8"></a><code>zoom</code><br />
-<div class="outline-text-4" id="text-orga68e3a8">
+<li><a id="orgf5e0a0f"></a><code>zoom</code><br />
+<div class="outline-text-4" id="text-orgf5e0a0f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(zoom)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(zoom)
@@ -627,8 +637,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orga80b1b9"></a><code>file-roller</code><br />
-<div class="outline-text-4" id="text-orga80b1b9">
+<li><a id="org2f627bb"></a><code>file-roller</code><br />
+<div class="outline-text-4" id="text-org2f627bb">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(file-roller)
 </pre>
@@ -636,8 +646,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgbd85381"></a><code>ncmpcpp</code><br />
-<div class="outline-text-4" id="text-orgbd85381">
+<li><a id="org7003d23"></a><code>ncmpcpp</code><br />
+<div class="outline-text-4" id="text-org7003d23">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(ncmpcpp)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(ncmpcpp)
@@ -647,19 +657,19 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org00dd55f"></a><code>khal</code><br />
-<div class="outline-text-4" id="text-org00dd55f">
+<li><a id="orgce809f1"></a><code>khal</code><br />
+<div class="outline-text-4" id="text-orgce809f1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(khal)
 <span style="color: #b8860b;">windowrulev2</span> = size 40%, class:(khal)
-<span style="color: #b8860b;">windowrulev2</span> = move onscreen cursor 50% 10%, class:(khal)
+<span style="color: #b8860b;">windowrulev2</span> = move onscreen cursor 50% 5%, class:(khal)
 </pre>
 </div>
 </div>
 </li>
 
-<li><a id="orgce055e5"></a><code>astroid</code><br />
-<div class="outline-text-4" id="text-orgce055e5">
+<li><a id="org5491caf"></a><code>astroid</code><br />
+<div class="outline-text-4" id="text-org5491caf">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 4, class:(astroid)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(astroid)
@@ -668,8 +678,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org6e29666"></a><code>vlc</code><br />
-<div class="outline-text-4" id="text-org6e29666">
+<li><a id="org127d902"></a><code>vlc</code><br />
+<div class="outline-text-4" id="text-org127d902">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 7,class:(vlc)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1,class:(vlc)
@@ -679,8 +689,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org2079326"></a><code>remmina</code><br />
-<div class="outline-text-4" id="text-org2079326">
+<li><a id="org1e6f8aa"></a><code>remmina</code><br />
+<div class="outline-text-4" id="text-org1e6f8aa">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, workspace 8, class:(org.remmina.Remmina)
 </pre>
@@ -688,8 +698,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org1f9d980"></a><code>transmission</code><br />
-<div class="outline-text-4" id="text-org1f9d980">
+<li><a id="orgdb8aa31"></a><code>transmission</code><br />
+<div class="outline-text-4" id="text-orgdb8aa31">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 9,class:^(com.transmissionbt.transmission).*
 <span style="color: #b8860b;">windowrulev2</span> = float,title:(Torrent.*)
@@ -698,8 +708,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org39cdb18"></a>dialogs<br />
-<div class="outline-text-4" id="text-org39cdb18">
+<li><a id="orge2a30c0"></a>dialogs<br />
+<div class="outline-text-4" id="text-orge2a30c0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span>=float,title:^(Open File)(.*)$
 <span style="color: #b8860b;">windowrule</span>=float,title:^(Select a File)(.*)$
@@ -713,8 +723,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgc589098"></a><code>thunar</code><br />
-<div class="outline-text-4" id="text-orgc589098">
+<li><a id="org5c8d69b"></a><code>thunar</code><br />
+<div class="outline-text-4" id="text-org5c8d69b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span> = center, title:^(Open File)(.*)$
 <span style="color: #b8860b;">windowrule</span> = center, title:^(Select a File)(.*)$
@@ -730,8 +740,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org7c7c299"></a>no tearing<br />
-<div class="outline-text-4" id="text-org7c7c299">
+<li><a id="org26705c8"></a>no tearing<br />
+<div class="outline-text-4" id="text-org26705c8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = noshadow,floating:0
 </pre>
@@ -739,8 +749,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org79766dd"></a><code>htop</code><br />
-<div class="outline-text-4" id="text-org79766dd">
+<li><a id="org28fc348"></a><code>htop</code><br />
+<div class="outline-text-4" id="text-org28fc348">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(htop)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 40%, class:(htop)
@@ -750,8 +760,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org3eed675"></a><code>nmtui</code><br />
-<div class="outline-text-4" id="text-org3eed675">
+<li><a id="orgf2d2255"></a><code>nmtui</code><br />
+<div class="outline-text-4" id="text-orgf2d2255">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(nmtui)
 </pre>
@@ -759,8 +769,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgd97d4ec"></a><code>vim</code><br />
-<div class="outline-text-4" id="text-orgd97d4ec">
+<li><a id="orge23e8ea"></a><code>vim</code><br />
+<div class="outline-text-4" id="text-orge23e8ea">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(vim)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(vim)
@@ -769,8 +779,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orge87a08d"></a><code>Emacs</code> (in terminal mode)<br />
-<div class="outline-text-4" id="text-orge87a08d">
+<li><a id="org6c9e3ab"></a><code>Emacs</code> (in terminal mode)<br />
+<div class="outline-text-4" id="text-org6c9e3ab">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = maximize, class:(nw-emacs)
 </pre>
@@ -778,8 +788,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org69f7dc8"></a><code>showmethekey</code><br />
-<div class="outline-text-4" id="text-org69f7dc8">
+<li><a id="org5958a11"></a><code>showmethekey</code><br />
+<div class="outline-text-4" id="text-org5958a11">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(one.alynx.showmethekey), title:(Show Me The Key)
 <span style="color: #b8860b;">windowrulev2</span> = nofocus, class:(showmethekey-gtk), title:(Floating Window - Show Me The Key)
@@ -793,16 +803,16 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org661f7c9"></a><code>screenkey</code><br />
-<div class="outline-text-4" id="text-org661f7c9">
+<li><a id="org4d9d66b"></a><code>screenkey</code><br />
+<div class="outline-text-4" id="text-org4d9d66b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(screenkey)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org56e7d43"></a>steam<br />
-<div class="outline-text-4" id="text-org56e7d43">
+<li><a id="org38114c9"></a>steam<br />
+<div class="outline-text-4" id="text-org38114c9">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(steam) initialTitle:(.*)
 <span style="color: #b8860b;">windowrulev2</span> = float, class:(steam) initialTitle:(.*)
@@ -812,8 +822,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgb843e16"></a>Mount &amp; Blade Warband<br />
-<div class="outline-text-5" id="text-orgb843e16">
+<li><a id="orgf6ccc96"></a>Mount &amp; Blade Warband<br />
+<div class="outline-text-5" id="text-orgf6ccc96">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(mb_warband_linux) initialTitle:(mb_warband_linux)
 </pre>
@@ -822,8 +832,8 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </li>
-<li><a id="org53bb7e5"></a>easyeffect<br />
-<div class="outline-text-4" id="text-org53bb7e5">
+<li><a id="org916e2b3"></a>easyeffect<br />
+<div class="outline-text-4" id="text-org916e2b3">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, title:(Easy Effects)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 60%, title:(Easy Effects)
@@ -831,8 +841,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgd722697"></a>layer<br />
-<div class="outline-text-4" id="text-orgd722697">
+<li><a id="orga2d83fd"></a>layer<br />
+<div class="outline-text-4" id="text-orga2d83fd">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">layerrule</span> = xray 1, .*
 <span style="color: #b22222;"># </span><span style="color: #b22222;">layerrule = noanim, .*</span>
@@ -884,34 +894,65 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </div>
-<div id="outline-container-orgc8bf982" class="outline-3">
-<h3 id="orgc8bf982"><code>~/.config/hypr/hypr.d/workspaces.conf</code></h3>
-<div class="outline-text-3" id="text-orgc8bf982">
+<div id="outline-container-orga337fd2" class="outline-3">
+<h3 id="orga337fd2"><code>~/.config/hypr/hypr.d/workspaces.conf</code></h3>
+<div class="outline-text-3" id="text-orga337fd2">
+</div>
+<ul class="org-ul">
+<li><a id="org95f8388"></a>Normal Workspaces<br />
+<div class="outline-text-4" id="text-org95f8388">
+<p>
+These workspaces are just standard workspaces, the way I set them is to have dedicated workspaces for each applications, such as web browsers, terminal emulators, etc.
+</p>
 <div class="org-src-container">
-<pre class="src src-conf"><span style="color: #b8860b;">workspace</span> = 1, name:terminal, monitor:eDP-1 <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:alacritty</span>
-<span style="color: #b8860b;">workspace</span> = 2, name:code, monitor:eDP-1 <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:emacsclient -c -a emacs</span>
-<span style="color: #b8860b;">workspace</span> = 3, name:web, monitor:eDP-1 <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:firefox</span>
-<span style="color: #b8860b;">workspace</span> = 4, name:message, monitor:eDP-1
+<pre class="src src-conf"><span style="color: #b8860b;">workspace</span> = 1, name:terminal, monitor: <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:alacritty</span>
+<span style="color: #b8860b;">workspace</span> = 2, name:code, monitor: <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:emacsclient -c -a emacs</span>
+<span style="color: #b8860b;">workspace</span> = 3, name:web, monitor: <span style="color: #b22222;">#</span><span style="color: #b22222;">, on-created-empty:firefox</span>
+<span style="color: #b8860b;">workspace</span> = 4, name:message, monitor:
 <span style="color: #b8860b;">workspace</span> = 5, name:file, monitor:HDMI-A-1, monitor:DP-1, default:true
 <span style="color: #b8860b;">workspace</span> = 6, name:office, monitor:HDMI-A-1
 <span style="color: #b8860b;">workspace</span> = 7, name:fun, monitor:HDMI-A-1
 <span style="color: #b8860b;">workspace</span> = 8, name:remote, monitor:HDMI-A-1
 <span style="color: #b8860b;">workspace</span> = 9, name:torrent, monitor:HDMI-A-1
 <span style="color: #b8860b;">workspace</span> = 10, name:zoom, monitor:HDMI-A-1
-<span style="color: #b8860b;">workspace</span> = special:scratchpad
 </pre>
 </div>
 </div>
-</div>
-<div id="outline-container-org628ca65" class="outline-3">
-<h3 id="org628ca65"><code>~/.config/hypr/hypr.d/keybindings.conf</code></h3>
-<div class="outline-text-3" id="text-org628ca65">
-</div>
+</li>
+<li><a id="org7c4e166"></a>Special workspaces<br />
+<div class="outline-text-4" id="text-org7c4e166">
+<p>
+In other window managers, a special workspace is often called <i>scratchpad</i>. The difference is in <i>Hyprland</i> we can have up to 97 of them, each with different names. The way I use it is to have one special workspace for an application, usually one that needs to always run in the background, like a music player, calculator and other. What I like from <i>Hyprland</i> (though I'm sure other <i>WM</i> also have), is the ability to only start the application when the workspace is opened. See the keybindings section for the detail.
+</p>
 
-
+<p>
+Also to conserve resource, I tend to only have terminal based application in these workspaces.
+</p>
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b8860b;">workspace</span> = special:music, on-created-empty:[tiled] $terminal --class ncmpcpp -e ncmpcpp
+<span style="color: #b8860b;">workspace</span> = special:khal, on-created-empty:[tiled] $terminal --class khal -e khal interactive
+<span style="color: #b8860b;">workspace</span> = special:proc, on-created-empty:[tiled] $terminal --class htop -e htop
+<span style="color: #b8860b;">workspace</span> = special:emacs, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term
+<span style="color: #b8860b;">workspace</span> = special:notmuch, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term -e <span style="color: #bc8f8f;">'(notmuch)'</span>
+<span style="color: #b8860b;">workspace</span> = special:dired, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term -e <span style="color: #bc8f8f;">'(dired (getenv "HOME"))'</span>
+<span style="color: #b8860b;">workspace</span> = special:keys, on-created-empty:[float] showmethekey-gtk
+<span style="color: #b8860b;">workspace</span> = special:nvim, on-created-empty:$terminal --class vim -e nvim
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-orgbbdff90" class="outline-3">
+<h3 id="orgbbdff90"><code>~/.config/hypr/hypr.d/keybindings.conf</code></h3>
+<div class="outline-text-3" id="text-orgbbdff90">
+</div>
 <ul class="org-ul">
-<li><a id="org72df462"></a>Set the <code>mainMod</code> variable<br />
-<div class="outline-text-4" id="text-org72df462">
+<li><a id="orgb7ec339"></a>Set the <code>mainMod</code> variable<br />
+<div class="outline-text-4" id="text-orgb7ec339">
+<p>
+<code>Super</code>, (or <code>WIN</code>) key, is a more common mod key for window manager anyway.
+</p>
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Keywords/ for more</span>
 <span style="color: #b8860b;">$mainMod</span> = SUPER
@@ -920,8 +961,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org10fc24d"></a>Apps keybindings<br />
-<div class="outline-text-4" id="text-org10fc24d">
+<li><a id="orgca794ac"></a>Apps keybindings<br />
+<div class="outline-text-4" id="text-orgca794ac">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, Return, exec, $terminal
@@ -934,37 +975,41 @@ Required packages(<code>archlinux</code>):
 <span style="color: #b8860b;">bind</span> = $mainMod, C, exec, cliphist list | rofi -dmenu -p <span style="color: #bc8f8f;">"Clipboard:"</span> -theme <span style="color: #bc8f8f;">"hyprland-clipboard"</span> | cliphist decode | wl-copy
 <span style="color: #b8860b;">bind</span> = $mainMod, Comma, exec, rofi -show emoji
 <span style="color: #b8860b;">bind</span> = $mainMod Shift, V, exec, pavucontrol
-<span style="color: #b8860b;">bind</span> = $mainMod, V, exec, easyeffects
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, V, exec, easyeffects
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, B, exec, blueman-manager
 
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, M, exec, alacritty --class ncmpcpp -e ncmpcpp
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, H, exec, alacritty --class htop -e htop
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, W, exec, alacritty --class nmtui -e nmtui
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, K, exec, alacritty --class khal -e khal interactive
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, V, exec, alacritty --class vim -e vim
-<span style="color: #b8860b;">bind</span> = $mainMod Shift Alt, N, exec, alacritty --class nw-emacs -e emacsclient -t -a emacs
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, E, exec, emacsclient -c -a emacs -e <span style="color: #bc8f8f;">'(dired (getenv "HOME"))'</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, H, exec, alacritty --class htop -e htop</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, W, exec, [float] alacritty --class nmtui -e nmtui</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, K, exec, alacritty --class khal -e khal interactive</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, V, exec, alacritty --class vim -e vim</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Shift Alt, N, exec, alacritty --class nw-emacs -e emacsclient -t -a emacs</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, E, exec, emacsclient -c -a emacs -e '(dired (getenv "HOME"))'</span>
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, N, exec, $editor
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, T, exec, $mail
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, P, exec, rofi-pass
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort -theme calculator
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, B, exec, rofi-rbw
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort -theme calculator</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Shift, P, exec, rofi-rbw
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, f, exec, firefox
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, S, exec, [workspace 10; silent; float] showmethekey-gtk
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, A, exec, hyprshade toggle
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">tesseract</span>
 <span style="color: #b8860b;">bind</span> = SuperShift,T,exec,grim -g <span style="color: #bc8f8f;">"$(slurp -d -c D1E5F4BB -b 1B232866 -s 00000000)"</span> <span style="color: #bc8f8f;">"tmp.png"</span> &amp;&amp; tesseract -l eng <span style="color: #bc8f8f;">"tmp.png"</span> - | wl-copy &amp;&amp; rm <span style="color: #bc8f8f;">"tmp.png"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">restart waybar</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Shift, R, exec, killall waybar &amp;&amp; waybar &amp;
 </pre>
 </div>
 </div>
 </li>
 
-<li><a id="org1d24d84"></a>window<br />
-<div class="outline-text-4" id="text-org1d24d84">
+<li><a id="org69dc94e"></a>window<br />
+<div class="outline-text-4" id="text-org69dc94e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, F, fullscreen, 0
 <span style="color: #b8860b;">bind</span> = $mainMod Shift, F, fullscreen, 1
-<span style="color: #b8860b;">bind</span> = $mainMod Control, F, fakefullscreen, 0
+<span style="color: #b8860b;">bind</span> = $mainMod Control, F, fullscreenstate, -1 -1
 <span style="color: #b8860b;">bind</span> = $mainMod, Space, togglefloating,
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Move focus with mainMod + arrow keys</span>
@@ -1005,8 +1050,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org50c69a9"></a>Mouse<br />
-<div class="outline-text-4" id="text-org50c69a9">
+<li><a id="org151cf00"></a>Mouse<br />
+<div class="outline-text-4" id="text-org151cf00">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Move/resize windows with mainMod + LMB/RMB and dragging</span>
 <span style="color: #b8860b;">bindm</span> = $mainMod, mouse:272, movewindow
@@ -1015,11 +1060,11 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org9bb2b37"></a>Media keys<br />
-<div class="outline-text-4" id="text-org9bb2b37">
+<li><a id="org3aced66"></a>Media keys<br />
+<div class="outline-text-4" id="text-org3aced66">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">binde</span> = , XF86AudioRaiseVolume, exec, ~/.local/bin/dunst-volume -i 1
-<span style="color: #b8860b;">binde</span> = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -1%
+<span style="color: #b22222;"># </span><span style="color: #b22222;">binde = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -1%</span>
 <span style="color: #b8860b;">binde</span> = , XF86AudioLowerVolume, exec, ~/.local/bin/dunst-volume -d 1
 <span style="color: #b8860b;">bindl</span> = , XF86AudioMute, exec, ~/.local/bin/dunst-volume -t
 <span style="color: #b22222;"># </span><span style="color: #b22222;">bindl = , XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle</span>
@@ -1046,8 +1091,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org2a5fef0"></a><code>dunst</code><br />
-<div class="outline-text-4" id="text-org2a5fef0">
+<li><a id="org186001e"></a><code>dunst</code><br />
+<div class="outline-text-4" id="text-org186001e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, grave, exec, dunstctl history-pop
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, grave, exec, dunstctl context
@@ -1057,10 +1102,10 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org38d7522"></a>Groups<br />
+<li><a id="orgf12b954"></a>Groups<br />
 <ul class="org-ul">
-<li><a id="orgdccae52"></a>Group management<br />
-<div class="outline-text-5" id="text-orgdccae52">
+<li><a id="org4190253"></a>Group management<br />
+<div class="outline-text-5" id="text-org4190253">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, G, submap, group
 <span style="color: #b8860b;">submap</span> = group
@@ -1112,8 +1157,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org9cf4ed4"></a>Window Resize<br />
-<div class="outline-text-5" id="text-org9cf4ed4">
+<li><a id="orga4bb971"></a>Window Resize<br />
+<div class="outline-text-5" id="text-orga4bb971">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Resize</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, R, submap, resize
@@ -1137,8 +1182,8 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </li>
-<li><a id="org14f67d6"></a>Hyprland<br />
-<div class="outline-text-4" id="text-org14f67d6">
+<li><a id="org9331f75"></a>Hyprland<br />
+<div class="outline-text-4" id="text-org9331f75">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, P, pseudo, <span style="color: #b22222;"># </span><span style="color: #b22222;">dwindle</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, S, togglesplit, <span style="color: #b22222;"># </span><span style="color: #b22222;">dwindle</span>
@@ -1147,8 +1192,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgb35b04a"></a>Master layout<br />
-<div class="outline-text-5" id="text-orgb35b04a">
+<li><a id="org1db0ff2"></a>Master layout<br />
+<div class="outline-text-5" id="text-org1db0ff2">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">master</span>
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, TAB, layoutmsg, swapwithmaster auto
@@ -1165,8 +1210,8 @@ Required packages(<code>archlinux</code>):
 </li>
 </ul>
 </li>
-<li><a id="org95d1b56"></a>Workspaces<br />
-<div class="outline-text-4" id="text-org95d1b56">
+<li><a id="orge7202b1"></a>Workspaces<br />
+<div class="outline-text-4" id="text-orge7202b1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Switch workspaces with mainMod + [0-9]</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, 1, workspace, 1
@@ -1190,15 +1235,17 @@ Required packages(<code>archlinux</code>):
 <span style="color: #b8860b;">bind</span> = $mainMod, 0, workspace, 10
 <span style="color: #b8860b;">bind</span> = $mainMod, 0, exec, $w10
 <span style="color: #b8860b;">bind</span> = $mainMod, TAB, workspace, previous
-
-<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod, BackSpace, workspace, special</span>
-<span style="color: #b8860b;">bind</span> = $mainMod Shift, Backspace, movetoworkspacesilent, special
-<span style="color: #b8860b;">bind</span> = $mainMod Alt, Backspace, togglespecialworkspace
-<span style="color: #b22222;"># </span><span style="color: #b22222;">Scroll through existing workspaces with mainMod + scroll</span>
-<span style="color: #b8860b;">bind</span> = $mainMod, mouse_down, workspace, e+1
-<span style="color: #b8860b;">bind</span> = $mainMod, mouse_up, workspace, e-1
-
-<span style="color: #b22222;"># </span><span style="color: #b22222;">Move active window to a workspace with mainMod + SHIFT + [0-9]</span>
+</pre>
+</div>
+<p>
+I set the bindings for workspace to have multiple bindings, the first one is to move to the intended workspace, but also to set the wallpaper to the variable set at the <i>variables.conf</i> file.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="orgf023fc5"></a>Workspace movement<br />
+<div class="outline-text-5" id="text-orgf023fc5">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Move active window to a workspace with mainMod + SHIFT + [0-9]</span>
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, 1, movetoworkspace, 1
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, 2, movetoworkspace, 2
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, 3, movetoworkspace, 3
@@ -1221,62 +1268,119 @@ Required packages(<code>archlinux</code>):
 <span style="color: #b8860b;">bind</span> = $mainMod Control, K, movecurrentworkspacetomonitor, u
 <span style="color: #b8860b;">bind</span> = $mainMod Control, L, movecurrentworkspacetomonitor, r
 
-<span style="color: #b8860b;">bind</span> = $mainMod, O, toggleopaque
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod, O, toggleopaque</span>
 
 <span style="color: #b8860b;">bind</span> = Alt, Tab, alterzorder, top
 <span style="color: #b8860b;">bind</span> = Alt Shift, Tab, bringactivetotop,
 <span style="color: #b8860b;">bind</span> = Alt Control, TAB, bringactivetotop,
 <span style="color: #b8860b;">bind</span> = Alt Control Shift, Tab, bringactivetotop,
-
-<span style="color: #b22222;"># </span><span style="color: #b22222;">lid switch</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org34839e4"></a>Laptops<br />
+<div class="outline-text-5" id="text-org34839e4">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">lid switch</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">trigger when the switch is toggled</span>
 <span style="color: #b8860b;">bindl</span>=,switch:Lid Switch,exec,hyprlock
 <span style="color: #b22222;"># </span><span style="color: #b22222;">trigger when the switch is turning on</span>
-<span style="color: #b22222;">#</span><span style="color: #b22222;">bindl=,switch:on:[switch name],exec,hyprctl keyword monitor "eDP-1, 2560x1600, 0x0, 1"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">bindl=,switch:on:[switch name],exec,hyprctl keyword monitor ", 2560x1600, 0x0, 1"</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">trigger when the switch is turning off</span>
-<span style="color: #b22222;">#</span><span style="color: #b22222;">bindl=,switch:off:[switch name],exec,hyprctl keyword monitor "eDP-1, disable"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">bindl=,switch:off:[switch name],exec,hyprctl keyword monitor ", disable"</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orge871141"></a>special workspace<br />
+<div class="outline-text-5" id="text-orge871141">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">0 is fn+m (music) in my laptop</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 0, togglespecialworkspace, music
+<span style="color: #b22222;"># </span><span style="color: #b22222;">1 is for htop</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 1, togglespecialworkspace, proc
+<span style="color: #b22222;"># </span><span style="color: #b22222;">2 is fn+k (khal)</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 2, togglespecialworkspace, khal
+<span style="color: #b22222;"># </span><span style="color: #b22222;">3 is for terminal emacsclient</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 3, togglespecialworkspace, emacs
+<span style="color: #b22222;"># </span><span style="color: #b22222;">4 is for terminal notmuch (using emacsclient)</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 4, togglespecialworkspace, notmuch
+<span style="color: #b22222;"># </span><span style="color: #b22222;">5 is for dired</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 5, togglespecialworkspace, dired
+<span style="color: #b22222;"># </span><span style="color: #b22222;">6 is for nvim</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 6, togglespecialworkspace, nvim
+<span style="color: #b22222;"># </span><span style="color: #b22222;">7 is for org-agenda (emacsclient)</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">bind = $mainMod Alt, 7, togglespecialworkspace, agenda</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">0 is for showmethekey-gtk</span>
+<span style="color: #b8860b;">bind</span> = $mainMod Alt, 9, togglespecialworkspace, keys
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org6b19929"></a>mouse<br />
+<div class="outline-text-5" id="text-org6b19929">
+<div class="org-src-container">
+<pre class="src src-conf">
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Scroll through existing workspaces with mainMod + scroll</span>
+<span style="color: #b8860b;">bind</span> = $mainMod, mouse_down, workspace, e+1
+<span style="color: #b8860b;">bind</span> = $mainMod, mouse_up, workspace, e-1
 </pre>
 </div>
 </div>
 </li>
 </ul>
+</li>
+</ul>
 </div>
 </div>
-<div id="outline-container-org503d43e" class="outline-2">
-<h2 id="org503d43e">waybar</h2>
-<div class="outline-text-2" id="text-org503d43e">
+<div id="outline-container-org8e376b0" class="outline-2">
+<h2 id="org8e376b0">waybar</h2>
+<div class="outline-text-2" id="text-org8e376b0">
 </div>
-<div id="outline-container-org2e5f95e" class="outline-3">
-<h3 id="org2e5f95e"><code>~/.config/waybar/config</code></h3>
-<div class="outline-text-3" id="text-org2e5f95e">
+<div id="outline-container-orga5a729b" class="outline-3">
+<h3 id="orga5a729b"><code>~/.config/waybar/config</code></h3>
+<div class="outline-text-3" id="text-orga5a729b">
+</div>
+<ul class="org-ul">
+<li><a id="org506eaec"></a>start config<br />
+<div class="outline-text-4" id="text-org506eaec">
 <div class="org-src-container">
 <pre class="src src-js">{
-  <span style="color: #bc8f8f;">"layer"</span>: <span style="color: #bc8f8f;">"top"</span>, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar at top layer</span>
-  <span style="color: #bc8f8f;">"output"</span>: [<span style="color: #bc8f8f;">"eDP-1"</span>, <span style="color: #bc8f8f;">"DP-1"</span>, <span style="color: #bc8f8f;">"DP-2"</span>, <span style="color: #bc8f8f;">"DP-3"</span>, <span style="color: #bc8f8f;">"DP-4"</span>, <span style="color: #bc8f8f;">"DP-5"</span>, <span style="color: #bc8f8f;">"HDMI-A-1"</span>],
-  <span style="color: #bc8f8f;">"position"</span>: <span style="color: #bc8f8f;">"top"</span>, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar position (top|bottom|left|right)</span>
-  <span style="color: #bc8f8f;">"height"</span>: 34, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar height (to be removed for auto height)</span>
-  <span style="color: #b22222;">// </span><span style="color: #b22222;">"width": 1280, // Waybar width</span>
-  <span style="color: #bc8f8f;">"spacing"</span>: 4, <span style="color: #b22222;">// </span><span style="color: #b22222;">Gaps between modules (4px)</span>
-  <span style="color: #b22222;">// </span><span style="color: #b22222;">Choose the order of the modules</span>
 </pre>
 </div>
 </div>
-<ul class="org-ul">
-<li><a id="org6e80bf6"></a>Left Modules<br />
-<div class="outline-text-4" id="text-org6e80bf6">
+</li>
+<li><a id="org3e0be37"></a>General<br />
+<div class="outline-text-4" id="text-org3e0be37">
+<div class="org-src-container">
+<pre class="src src-js">
+<span style="color: #bc8f8f;">"layer"</span>: <span style="color: #bc8f8f;">"top"</span>, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar at top layer</span>
+<span style="color: #bc8f8f;">"output"</span>: [<span style="color: #bc8f8f;">"eDP-1"</span>, <span style="color: #bc8f8f;">"DP-1"</span>, <span style="color: #bc8f8f;">"DP-2"</span>, <span style="color: #bc8f8f;">"DP-3"</span>, <span style="color: #bc8f8f;">"DP-4"</span>, <span style="color: #bc8f8f;">"DP-5"</span>, <span style="color: #bc8f8f;">"HDMI-A-1"</span>],
+<span style="color: #bc8f8f;">"position"</span>: <span style="color: #bc8f8f;">"top"</span>, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar position (top|bottom|left|right)</span>
+<span style="color: #bc8f8f;">"height"</span>: 34, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar height (to be removed for auto height)</span>
+<span style="color: #b22222;">// </span><span style="color: #b22222;">"width": 1280, // Waybar width</span>
+<span style="color: #bc8f8f;">"spacing"</span>: 4, <span style="color: #b22222;">// </span><span style="color: #b22222;">Gaps between modules (4px)</span>
+<span style="color: #b22222;">// </span><span style="color: #b22222;">Choose the order of the modules</span>
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgd7f6df6"></a>Left Modules<br />
+<div class="outline-text-4" id="text-orgd7f6df6">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-left"</span>: [
+  <span style="color: #bc8f8f;">"custom/launcher"</span>,
   <span style="color: #bc8f8f;">"hyprland/workspaces"</span>,
-  <span style="color: #bc8f8f;">"hyprland/submap"</span>,
-  <span style="color: #bc8f8f;">"mpris"</span>
+  <span style="color: #bc8f8f;">"hyprland/submap"</span>
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">"mpris"</span>
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"custom/media"</span>
 ],
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgff8e0c9"></a>Center Modules<br />
-<div class="outline-text-4" id="text-orgff8e0c9">
+<li><a id="org07a8d5b"></a>Center Modules<br />
+<div class="outline-text-4" id="text-org07a8d5b">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-center"</span>: [
   <span style="color: #bc8f8f;">"hyprland/window"</span>
@@ -1285,35 +1389,36 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgdced109"></a>Right Modules<br />
-<div class="outline-text-4" id="text-orgdced109">
+<li><a id="orgb33aefa"></a>Right Modules<br />
+<div class="outline-text-4" id="text-orgb33aefa">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-right"</span>: [
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"mpd",</span>
-  <span style="color: #bc8f8f;">"idle_inhibitor"</span>,
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">"idle_inhibitor",</span>
   <span style="color: #bc8f8f;">"backlight"</span>,
   <span style="color: #bc8f8f;">"pulseaudio"</span>,
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"wireplumber",</span>
   <span style="color: #bc8f8f;">"network"</span>,
-  <span style="color: #b22222;">// </span><span style="color: #b22222;">"cpu",</span>
-  <span style="color: #b22222;">// </span><span style="color: #b22222;">"memory",</span>
-  <span style="color: #b22222;">// </span><span style="color: #b22222;">"temperature",</span>
+  <span style="color: #bc8f8f;">"cpu"</span>,
+  <span style="color: #bc8f8f;">"memory"</span>,
+  <span style="color: #bc8f8f;">"temperature"</span>,
   <span style="color: #bc8f8f;">"keyboard-state"</span>,
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"hyprland/language",</span>
   <span style="color: #bc8f8f;">"battery"</span>,
   <span style="color: #bc8f8f;">"custom/pacman"</span>,
   <span style="color: #bc8f8f;">"clock#date"</span>,
   <span style="color: #bc8f8f;">"clock#time"</span>,
-  <span style="color: #bc8f8f;">"tray"</span>
+  <span style="color: #bc8f8f;">"tray"</span>,
+  <span style="color: #bc8f8f;">"custom/power"</span>
 ],
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org3212803"></a>Modules Configuration<br />
+<li><a id="org329fa5f"></a>Modules Configuration<br />
 <ul class="org-ul">
-<li><a id="orga7a7b8c"></a>mpris<br />
-<div class="outline-text-5" id="text-orga7a7b8c">
+<li><a id="org7d191cb"></a>mpris<br />
+<div class="outline-text-5" id="text-org7d191cb">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"mpris"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{player_icon} {title}"</span>,
@@ -1330,8 +1435,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org899846e"></a>backlight<br />
-<div class="outline-text-5" id="text-org899846e">
+<li><a id="orgf8b9d77"></a>backlight<br />
+<div class="outline-text-5" id="text-orgf8b9d77">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"backlight"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61829; {percent}%"</span>,
@@ -1343,31 +1448,32 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org804b277"></a>hyprland/workspaces<br />
-<div class="outline-text-5" id="text-org804b277">
+<li><a id="orgfef33dc"></a>hyprland/workspaces<br />
+<div class="outline-text-5" id="text-orgfef33dc">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/workspaces"</span>: {
-  <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{id}: {icon}"</span>,
-  <span style="color: #bc8f8f;">"format-icons"</span>: {
-    <span style="color: #bc8f8f;">"1"</span>: <span style="color: #bc8f8f;">"&#59285;"</span>,
-    <span style="color: #bc8f8f;">"2"</span>: <span style="color: #bc8f8f;">"&#60100;"</span>,
-    <span style="color: #bc8f8f;">"3"</span>: <span style="color: #bc8f8f;">"&#984479;"</span>,
-    <span style="color: #bc8f8f;">"4"</span>: <span style="color: #bc8f8f;">"&#986811;"</span>,
-    <span style="color: #bc8f8f;">"5"</span>: <span style="color: #bc8f8f;">"&#983572;"</span>,
-    <span style="color: #bc8f8f;">"6"</span>: <span style="color: #bc8f8f;">"&#985489;"</span>,
-    <span style="color: #bc8f8f;">"7"</span>: <span style="color: #bc8f8f;">"&#61723;"</span>,
-    <span style="color: #bc8f8f;">"8"</span>: <span style="color: #bc8f8f;">"&#984148;"</span>,
-    <span style="color: #bc8f8f;">"9"</span>: <span style="color: #bc8f8f;">"&#61786;"</span>,
-    <span style="color: #bc8f8f;">"10"</span>: <span style="color: #bc8f8f;">"&#62770;"</span>
-  },
+  <span style="color: #bc8f8f;">"num-tags"</span>: 6,
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">"format": "{id}: {icon}",</span>
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">"format-icons": {</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"1": "&#59285;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"2": "&#60100;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"3": "&#984479;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"4": "&#986811;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"5": "&#983572;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"6": "&#985489;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"7": "&#61723;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"8": "&#984148;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"9": "&#61786;",</span>
+  <span style="color: #b22222;">//   </span><span style="color: #b22222;">"10": "&#62770;"</span>
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">},</span>
   <span style="color: #bc8f8f;">"active-only"</span>: <span style="color: #5f9ea0;">false</span>
 },
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgc94fc02"></a>hyprland/languages<br />
-<div class="outline-text-5" id="text-orgc94fc02">
+<li><a id="orgdeb71ab"></a>hyprland/languages<br />
+<div class="outline-text-5" id="text-orgdeb71ab">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/language"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1378,23 +1484,24 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org0a0c2db"></a>hyprland/window<br />
-<div class="outline-text-5" id="text-org0a0c2db">
+<li><a id="org2ad0884"></a>hyprland/window<br />
+<div class="outline-text-5" id="text-org2ad0884">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/window"</span>: {
-  <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
+  <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{title}"</span>,
   <span style="color: #bc8f8f;">"rewrite"</span>: {
     <span style="color: #bc8f8f;">"(.*) &#8212; Mozilla Firefox"</span>: <span style="color: #bc8f8f;">"&#127758; $1"</span>,
     <span style="color: #bc8f8f;">"(.*) - (GNU Emacs at.*)"</span>: <span style="color: #bc8f8f;">"$1"</span>
   },
+  <span style="color: #bc8f8f;">"max-length"</span>: 80,
   <span style="color: #bc8f8f;">"separate-outputs"</span>: <span style="color: #5f9ea0;">true</span>
 },
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org3044dc0"></a>hyprland/submap<br />
-<div class="outline-text-5" id="text-org3044dc0">
+<li><a id="org62d25e3"></a>hyprland/submap<br />
+<div class="outline-text-5" id="text-org62d25e3">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/submap"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1405,8 +1512,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org7e82871"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-org7e82871">
+<li><a id="org0ccfdd2"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org0ccfdd2">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"keyboard-state"</span>: {
   <span style="color: #bc8f8f;">"numlock"</span>: <span style="color: #5f9ea0;">false</span>,
@@ -1421,8 +1528,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgb94a44a"></a>mpd<br />
-<div class="outline-text-5" id="text-orgb94a44a">
+<li><a id="orge9ada0e"></a>mpd<br />
+<div class="outline-text-5" id="text-orge9ada0e">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"mpd"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) &#11816;{songPosition}|{queueLength}&#11817; {volume}% &#61441;",</span>
@@ -1455,8 +1562,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgc7ebccf"></a>idle_inhibitor<br />
-<div class="outline-text-5" id="text-orgc7ebccf">
+<li><a id="org2ef3afc"></a>idle_inhibitor<br />
+<div class="outline-text-5" id="text-org2ef3afc">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"idle_inhibitor"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon}"</span>,
@@ -1469,8 +1576,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgbc4fbe1"></a>tray<br />
-<div class="outline-text-5" id="text-orgbc4fbe1">
+<li><a id="org61e2127"></a>tray<br />
+<div class="outline-text-5" id="text-org61e2127">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"tray"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"icon-size": 21,</span>
@@ -1480,8 +1587,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgdad945f"></a>clock<br />
-<div class="outline-text-5" id="text-orgdad945f">
+<li><a id="org2ebf035"></a>clock<br />
+<div class="outline-text-5" id="text-org2ebf035">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"clock#date"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"timezone": "America/New_York",</span>
@@ -1499,29 +1606,33 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orga042e35"></a>cpu<br />
-<div class="outline-text-5" id="text-orga042e35">
+<li><a id="org7f3a3e4"></a>cpu<br />
+<div class="outline-text-5" id="text-org7f3a3e4">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"cpu"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{usage}% &#62171;"</span>,
-  <span style="color: #bc8f8f;">"tooltip"</span>: <span style="color: #5f9ea0;">false</span>
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">"format": "&#62171; {}%",</span>
+  <span style="color: #bc8f8f;">"tooltip"</span>: <span style="color: #5f9ea0;">true</span>,
+  <span style="color: #bc8f8f;">"interval"</span>: 15
 },
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org8fa2ebd"></a>memory<br />
-<div class="outline-text-5" id="text-org8fa2ebd">
+<li><a id="org885f455"></a>memory<br />
+<div class="outline-text-5" id="text-org885f455">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"memory"</span>: {
+  <span style="color: #bc8f8f;">"interval"</span>: 30,
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}% &#61641;"</span>
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">"max-length": 50</span>
 },
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgfc3f23b"></a>temperature<br />
-<div class="outline-text-5" id="text-orgfc3f23b">
+<li><a id="orgb638a41"></a>temperature<br />
+<div class="outline-text-5" id="text-orgb638a41">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"temperature"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"thermal-zone": 2,</span>
@@ -1535,8 +1646,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org1732333"></a>battery<br />
-<div class="outline-text-5" id="text-org1732333">
+<li><a id="org86941b1"></a>battery<br />
+<div class="outline-text-5" id="text-org86941b1">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"battery"</span>: {
   <span style="color: #bc8f8f;">"states"</span>: {
@@ -1559,8 +1670,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org2eea687"></a>network<br />
-<div class="outline-text-5" id="text-org2eea687">
+<li><a id="org358531e"></a>network<br />
+<div class="outline-text-5" id="text-org358531e">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"network"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"interface": "wlp2*", // (Optional) To force the use of this interface</span>
@@ -1576,8 +1687,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org8a12cd5"></a>wireplumber<br />
-<div class="outline-text-5" id="text-org8a12cd5">
+<li><a id="orgb69f3f9"></a>wireplumber<br />
+<div class="outline-text-5" id="text-orgb69f3f9">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"wireplumber"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon} {volume}%"</span>,
@@ -1591,8 +1702,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgcb3b5b1"></a>pulseaudio<br />
-<div class="outline-text-5" id="text-orgcb3b5b1">
+<li><a id="orgce579dc"></a>pulseaudio<br />
+<div class="outline-text-5" id="text-orgce579dc">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"pulseaudio"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"scroll-step": 1, // %, can be a float</span>
@@ -1611,14 +1722,14 @@ Required packages(<code>archlinux</code>):
     <span style="color: #bc8f8f;">"car"</span>: <span style="color: #bc8f8f;">"&#61881;"</span>,
     <span style="color: #bc8f8f;">"default"</span>: [<span style="color: #bc8f8f;">"&#61478;"</span>, <span style="color: #bc8f8f;">"&#61479;"</span>, <span style="color: #bc8f8f;">"&#61480;"</span>]
   },
-  <span style="color: #bc8f8f;">"on-click"</span>: <span style="color: #bc8f8f;">"pavucontrol"</span>
+  <span style="color: #bc8f8f;">"on-click"</span>: <span style="color: #bc8f8f;">"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"</span>
 },
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgeebb86b"></a>custom/pacman<br />
-<div class="outline-text-5" id="text-orgeebb86b">
+<li><a id="orga53e88b"></a>custom/pacman<br />
+<div class="outline-text-5" id="text-orga53e88b">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/pacman"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61538; {} update available"</span>,
@@ -1631,8 +1742,33 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org6be7d13"></a>custom/media<br />
-<div class="outline-text-5" id="text-org6be7d13">
+<li><a id="org330aa63"></a>custom/launcher<br />
+<div class="outline-text-5" id="text-org330aa63">
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #bc8f8f;">"custom/launcher"</span>:{
+  <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#62211; "</span>,
+  <span style="color: #bc8f8f;">"tooltip"</span>: <span style="color: #5f9ea0;">false</span>,
+  <span style="color: #bc8f8f;">"on-click"</span>: <span style="color: #bc8f8f;">"rofi -show drun -theme hyprland-menu"</span>,
+  <span style="color: #bc8f8f;">"on-click-right"</span>: <span style="color: #bc8f8f;">"killall rofi"</span>
+},
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org06f561c"></a>custom/power<br />
+<div class="outline-text-5" id="text-org06f561c">
+<div class="org-src-container">
+<pre class="src src-js"><span style="color: #bc8f8f;">"custom/power"</span>:{
+  <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61752; "</span>,
+  <span style="color: #bc8f8f;">"tooltip"</span>: <span style="color: #5f9ea0;">false</span>,
+  <span style="color: #bc8f8f;">"on-click"</span>: <span style="color: #bc8f8f;">"~/.local/bin/rofi-logout hyprland-logout"</span>
+},
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org48239c5"></a>custom/media<br />
+<div class="outline-text-5" id="text-org48239c5">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/media"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon} {}"</span>,
@@ -1646,22 +1782,29 @@ Required packages(<code>archlinux</code>):
   <span style="color: #bc8f8f;">"exec"</span>: <span style="color: #bc8f8f;">"$HOME/.config/waybar/mediaplayer.py 2&gt; /dev/null"</span> <span style="color: #b22222;">// </span><span style="color: #b22222;">Script in resources folder</span>
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2&gt; /dev/null" // Filter player based on name</span>
 }
-}
 </pre>
 </div>
 </div>
 </li>
 </ul>
 </li>
+<li><a id="orgd436fb3"></a>End config<br />
+<div class="outline-text-4" id="text-orgd436fb3">
+<div class="org-src-container">
+<pre class="src src-js">}
+</pre>
+</div>
+</div>
+</li>
 </ul>
 </div>
-<div id="outline-container-orga74a76f" class="outline-3">
-<h3 id="orga74a76f"><code>~/.config/waybar/style.css</code></h3>
-<div class="outline-text-3" id="text-orga74a76f">
+<div id="outline-container-org8c96e79" class="outline-3">
+<h3 id="org8c96e79"><code>~/.config/waybar/style.css</code></h3>
+<div class="outline-text-3" id="text-org8c96e79">
 </div>
 <ul class="org-ul">
-<li><a id="org99b3c59"></a>definitions<br />
-<div class="outline-text-4" id="text-org99b3c59">
+<li><a id="org8196913"></a>definitions<br />
+<div class="outline-text-4" id="text-org8196913">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b22222;">/* </span><span style="color: #b22222;">Nord </span><span style="color: #b22222;">*/</span>
 <span style="color: #00008b;">@define-color</span> background <span style="color: #ffffff; background-color: #2e3440;">rgba(46, 52, 64, 1)</span>;
@@ -1671,7 +1814,7 @@ Required packages(<code>archlinux</code>):
 <span style="color: #00008b;">@define-color</span> <span style="color: #ffffff; background-color: #ff0000;">red</span> <span style="color: #ffffff; background-color: #bf616a;">rgba(191, 97, 106, 1)</span>;
 <span style="color: #00008b;">@define-color</span> red2 <span style="color: #ffffff; background-color: #bf616a;">rgba(191, 97, 106, 0.6)</span>;
 <span style="color: #00008b;">@define-color</span> foreground <span style="color: #000000; background-color: #d8dee9;">rgba(216, 222, 233, 1)</span>;
-<span style="color: #00008b;">@define-color</span> <span style="color: #ffffff; background-color: #000000;">black</span> <span style="color: #ffffff; background-color: #3b4252;">rgba(59, 66, 82, 1)</span>;
+<span style="color: #00008b;">@define-color</span> <span style="color: #ffffff; background-color: #000000;">black</span> <span style="color: #ffffff; background-color: #161320;">#161320</span>;
 <span style="color: #00008b;">@define-color</span> <span style="color: #ffffff; background-color: #008000;">green</span> <span style="color: #000000; background-color: #a3be8c;">rgba(163, 190, 140, 1)</span>;
 <span style="color: #00008b;">@define-color</span> green2 <span style="color: #000000; background-color: #a3be8c;">rgba(163, 190, 140, 0.3)</span>;
 <span style="color: #00008b;">@define-color</span> <span style="color: #000000; background-color: #ffff00;">yellow</span> <span style="color: #000000; background-color: #ebcb8b;">rgba(235, 203, 139, 1)</span>;
@@ -1691,6 +1834,7 @@ Required packages(<code>archlinux</code>):
 <span style="color: #b22222;">/*</span><span style="color: #b22222;">@define-color workspaces @nord_dark_font;</span><span style="color: #b22222;">*/</span>
 <span style="color: #b22222;">/*</span><span style="color: #b22222;">@define-color workspacesfocused #434C5E;</span><span style="color: #b22222;">*/</span>
 <span style="color: #00008b;">@define-color</span> workspacebutton <span style="color: #00008b;">@white</span>;
+<span style="color: #00008b;">@define-color</span> launcher <span style="color: #000000; background-color: #5e81ac;">rgba(94, 129, 172, 1)</span>;
 <span style="color: #00008b;">@define-color</span> tray <span style="color: #00008b;">@workspacesfocused</span>;
 <span style="color: #00008b;">@define-color</span> sound <span style="color: #000000; background-color: #EBCB8B;">#EBCB8B</span>;
 <span style="color: #00008b;">@define-color</span> network <span style="color: #ffffff; background-color: #5D7096;">#5D7096</span>;
@@ -1713,53 +1857,63 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org10e6938"></a>global<br />
-<div class="outline-text-4" id="text-org10e6938">
+<li><a id="orge55c704"></a>global<br />
+<div class="outline-text-4" id="text-orge55c704">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">* </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">`otf-font-awesome` is required to be installed for icons </span><span style="color: #b22222;">*/</span>
+    <span style="color: #4169e1;">border</span>: none;
+    <span style="color: #4169e1;">border-radius</span>: 10px;
     <span style="color: #4169e1;">font-family</span>: FontAwesome, JetBrainsMonoNL Nerd Font Mono;
-    <span style="color: #4169e1;">font-size</span>: 13px;
+    <span style="color: #4169e1;">font-size</span>: 12px;
+    <span style="color: #4169e1;">min-height</span>: 10px;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org04f6072"></a>keyframes<br />
-<div class="outline-text-4" id="text-org04f6072">
+<li><a id="orgabb38a5"></a>keyframes<br />
+<div class="outline-text-4" id="text-orgabb38a5">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #00008b;">@keyframes</span> blink {
     <span style="color: #0000ff;">to </span>{
-        <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@white</span>;
-        <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+        <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@red</span>;
+        <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@cyan</span>;
     }
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org8e30486"></a>window<br />
-<div class="outline-text-4" id="text-org8e30486">
+<li><a id="orga9544a7"></a>window<br />
+<div class="outline-text-4" id="text-orga9544a7">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">window#waybar </span>{
-    <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@background2</span>;
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: transparent; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @background2; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #4169e1;">background-color</span>: transparent;
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">border-bottom: 3px solid @cyan; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@white</span>;
-    <span style="color: #4169e1;">transition-property</span>: background-color;
-    <span style="color: #4169e1;">transition-duration</span>: .5s;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @white; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">transition-property: background-color; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">transition-duration: .5s; </span><span style="color: #b22222;">*/</span>
 }
 
 <span style="color: #0000ff;">window#waybar.hidden </span>{
     <span style="color: #4169e1;">opacity</span>: 0.2;
 }
 
-<span style="color: #0000ff;">#waybar.empty #window </span>{
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: transparent; </span><span style="color: #b22222;">*/</span>
+<span style="color: #0000ff;">window#waybar.empty #window </span>{
+    <span style="color: #4169e1;">background-color</span>: transparent;
 }
 
 <span style="color: #0000ff;">#window </span>{
-    <span style="color: #4169e1;">margin</span>: 0px;
+    <span style="color: #4169e1;">margin-top</span>: 6px;
+    <span style="color: #4169e1;">margin-left</span>: 8px;
+    <span style="color: #4169e1;">padding-left</span>: 10px;
+    <span style="color: #4169e1;">padding-right</span>: 10px;
+    <span style="color: #4169e1;">border-radius</span>: 10px;
+    <span style="color: #4169e1;">transition</span>: none;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+    <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@white</span>;
     <span style="color: #4169e1;">font-size</span>:14px;
     <span style="color: #4169e1;">font-weight</span>: bold;
 }
@@ -1767,8 +1921,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgc68a9d2"></a>button<br />
-<div class="outline-text-4" id="text-orgc68a9d2">
+<li><a id="org32f3858"></a>button<br />
+<div class="outline-text-4" id="text-org32f3858">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">button </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">Use box-shadow instead of border so the text isn't offset </span><span style="color: #b22222;">*/</span>
@@ -1787,8 +1941,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgc0d305d"></a>tooltip<br />
-<div class="outline-text-4" id="text-orgc0d305d">
+<li><a id="org11f7268"></a>tooltip<br />
+<div class="outline-text-4" id="text-org11f7268">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">tooltip </span>{
     <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@background</span>;
@@ -1806,43 +1960,82 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orge7c2f7d"></a>modules<br />
+<li><a id="org801386b"></a>modules<br />
 <ul class="org-ul">
-<li><a id="org7c3561a"></a>global<br />
-<div class="outline-text-5" id="text-org7c3561a">
+<li><a id="orgb2c7cd6"></a>cpu<br />
+<div class="outline-text-5" id="text-orgb2c7cd6">
 <div class="org-src-container">
-<pre class="src src-css"><span style="color: #0000ff;">#clock,</span>
-<span style="color: #0000ff;">#battery,</span>
-<span style="color: #0000ff;">#cpu,</span>
-<span style="color: #0000ff;">#memory,</span>
-<span style="color: #0000ff;">#disk,</span>
-<span style="color: #0000ff;">#temperature,</span>
-<span style="color: #0000ff;">#backlight,</span>
-<span style="color: #0000ff;">#network,</span>
-<span style="color: #0000ff;">#pulseaudio,</span>
-<span style="color: #0000ff;">#wireplumber,</span>
-<span style="color: #0000ff;">#pulseaudio,</span>
-<span style="color: #0000ff;">#custom-media,</span>
-<span style="color: #0000ff;">#tray,</span>
-<span style="color: #0000ff;">#mode,</span>
-<span style="color: #0000ff;">#idle_inhibitor,</span>
-<span style="color: #0000ff;">#scratchpad,</span>
-<span style="color: #0000ff;">#keyboard-state,</span>
-<span style="color: #0000ff;">#mode,</span>
-<span style="color: #0000ff;">#submap,</span>
-<span style="color: #0000ff;">#mpd </span>{
-    <span style="color: #4169e1;">margin</span>: 2px;
-    <span style="color: #4169e1;">padding-left</span>: 4px;
-    <span style="color: #4169e1;">padding-right</span>: 4px;
-    <span style="color: #4169e1;">background-color</span>: transparent;
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@white</span>;
+<pre class="src src-css"><span style="color: #0000ff;">#cpu </span>{
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@cyan2</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgaa597a3"></a>modules-left<br />
-<div class="outline-text-5" id="text-orgaa597a3">
+<li><a id="orgb28ebd8"></a>memory<br />
+<div class="outline-text-5" id="text-orgb28ebd8">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #0000ff;">#memory </span>{
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@magenta</span>;
+}
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org0735951"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org0735951">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #0000ff;">#keyboard-state </span>{
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@magenta</span>;
+}
+</pre>
+</div>
+</div>
+</li>
+<li><a id="orgbbb0ecf"></a>temperature<br />
+<div class="outline-text-5" id="text-orgbbb0ecf">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #0000ff;">#temperature </span>{
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@red</span>;
+}
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org4b7e043"></a>modules-left<br />
+<div class="outline-text-5" id="text-org4b7e043">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">.modules-left &gt; widget:first-child &gt; #workspaces </span>{
     <span style="color: #4169e1;">margin-left</span>: 0;
@@ -1851,8 +2044,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org23b6d20"></a>modules-right<br />
-<div class="outline-text-5" id="text-org23b6d20">
+<li><a id="org1cb2853"></a>modules-right<br />
+<div class="outline-text-5" id="text-org1cb2853">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">.modules-right &gt; widget:last-child &gt; #workspaces </span>{
     <span style="color: #4169e1;">margin-right</span>: 0;
@@ -1861,110 +2054,146 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="orgf4dde73"></a>mpris<br />
-<div class="outline-text-5" id="text-orgf4dde73">
+<li><a id="org60f3d99"></a>mpris<br />
+<div class="outline-text-5" id="text-org60f3d99">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#mpris </span>{
-    <span style="color: #4169e1;">padding</span>: 0 4px;
-    <span style="color: #4169e1;">font-size</span>: 9px;
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@warning</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">padding: 0 4px; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">font-size: 9px; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @warning; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@blue</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org7e2ce95"></a>idle_inhibitor<br />
-<div class="outline-text-5" id="text-org7e2ce95">
+<li><a id="org951464c"></a>idle_inhibitor<br />
+<div class="outline-text-5" id="text-org951464c">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#idle_inhibitor </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@blue</span>;
 }
 
 <span style="color: #0000ff;">#idle_inhibitor.activated </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@foreground</span>;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org6e5baff"></a>backlight<br />
-<div class="outline-text-5" id="text-org6e5baff">
+<li><a id="orgc37461f"></a>backlight<br />
+<div class="outline-text-5" id="text-orgc37461f">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#backlight</span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @yellow; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@yellow</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgbfe49b3"></a>pulseaudio<br />
-<div class="outline-text-5" id="text-orgbfe49b3">
+<li><a id="org38632f5"></a>pulseaudio<br />
+<div class="outline-text-5" id="text-org38632f5">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#pulseaudio </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@wireplumber</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @wireplumber; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@blue</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org69a1d0d"></a>wireplumber<br />
-<div class="outline-text-5" id="text-org69a1d0d">
+<li><a id="org72a5ea3"></a>wireplumber<br />
+<div class="outline-text-5" id="text-org72a5ea3">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#wireplumber </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@wireplumber</span>;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgf7369bc"></a>network<br />
-<div class="outline-text-5" id="text-orgf7369bc">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #0000ff;">#network </span>{
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @cyan2; </span><span style="color: #b22222;">*/</span>
-}
-</pre>
-</div>
-</div>
-</li>
-<li><a id="org50061c7"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-org50061c7">
+<li><a id="org170d50b"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org170d50b">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#keyboard-state </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@keyboard</span>;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@green</span>;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org373f181"></a>battery<br />
-<div class="outline-text-5" id="text-org373f181">
+<li><a id="org3a235f9"></a>battery<br />
+<div class="outline-text-5" id="text-org3a235f9">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#battery </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@battery</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @battery; </span><span style="color: #b22222;">*/</span>
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @yellow2; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@magenta</span>;
 }
 
 <span style="color: #0000ff;">#battery.charging, #battery.plugged </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @yellow; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@background</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @background; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+    <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@magenta</span>;
 }
 
-<span style="color: #0000ff;">#battery.warning:not(.charging) </span>{
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background: @red; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @white; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">animation-name</span>: blink;
-    <span style="color: #4169e1;">animation-duration</span>: 0.5s;
-    <span style="color: #4169e1;">animation-timing-function</span>: steps(12);
-    <span style="color: #4169e1;">animation-iteration-count</span>: infinite;
-    <span style="color: #4169e1;">animation-direction</span>: alternate;
-}
+<span style="color: #b22222;">/* </span><span style="color: #b22222;">#battery.warning:not(.charging) { </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">/\* background: @red; *\/ </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">/\* color: @white; *\/ </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">animation-name: blink; </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">animation-duration: 0.5s; </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">animation-timing-function: steps(12); </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">animation-iteration-count: infinite; </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/*     </span><span style="color: #b22222;">animation-direction: alternate; </span><span style="color: #b22222;">*/</span>
+<span style="color: #b22222;">/* </span><span style="color: #b22222;">} </span><span style="color: #b22222;">*/</span>
 
 <span style="color: #0000ff;">#battery.critical:not(.charging) </span>{
-    <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@red</span>;
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@white</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @red; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @white; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">animation-name: blink; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">animation-duration: 0.5s; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">animation-timing-function: linear; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">animation-iteration-count: infinite; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">animation-direction: alternate; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #4169e1;">background-color</span>: <span style="color: #00008b;">@magenta</span>;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
     <span style="color: #4169e1;">animation-name</span>: blink;
     <span style="color: #4169e1;">animation-duration</span>: 0.5s;
     <span style="color: #4169e1;">animation-timing-function</span>: linear;
@@ -1975,93 +2204,197 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org83a4e9b"></a>custom/pacman<br />
-<div class="outline-text-5" id="text-org83a4e9b">
+<li><a id="org8d01d6d"></a>custom/pacman<br />
+<div class="outline-text-5" id="text-org8d01d6d">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#custom-pacman </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @black; </span><span style="color: #b22222;">*/</span>
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @green2; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@yellow</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgac95c54"></a>clock<br />
-<div class="outline-text-5" id="text-orgac95c54">
+<li><a id="orgfe075dc"></a>clock<br />
+<div class="outline-text-5" id="text-orgfe075dc">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#clock.date </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@date</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @date; </span><span style="color: #b22222;">*/</span>
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@green</span>;
 }
 
 <span style="color: #0000ff;">#clock.time </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@time</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @time; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@yellow</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org47d47d6"></a>network<br />
-<div class="outline-text-5" id="text-org47d47d6">
+<li><a id="orgc00d124"></a>network<br />
+<div class="outline-text-5" id="text-orgc00d124">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#network </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@network</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @network; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@magenta</span>;
 }
 
 <span style="color: #0000ff;">#network.wifi </span>{
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@yellow</span>;
 }
 
 <span style="color: #0000ff;">#network.ethernet </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@green</span>;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@blue</span>;
 }
 
 <span style="color: #0000ff;">#network.linked </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@green</span>;
 }
 
 <span style="color: #0000ff;">#network.disconnected </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@red</span>;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@black</span>;
 }
-
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org4770bb7"></a>custom-launcher<br />
+<div class="outline-text-5" id="text-org4770bb7">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #0000ff;">#custom-launcher </span>{
+      <span style="color: #4169e1;">font-size</span>: 24px;
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 5px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@blue</span>;
+}
+</pre>
+</div>
+</div>
+</li>
+<li><a id="org4a6f5ac"></a>custom-power<br />
+<div class="outline-text-5" id="text-org4a6f5ac">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #0000ff;">#custom-power </span>{
+      <span style="color: #4169e1;">font-size</span>: 24px;
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 5px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@blue</span>;
+}
 </pre>
 </div>
 </div>
 </li>
 </ul>
 </li>
-<li><a id="orgb521def"></a>workspaces<br />
-<div class="outline-text-4" id="text-orgb521def">
+<li><a id="org7d62575"></a>workspaces<br />
+<div class="outline-text-4" id="text-org7d62575">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#workspaces </span>{
-    <span style="color: #4169e1;">margin</span>: 0px;
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+    <span style="color: #4169e1;">margin-left</span>: 12px;
+    <span style="color: #4169e1;">font-size</span>: 4px;
+    <span style="color: #4169e1;">margin-bottom</span>: 0px;
+    <span style="color: #4169e1;">border-radius</span>: 10px;
+    <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@green</span>;
+    <span style="color: #4169e1;">transition</span>: none;
 }
 
 <span style="color: #0000ff;">#workspaces button </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@nord</span>_light;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @nord_light; </span><span style="color: #b22222;">*/</span>
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">padding: 0 4px; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@workspacebutton</span>;
-    <span style="color: #4169e1;">font-size</span>: 14px;
-    <span style="color: #4169e1;">font-weight</span>: bold;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @workspacebutton; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">font-size: 14px; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">font-weight: bold; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
+      <span style="color: #4169e1;">background</span>: transparent;
+      <span style="color: #4169e1;">font-size</span>: 16px;
+      <span style="color: #4169e1;">border-radius</span>: 2px;
+}
+
+<span style="color: #0000ff;">#workspaces button.occupied </span>{
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@blue</span>;
+      <span style="color: #4169e1;">background</span>: transparent;
+      <span style="color: #4169e1;">font-size</span>: 4px;
 }
 
 <span style="color: #0000ff;">#workspaces button.empty </span>{
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @cyan; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@cyan</span>;
 }
 
 <span style="color: #0000ff;">#workspaces button.active </span>{
-    <span style="color: #4169e1;">background</span>: inherit;
-    <span style="color: #4169e1;">border-top</span>: 2px solid <span style="color: #00008b;">@magenta</span>;
     <span style="color: #4169e1;">font-weight</span>: bold;
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@magenta</span>;
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@white</span>;
 }
 
 <span style="color: #0000ff;">#workspaces button:hover </span>{
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #b22222;">/* </span><span style="color: #b22222;">box-shadow: inherit; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #b22222;">/* </span><span style="color: #b22222;">text-shadow: inherit; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">border-color: @red; </span><span style="color: #b22222;">*/</span>
 }
 
 <span style="color: #0000ff;">#workspaces button.focused </span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @black; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@red</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @red; </span><span style="color: #b22222;">*/</span>
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">border-top: 2px solid @red; </span><span style="color: #b22222;">*/</span>
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@green</span>;
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">border-top: 2px solid @green; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #b22222;">/* </span><span style="color: #b22222;">border-bottom: 2px solid @green; </span><span style="color: #b22222;">*/</span>
+}
+
+<span style="color: #0000ff;">#workspaces button.focused:hover </span>{
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@red</span>;
 }
 
 <span style="color: #0000ff;">#workspaces button.urgent </span>{
@@ -2071,20 +2404,18 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org1122f2c"></a>mode<br />
-<div class="outline-text-4" id="text-org1122f2c">
+<li><a id="org9be7337"></a>mode<br />
+<div class="outline-text-4" id="text-org9be7337">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#mode </span>{
-    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@mode</span>;
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @black; </span><span style="color: #b22222;">*/</span>
-    <span style="color: #b22222;">/* </span><span style="color: #b22222;">border-bottom: 3px solid @white; </span><span style="color: #b22222;">*/</span>
+    <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
 }
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org663f817"></a>submap<br />
-<div class="outline-text-4" id="text-org663f817">
+<li><a id="org4f4b07f"></a>submap<br />
+<div class="outline-text-4" id="text-org4f4b07f">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#submap </span>{
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
@@ -2093,10 +2424,22 @@ Required packages(<code>archlinux</code>):
 </div>
 </div>
 </li>
-<li><a id="org244e029"></a>tray<br />
-<div class="outline-text-4" id="text-org244e029">
+<li><a id="orgfc3c48b"></a>tray<br />
+<div class="outline-text-4" id="text-orgfc3c48b">
 <div class="org-src-container">
-<pre class="src src-css"><span style="color: #0000ff;">#tray &gt; .passive </span>{
+<pre class="src src-css"><span style="color: #0000ff;">#tray </span>{
+      <span style="color: #4169e1;">margin-top</span>: 6px;
+      <span style="color: #4169e1;">margin-left</span>: 8px;
+      <span style="color: #4169e1;">padding-left</span>: 10px;
+      <span style="color: #4169e1;">padding-right</span>: 10px;
+      <span style="color: #4169e1;">margin-bottom</span>: 0px;
+      <span style="color: #4169e1;">border-radius</span>: 10px;
+      <span style="color: #4169e1;">transition</span>: none;
+      <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@white</span>;
+      <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@blue</span>;
+}
+
+<span style="color: #0000ff;">#tray &gt; .passive </span>{
     -gtk-icon-effect: dim;
 }
 
@@ -2111,38 +2454,32 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 </div>
-<div id="outline-container-org8e46f5c" class="outline-2">
-<h2 id="org8e46f5c">hyprpaper</h2>
-<div class="outline-text-2" id="text-org8e46f5c">
+<div id="outline-container-org60446e6" class="outline-2">
+<h2 id="org60446e6">hyprpaper</h2>
+<div class="outline-text-2" id="text-org60446e6">
 <div class="org-src-container">
-<pre class="src src-conf"><span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/manga/Sora-no-Otoshimono/kazane_hiyori_angel_by_sakurakiel_d4cnyy6.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/nord_scenary.png
+<pre class="src src-conf"><span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/linux-friends-4k.png
+<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/keyboard.png
 <span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/wild.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/waves.jpg
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/subtle_ferns.jpg
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/street_blues.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/ign_duaAnime.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/ign_chainsaw-man.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/ign_animeGirlSleeping.png
-<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/ign_girlWithHeadphones.png
+<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/nord_alone_tree.png
+<span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/nord_buildings.png
 <span style="color: #b8860b;">splash</span> = false
 
-<span style="color: #b8860b;">wallpaper</span> = ,~/.local/share/wallpapers/nord/ign_duaAnime.png
-<span style="color: #b8860b;">wallpaper</span> = eDP1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">wallpaper</span> = DP-1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">wallpaper</span> = DP-2,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">wallpaper</span> = DP-3,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">wallpaper</span> = DP-4,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">wallpaper</span> = DP-5,~/.local/share/wallpapers/nord/ign-hevlettpackard.png
-<span style="color: #b8860b;">wallpaper</span> = HDMI-A-1,~/.local/share/wallpapers/nord/ign_duaAnime.png
+<span style="color: #b22222;"># </span><span style="color: #b22222;">wallpaper = eDP1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">wallpaper = DP-1,~/.local/share/wallpapers/nord/ign-hevlettpackard.png</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">wallpaper = DP-2,~/.local/share/wallpapers/nord/ign-hevlettpackard.png</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">wallpaper = DP-3,~/.local/share/wallpapers/nord/ign-hevlettpackard.png</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">wallpaper = DP-4,~/.local/share/wallpapers/nord/ign-hevlettpackard.png</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">wallpaper = DP-5,~/.local/share/wallpapers/nord/ign-hevlettpackard.png</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">wallpaper = HDMI-A-1,~/.local/share/wallpapers/nord/ign_duaAnime.png</span>
+<span style="color: #b8860b;">wallpaper</span> = ,~/.local/share/wallpapers/nord/linux-friends-4k.png
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgda2f366" class="outline-2">
-<h2 id="orgda2f366">hyprshade</h2>
-<div class="outline-text-2" id="text-orgda2f366">
+<div id="outline-container-org4fb7aed" class="outline-2">
+<h2 id="org4fb7aed">hyprshade</h2>
+<div class="outline-text-2" id="text-org4fb7aed">
 <div class="org-src-container">
 <pre class="src src-toml">[[shades]]
 name = "vibrance"
@@ -2156,9 +2493,9 @@ end_time = 06:00:00   # optional if you have more than one shade with start_time
 </div>
 </div>
 </div>
-<div id="outline-container-org0678cd3" class="outline-2">
-<h2 id="org0678cd3">hyprlock</h2>
-<div class="outline-text-2" id="text-org0678cd3">
+<div id="outline-container-org33f30ea" class="outline-2">
+<h2 id="org33f30ea">hyprlock</h2>
+<div class="outline-text-2" id="text-org33f30ea">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 
@@ -2252,9 +2589,9 @@ end_time = 06:00:00   # optional if you have more than one shade with start_time
 </div>
 </div>
 </div>
-<div id="outline-container-orgbbab3ee" class="outline-2">
-<h2 id="orgbbab3ee">hypridle</h2>
-<div class="outline-text-2" id="text-orgbbab3ee">
+<div id="outline-container-org2426b0b" class="outline-2">
+<h2 id="org2426b0b">hypridle</h2>
+<div class="outline-text-2" id="text-org2426b0b">
 <div class="org-src-container">
 <pre class="src src-conf-unix"><span style="color: #228b22;">general</span> {
   <span style="color: #b8860b;">lock_cmd</span> = pidof hyprlock || hyprlock       <span style="color: #b22222;"># </span><span style="color: #b22222;">avoid starting multiple hyprlock instances.</span>
@@ -2281,13 +2618,13 @@ end_time = 06:00:00   # optional if you have more than one shade with start_time
 </div>
 </div>
 </div>
-<div id="outline-container-org54e9545" class="outline-2">
-<h2 id="org54e9545">Rofi configuration</h2>
-<div class="outline-text-2" id="text-org54e9545">
+<div id="outline-container-org280d0e9" class="outline-2">
+<h2 id="org280d0e9">Rofi configuration</h2>
+<div class="outline-text-2" id="text-org280d0e9">
 </div>
-<div id="outline-container-orgbe6161e" class="outline-3">
-<h3 id="orgbe6161e">hyprland-menu</h3>
-<div class="outline-text-3" id="text-orgbe6161e">
+<div id="outline-container-org4ecbdcd" class="outline-3">
+<h3 id="org4ecbdcd">hyprland-menu</h3>
+<div class="outline-text-3" id="text-org4ecbdcd">
 <p>
 This is the theme used when running <code>rofi -show drun</code>.
 </p>
@@ -2297,25 +2634,67 @@ This is the theme used when running <code>rofi -show drun</code>.
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
 <span class="linenr"> 3: </span>
 <span class="linenr"> 4: </span><span style="color: #0000ff;">window </span>{
-<span class="linenr"> 5: </span>    <span style="color: #4169e1;">location</span>: southwest;
-<span class="linenr"> 6: </span>    <span style="color: #4169e1;">anchor</span>: center;
-<span class="linenr"> 7: </span>    <span style="color: #4169e1;">width</span>: 40%;
-<span class="linenr"> 8: </span>    <span style="color: #4169e1;">x-offset</span>: 1%;
-<span class="linenr"> 9: </span>    <span style="color: #4169e1;">y-offset</span>: -2%;
-<span class="linenr">10: </span>}
-<span class="linenr">11: </span>
-<span class="linenr">12: </span><span style="color: #0000ff;">listview </span>{
-<span class="linenr">13: </span>    <span style="color: #4169e1;">columns</span>: 2;
-<span class="linenr">14: </span>    <span style="color: #4169e1;">lines</span>: 6;
-<span class="linenr">15: </span>    <span style="color: #4169e1;">spacing</span>: 5px;
-<span class="linenr">16: </span>}
+<span class="linenr"> 5: </span>    <span style="color: #4169e1;">transparency</span>: <span style="color: #bc8f8f;">"real"</span>;
+<span class="linenr"> 6: </span>    <span style="color: #4169e1;">location</span>: northwest;
+<span class="linenr"> 7: </span>    <span style="color: #4169e1;">anchor</span>: center;
+<span class="linenr"> 8: </span>    <span style="color: #4169e1;">width</span>: 25%;
+<span class="linenr"> 9: </span>    <span style="color: #4169e1;">x-offset</span>: 0%;
+<span class="linenr">10: </span>    <span style="color: #4169e1;">y-offset</span>: 0%;
+<span class="linenr">11: </span>    <span style="color: #4169e1;">fullscreen</span>: false;
+<span class="linenr">12: </span>    <span style="color: #4169e1;">margin</span>: 0px;
+<span class="linenr">13: </span>    <span style="color: #4169e1;">padding</span>: 0px;
+<span class="linenr">14: </span>}
+<span class="linenr">15: </span>
+<span class="linenr">16: </span><span style="color: #0000ff;">listview </span>{
+<span class="linenr">17: </span>    <span style="color: #4169e1;">columns</span>: 1;
+<span class="linenr">18: </span>    <span style="color: #4169e1;">lines</span>: 6;
+<span class="linenr">19: </span>    <span style="color: #4169e1;">spacing</span>: 5px;
+<span class="linenr">20: </span>    <span style="color: #4169e1;">cycle</span>: true;
+<span class="linenr">21: </span>    <span style="color: #4169e1;">dynamic</span>: true;
+<span class="linenr">22: </span>    <span style="color: #4169e1;">scrollbar</span>: false;
+<span class="linenr">23: </span>    <span style="color: #4169e1;">layout</span>: vertical;
+<span class="linenr">24: </span>    <span style="color: #4169e1;">reverse</span>: false;
+<span class="linenr">25: </span>    <span style="color: #4169e1;">fixed-height</span>: true;
+<span class="linenr">26: </span>    <span style="color: #4169e1;">fixed-width</span>: true;
+<span class="linenr">27: </span>}
+<span class="linenr">28: </span>
+<span class="linenr">29: </span><span style="color: #0000ff;">element </span>{
+<span class="linenr">30: </span>    <span style="color: #4169e1;">spacing</span>: 10px;
+<span class="linenr">31: </span>    <span style="color: #4169e1;">margin</span>: 0px;
+<span class="linenr">32: </span>    <span style="color: #4169e1;">padding</span>: 6px;
+<span class="linenr">33: </span>    <span style="color: #4169e1;">border</span>: 0px solid;
+<span class="linenr">34: </span>    <span style="color: #4169e1;">border-radius</span>: 0px;
+<span class="linenr">35: </span>    <span style="color: #4169e1;">cursor</span>: pointer;
+<span class="linenr">36: </span>}
+<span class="linenr">37: </span>
+<span class="linenr">38: </span><span style="color: #0000ff;">element-icon </span>{
+<span class="linenr">39: </span>    <span style="color: #4169e1;">background</span>: transparent;
+<span class="linenr">40: </span>    <span style="color: #4169e1;">text-color</span>: inherit;
+<span class="linenr">41: </span>    <span style="color: #4169e1;">size</span>: 16px;
+<span class="linenr">42: </span>    <span style="color: #4169e1;">cursor</span>: inherit;
+<span class="linenr">43: </span>}
+<span class="linenr">44: </span>
+<span class="linenr">45: </span><span style="color: #0000ff;">element-text </span>{
+<span class="linenr">46: </span>    <span style="color: #4169e1;">background</span>: transparent;
+<span class="linenr">47: </span>    <span style="color: #4169e1;">text-color</span>: inherit;
+<span class="linenr">48: </span>    <span style="color: #4169e1;">highlight</span>: inherit;
+<span class="linenr">49: </span>    <span style="color: #4169e1;">cursor</span>: inherit;
+<span class="linenr">50: </span>    <span style="color: #b22222;">/* </span><span style="color: #b22222;">vertical-align: 0.5; </span><span style="color: #b22222;">*/</span>
+<span class="linenr">51: </span>    <span style="color: #b22222;">/* </span><span style="color: #b22222;">horizontal-align: 0.5; </span><span style="color: #b22222;">*/</span>
+<span class="linenr">52: </span>}
+<span class="linenr">53: </span>
+<span class="linenr">54: </span><span style="color: #0000ff;">textbox </span>{
+<span class="linenr">55: </span>    <span style="color: #4169e1;">vertical-align</span>: 0.5;
+<span class="linenr">56: </span>    <span style="color: #4169e1;">horizontal-align</span>: 0.0;
+<span class="linenr">57: </span>    <span style="color: #4169e1;">highlight</span>: none;
+<span class="linenr">58: </span>}
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org655490d" class="outline-3">
-<h3 id="org655490d">hyprland-logout</h3>
-<div class="outline-text-3" id="text-org655490d">
+<div id="outline-container-org0d4a0b1" class="outline-3">
+<h3 id="org0d4a0b1">hyprland-logout</h3>
+<div class="outline-text-3" id="text-org0d4a0b1">
 <div class="org-src-container">
 <pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #b22222;">/* </span><span style="color: #b22222;">-*-css -*- </span><span style="color: #b22222;">*/</span>
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
@@ -2342,9 +2721,9 @@ This is the theme used when running <code>rofi -show drun</code>.
 </div>
 </div>
 </div>
-<div id="outline-container-org088ae30" class="outline-3">
-<h3 id="org088ae30">hyprland-clipboard</h3>
-<div class="outline-text-3" id="text-org088ae30">
+<div id="outline-container-org3679aba" class="outline-3">
+<h3 id="org3679aba">hyprland-clipboard</h3>
+<div class="outline-text-3" id="text-org3679aba">
 <div class="org-src-container">
 <pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #b22222;">/* </span><span style="color: #b22222;">-*-css -*- </span><span style="color: #b22222;">*/</span>
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
@@ -2373,7 +2752,7 @@ This is the theme used when running <code>rofi -show drun</code>.
 <div id="postamble" class="status">
 <p class="date">Date: 2024-03-23 Sat 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2024-07-30 Tue 02:51</p>
+<p class="date">Created: 2024-08-18 Sun 01:17</p>
 </div>
 </body>
 </html>
