@@ -32,7 +32,7 @@ Enable the =rainbow-mode= minor-mode for /Emacs/ in this file.
   source = ./hypr.d/variables.conf
   source = ./hypr.d/input.conf
   source = ./hypr.d/general.conf
-  source = ./hypr.d/group.conf
+  source = ./hypr.d/groups.conf
   source = ./hypr.d/decoration.conf
   source = ./hypr.d/animations.conf
   source = ./hypr.d/dwindle.conf
