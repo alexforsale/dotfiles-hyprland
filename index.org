@@ -455,7 +455,11 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   windowrulev2 = float,class:^(pavucontrol)$
   windowrulev2 = size 50%,class:^(pavucontrol)$
 #+end_src
-
+*** =pwvucontrol=
+#+begin_src conf
+  windowrulev2 = float,class:^(com.saivert.pwvucontrol)$
+  windowrulev2 = size 50%,class:^(com.saivert.pwvucontrol)$
+#+end_src
 *** =polkit-kde-agent=
 #+begin_src conf
   windowrulev2 = float,class:(org.kde.polkit-kde-authentication-agent-1)
@@ -729,7 +733,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, D, exec, $menu
   bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
   bind = $mainMod, Comma, exec, rofi -show emoji
-  bind = $mainMod Shift, V, exec, pavucontrol
+  bind = $mainMod Shift, V, exec, pwvucontrol
   bind = $mainMod Alt, V, exec, easyeffects
   #bind = $mainMod Alt, B, exec, blueman-manager
 
