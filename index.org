@@ -141,7 +141,7 @@ Required packages(=archlinux=):
   $editor = emacsclient -c -a emacs
   $editor_term = emacsclient -t -a ""
   $mail = thunderbird
-  $browser = firefox
+  $browser = google-chrome-stable
 #+end_src
 
 *** Environment Variables
