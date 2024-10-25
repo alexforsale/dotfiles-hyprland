@@ -76,7 +76,7 @@ These are the monitors I used across all my machines.
   exec-once = /usr/lib/polkit-kde-authentication-agent-1 &
   exec-once = gnome-keyring-daemon --components=pkcs11,secrets,ssh -r -d &
   exec-once = dbus-launch --sh-syntax --exit-with-session dunst -conf ~/.config/dunst/dunstrc &
-  exec-once = hypridle
+  exec-once = pgrep hypridle || hypridle
   exec-once = waybar &
   exec-once = hyprpaper &
   exec-once = wl-paste --type text --watch cliphist store &
@@ -135,7 +135,7 @@ Required packages(=archlinux=):
 :END:
 *** Applications
 #+begin_src conf
-  $terminal = alacritty
+  $terminal = alacritty --config-file ~/.config/alacritty/alacritty-hyprland.toml
   $fileManager = thunar
   $menu = rofi -show drun -theme hyprland-menu
   $editor = emacsclient -c -a emacs
@@ -2064,6 +2064,89 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
     timeout = 540
     on-timeout = pidof steam || systemctl suspend || loginctl suspend
   }
+#+end_src
+* Alacritty
+** ~/.config/alacritty/alacritty-hyprland.toml
+:PROPERTIES:
+:header-args: :tangle .config/alacritty/alacritty-hyprland.toml :mkdirp t
+:END:
+#+begin_src toml
+  import = ["~/.config/alacritty/themes/nord.toml"]
+  live_config_reload = true
+  [window]
+  dynamic_padding = true
+  decorations = "None"
+  padding = { x = 25, y = 25 }
+  blur = true
+  #startup_mode = "Fullscreen"
+  decorations_theme_variant = "Dark"
+  [scrolling]
+  history = 100000
+  multiplier = 2
+  [font]
+  normal = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Regular" }
+  bold = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Bold" }
+  italic = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Italic" }
+  bold_italic = { family = "JetBrainsMonoNL Nerd Font Mono", style = "Semibold Italic" }
+  size = 8
+  [bell]
+  animation = "EaseOutCirc"
+  duration = 1
+  # command = { program = "canberra-gtk-play", args = ["-i", "bell"] }
+  [cursor]
+  style = { shape = "Beam", blinking = "On" }
+  vi_mode_style = { shape = "Block", blinking = "Off" }
+  [mouse]
+  hide_when_typing = true
+  [selection]
+  save_to_clipboard = true
+  # [shell]
+  # program = "/bin/bash"
+  # args = ["-l"]
+  [[hints.enabled]]
+  command = "xdg-open"
+  hyperlinks = true
+  post_processing = true
+  persist = false
+  mouse.enabled = true
+  binding = { key = "U", mods = "Control|Shift" }
+   regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+#+end_src
+** nord theme
+:PROPERTIES:
+:header-args: :tangle .config/alacritty/themes/nord.toml :mkdirp t
+:END:
+
+#+begin_src toml
+  # -*- eval: (rainbow-mode 1) -*-
+  # Colors (Nord)
+
+  # Default colors
+  [colors.primary]
+  background = '#2E3440'
+  foreground = '#D8DEE9'
+
+  # Normal colors
+  [colors.normal]
+  black   = '#3B4252'
+  red     = '#BF616A'
+  green   = '#A3BE8C'
+  yellow  = '#EBCB8B'
+  blue    = '#81A1C1'
+  magenta = '#B48EAD'
+  cyan    = '#88C0D0'
+  white   = '#E5E9F0'
+
+  # Bright colors
+  [colors.bright]
+  black   = '#4C566A'
+  red     = '#BF616A'
+  green   = '#A3BE8C'
+  yellow  = '#EBCB8B'
+  blue    = '#81A1C1'
+  magenta = '#B48EAD'
+  cyan    = '#8FBCBB'
+  white   = '#ECEFF4'
 #+end_src
 * Rofi configuration
 ** hyprland-menu
