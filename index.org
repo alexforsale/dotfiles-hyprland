@@ -2071,6 +2071,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 :header-args: :tangle .config/alacritty/alacritty-hyprland.toml :mkdirp t
 :END:
 #+begin_src toml
+  [general]
   import = ["~/.config/alacritty/themes/nord.toml"]
   live_config_reload = true
   [window]
