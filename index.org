@@ -63,6 +63,10 @@ I split the configuration file into sections, based on the section from the [[ht
 
   # laptop
   monitor = HDMI-A-1, preferred, auto, 1
+
+  # specific monitors
+  # Samsung
+  monitor = desc:Samsung Electric Company SMS19A100 HMAC900747, preferred, auto, 1
 #+end_src
 These are the monitors I used across all my machines.
 ** =~/.config/hypr/hypr.d/autostart.conf=
