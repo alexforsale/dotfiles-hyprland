@@ -831,9 +831,11 @@ Also to conserve resource, I tend to only have terminal based application in the
   binde = , XF86MonBrightnessDown, exec, ~/.local/bin/dunst-backlight 1%-
   # binde = , XF86MonBrightnessDown, exec, brightnessctl set 1%-
 
-  bind= , Print, exec, grim "$(echo ~/Pictures/Screenshots/Screenshot1-$(date +'%Y%m%d_%H%M%S').png)"
+  bind = , Print, exec, grim "$(echo ~/Pictures/Screenshots/Screenshot1-$(date +'%Y%m%d_%H%M%S').png)"
   bind = Control, Print, exec, grim -g "$(slurp)" - | swappy -f -
   bind = Alt, Print, exec, kooha
+
+  bind = $mainMod Shift, S, exec, grim -g "$(slurp)" - | swappy -f -
 #+end_src
 *** =dunst=
 #+begin_src conf
