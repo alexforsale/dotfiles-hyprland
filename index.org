@@ -122,6 +122,8 @@ Required packages(=archlinux=):
   exec-once = gsettings set org.gnome.desktop.interface gtk-theme Breeze
   exec-once = gsettings set org.gnome.desktop.interface gtk-key-theme Emacs
   exec-once = gsettings set org.gnome.desktop.interface icon-theme Papirus
+  exec-once = gsettings set org.gnome.desktop.interface color-scheme \'prefer-dark\'
+  exec-once = gsettings set org.gnome.desktop.interface text-scaling-factor 0.9
   exec-once = gsettings set org.gnome.desktop.sound theme-name freedesktop
   exec-once = gsettings set org.gnome.desktop.sound input-feedback-sounds true
   exec-once = gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
@@ -1436,7 +1438,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
       border: none;
       border-radius: 10px;
       font-family: FontAwesome, JetBrainsMonoNL Nerd Font Mono;
-      font-size: 12px;
+      font-size: 11px;
       min-height: 10px;
   }
 #+end_src
