@@ -251,34 +251,37 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 
 #+begin_src conf
   decoration {
-  # See https://wiki.hyprland.org/Configuring/Variables/ for more
+      # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
-  rounding = 20
+      rounding = 20
 
-  blur {
-  enabled = true
-  xray = true
-  special = false
-  new_optimizations = true
-  size = 14
-  passes = 4
-  brightness = 1
-  noise = 0.01
-  contrast = 1
-  popups = true
-  popups_ignorealpha = 0.6
-  }
+      blur {
+      enabled = true
+      xray = true
+      special = false
+      new_optimizations = true
+      size = 14
+      passes = 4
+      brightness = 1
+      noise = 0.01
+      contrast = 1
+      popups = true
+      popups_ignorealpha = 0.6
 
-  drop_shadow = true
-  shadow_ignore_window = true
-  shadow_range = 20
-  shadow_offset = 0 2
-  shadow_render_power = 4
-  col.shadow = rgba(0000002A)
+      }
 
-  dim_inactive = false
-  dim_strength = 0.1
-  dim_special = 0
+      shadow {
+          enabled = true
+          ignore_window = true
+          render_power = 4
+          range = 20
+          offset = 0 2
+          color = rgba(0000002A)
+      }
+
+      dim_inactive = false
+      dim_strength = 0.1
+      dim_special = 0
   }
 #+end_src
 
@@ -547,7 +550,11 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 #+begin_src conf
   windowrulev2 = float, workspace 8, class:(org.remmina.Remmina)
 #+end_src
-
+*** libvirt / virt-manager
+#+begin_src conf
+  windowrulev2 = float, workspace 9, class:(virt-manager), initialTitle:(QEMU/KVM - Connection Details)
+  windowrulev2 = float, workspace 9, class:(virt-manager), initialTitle:(.*on QEMU/KVM)
+#+end_src
 *** =transmission=
 #+begin_src conf
   windowrulev2 = workspace 9,class:^(com.transmissionbt.transmission).*
