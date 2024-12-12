@@ -97,6 +97,7 @@ These are the monitors I used across all my machines.
   # exec-once = /usr/lib/kdeconnectd
   # exec-once = kdeconnect-indicator
   exec-once = udiskie -t
+  exec-once = ~/.local/bin/toggleLeds
 #+end_src
 
 Required packages(=archlinux=):
@@ -114,6 +115,18 @@ Required packages(=archlinux=):
 - thunar
 - hypridle
 
+~/.local/bin/toggleLeds is just a script for calling another python scripts (see [[https://github.com/bigrand/scrolllock-wlroots-workaround/blob/main/ledToggler.py][here]] for the actual script) for toggling my keyboard leds. I use another bash script since I don't want to hardcode the input device location here.
+#+begin_src bash :tangle no
+  #!/usr/bin/env bash
+
+  if ! $(pgrep ledToggler.py) &>/dev/null; then
+      setsid ledToggler.py /dev/input/event4 scrolllock scrolllock 1 1
+  fi
+#+end_src
+This is a very hacky solution, and it messes up my scrolling in /Emacs/. Should be removed when the leds handling is better in wayland, or buy better keyboard. And my keyboard description:
+#+begin_quote
+Bus 001 Device 003: ID 2a7a:9597  CASUE USB KB
+#+end_quote
 *** Additional GTK Settings
 #+begin_src conf
   exec-once = gsettings set org.gnome.desktop.interface font-name "JetBrainsMonoNL Nerd Font Mono 10"
