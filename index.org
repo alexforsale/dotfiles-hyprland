@@ -94,8 +94,8 @@ These are the monitors I used across all my machines.
   exec-once = blueman-applet &
   exec-once = blueman-tray &
   exec-once = nm-applet --indicator
-  # exec-once = /usr/lib/kdeconnectd
-  # exec-once = kdeconnect-indicator
+  exec-once = /usr/bin/kdeconnectd
+  exec-once = kdeconnect-indicator
   exec-once = udiskie -t
   exec-once = ~/.local/bin/toggleLeds
 #+end_src
