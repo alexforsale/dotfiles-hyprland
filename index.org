@@ -530,6 +530,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 *** =file-roller=
 #+begin_src conf
   windowrulev2 = float, class:(file-roller)
+  windowrulev2 = float, class:(org.gnome.FileRoller)
+  windowrulev2 = float, title:(Compress)
 #+end_src
 
 *** =ncmpcpp=
