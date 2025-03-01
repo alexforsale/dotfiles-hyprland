@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-03-01 Sat 13:38 -->
+<!-- 2025-03-01 Sat 15:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hyprland and Hyprland-related configuration files</title>
@@ -201,66 +201,66 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7fb020f">Hyprland</a>
+<li><a href="#org2799057">Hyprland</a>
 <ul>
-<li><a href="#org49f0fe0"><code>~/.config/hypr/hypland.conf</code></a></li>
-<li><a href="#orgf921d73"><code>~/.config/hypr/hypr.d/monitors.conf</code></a></li>
-<li><a href="#org96741fe"><code>~/.config/hypr/hypr.d/autostart.conf</code></a></li>
-<li><a href="#org20b7365"><code>~/.config/hypr/hypr.d/variables.conf</code></a></li>
-<li><a href="#org19e9437"><code>~/.config/hypr/hypr.d/input.conf</code></a></li>
-<li><a href="#org63467a9"><code>~/.config/hypr/hypr.d/general.conf</code></a></li>
-<li><a href="#orgdf72c3c"><code>~/.config/hypr/hypr.d/decoration.conf</code></a></li>
-<li><a href="#orgc310272"><code>~/.config/hypr/hypr.d/animations.conf</code></a></li>
-<li><a href="#org00e40fc"><code>~/.config/hypr/hypr.d/dwindle.conf</code></a></li>
-<li><a href="#org3ee0ee6"><code>~/.config/hypr/hypr.d/master.conf</code></a></li>
-<li><a href="#org306db14"><code>~/.config/hypr/hypr.d/gestures.conf</code></a></li>
-<li><a href="#org453da8b"><code>~/.config/hypr/hypr.d/groups.conf</code></a></li>
-<li><a href="#org776a3c1"><code>~/.config/hypr/hypr.d/binds.conf</code></a></li>
-<li><a href="#org18c2e8f"><code>~/.config/hypr/hypr.d/misc.conf</code></a></li>
-<li><a href="#orgeaffc05"><code>~/.config/hypr/hypr.d/devices.conf</code></a></li>
-<li><a href="#orgd915e9a"><code>~/.config/hypr/hypr.d/windowrule.conf</code></a></li>
-<li><a href="#org6b17fbe"><code>~/.config/hypr/hypr.d/workspaces.conf</code></a></li>
-<li><a href="#orgc577590"><code>~/.config/hypr/hypr.d/keybindings.conf</code></a></li>
+<li><a href="#org6cba883"><code>~/.config/hypr/hypland.conf</code></a></li>
+<li><a href="#orga5cca5f"><code>~/.config/hypr/hypr.d/monitors.conf</code></a></li>
+<li><a href="#orge2391af"><code>~/.config/hypr/hypr.d/autostart.conf</code></a></li>
+<li><a href="#orgeabd640"><code>~/.config/hypr/hypr.d/variables.conf</code></a></li>
+<li><a href="#org98bbcad"><code>~/.config/hypr/hypr.d/input.conf</code></a></li>
+<li><a href="#org4144a7a"><code>~/.config/hypr/hypr.d/general.conf</code></a></li>
+<li><a href="#orgfbaabc6"><code>~/.config/hypr/hypr.d/decoration.conf</code></a></li>
+<li><a href="#org6947fdf"><code>~/.config/hypr/hypr.d/animations.conf</code></a></li>
+<li><a href="#orge6cc47d"><code>~/.config/hypr/hypr.d/dwindle.conf</code></a></li>
+<li><a href="#org82a606c"><code>~/.config/hypr/hypr.d/master.conf</code></a></li>
+<li><a href="#org2354c91"><code>~/.config/hypr/hypr.d/gestures.conf</code></a></li>
+<li><a href="#org0adcd2d"><code>~/.config/hypr/hypr.d/groups.conf</code></a></li>
+<li><a href="#org599637b"><code>~/.config/hypr/hypr.d/binds.conf</code></a></li>
+<li><a href="#org231a201"><code>~/.config/hypr/hypr.d/misc.conf</code></a></li>
+<li><a href="#orgb5b7114"><code>~/.config/hypr/hypr.d/devices.conf</code></a></li>
+<li><a href="#orgeb3b8a6"><code>~/.config/hypr/hypr.d/windowrule.conf</code></a></li>
+<li><a href="#org13f6961"><code>~/.config/hypr/hypr.d/workspaces.conf</code></a></li>
+<li><a href="#orgacac2ba"><code>~/.config/hypr/hypr.d/keybindings.conf</code></a></li>
 </ul>
 </li>
-<li><a href="#org0cef9b4">waybar</a>
+<li><a href="#orge4b37c9">waybar</a>
 <ul>
-<li><a href="#org93f888b"><code>~/.config/waybar/config</code></a></li>
-<li><a href="#org1982046"><code>~/.config/waybar/style.css</code></a></li>
+<li><a href="#org90012cd"><code>~/.config/waybar/config</code></a></li>
+<li><a href="#org6b57fd6"><code>~/.config/waybar/style.css</code></a></li>
 </ul>
 </li>
-<li><a href="#orgb7ceb68">hyprpaper</a></li>
-<li><a href="#org94a5ed7">hyprshade</a></li>
-<li><a href="#org7c3df38">hyprlock</a></li>
-<li><a href="#org5899f76">hypridle</a></li>
-<li><a href="#org067dd20">Alacritty</a>
+<li><a href="#org027165d">hyprpaper</a></li>
+<li><a href="#orgd8c0e73">hyprshade</a></li>
+<li><a href="#org151b907">hyprlock</a></li>
+<li><a href="#org0cb6695">hypridle</a></li>
+<li><a href="#org837cddd">Alacritty</a>
 <ul>
-<li><a href="#org5d6e16c">~/.config/alacritty/alacritty-hyprland.toml</a></li>
-<li><a href="#orgfe405c7">nord theme</a></li>
+<li><a href="#org35a8e31">~/.config/alacritty/alacritty-hyprland.toml</a></li>
+<li><a href="#org5076dd4">nord theme</a></li>
 </ul>
 </li>
-<li><a href="#org36a14bd">Swappy</a></li>
-<li><a href="#orgcfb874a">Rofi configuration</a>
+<li><a href="#org833aeb6">Swappy</a></li>
+<li><a href="#org0553b2b">Rofi configuration</a>
 <ul>
-<li><a href="#org55f0f5d">hyprland-menu</a></li>
-<li><a href="#org9c71d1d">hyprland-logout</a></li>
-<li><a href="#org56560a9">hyprland-clipboard</a></li>
+<li><a href="#org4ef4da3">hyprland-menu</a></li>
+<li><a href="#org75d295d">hyprland-logout</a></li>
+<li><a href="#orgf131be5">hyprland-clipboard</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7fb020f" class="outline-2">
-<h2 id="org7fb020f">Hyprland</h2>
-<div class="outline-text-2" id="text-org7fb020f">
+<div id="outline-container-org2799057" class="outline-2">
+<h2 id="org2799057">Hyprland</h2>
+<div class="outline-text-2" id="text-org2799057">
 </div>
-<div id="outline-container-org49f0fe0" class="outline-3">
-<h3 id="org49f0fe0"><code>~/.config/hypr/hypland.conf</code></h3>
-<div class="outline-text-3" id="text-org49f0fe0">
+<div id="outline-container-org6cba883" class="outline-3">
+<h3 id="org6cba883"><code>~/.config/hypr/hypland.conf</code></h3>
+<div class="outline-text-3" id="text-org6cba883">
 </div>
 <ul class="org-ul">
-<li><a id="org5d9cc97"></a>Modular configuration files<br />
-<div class="outline-text-4" id="text-org5d9cc97">
+<li><a id="org1525c7b"></a>Modular configuration files<br />
+<div class="outline-text-4" id="text-org1525c7b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">source</span> = ./hypr.d/monitors.conf
 <span style="color: #b8860b;">source</span> = ./hypr.d/autostart.conf
@@ -288,9 +288,9 @@ I split the configuration file into sections, based on the section from the <a h
 </li>
 </ul>
 </div>
-<div id="outline-container-orgf921d73" class="outline-3">
-<h3 id="orgf921d73"><code>~/.config/hypr/hypr.d/monitors.conf</code></h3>
-<div class="outline-text-3" id="text-orgf921d73">
+<div id="outline-container-orga5cca5f" class="outline-3">
+<h3 id="orga5cca5f"><code>~/.config/hypr/hypr.d/monitors.conf</code></h3>
+<div class="outline-text-3" id="text-orga5cca5f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Monitors/</span>
 <span style="color: #b8860b;">monitor</span>=,highrr,auto,1
@@ -314,9 +314,9 @@ These are the monitors I used across all my machines.
 </p>
 </div>
 </div>
-<div id="outline-container-org96741fe" class="outline-3">
-<h3 id="org96741fe"><code>~/.config/hypr/hypr.d/autostart.conf</code></h3>
-<div class="outline-text-3" id="text-org96741fe">
+<div id="outline-container-orge2391af" class="outline-3">
+<h3 id="orge2391af"><code>~/.config/hypr/hypr.d/autostart.conf</code></h3>
+<div class="outline-text-3" id="text-orge2391af">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME SSH_AUTH_SOCK
 <span style="color: #b8860b;">exec-once</span> = dbus-update-activation-environment --systemd --all &amp;
@@ -384,8 +384,8 @@ Bus 001 Device 003: ID 2a7a:9597  CASUE USB KB
 </blockquote>
 </div>
 <ul class="org-ul">
-<li><a id="org86b2afa"></a>Additional GTK Settings<br />
-<div class="outline-text-4" id="text-org86b2afa">
+<li><a id="org2b5e225"></a>Additional GTK Settings<br />
+<div class="outline-text-4" id="text-org2b5e225">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = gsettings set org.gnome.desktop.interface font-name <span style="color: #bc8f8f;">"JetBrainsMonoNL Nerd Font Mono 10"</span>
 <span style="color: #b8860b;">exec-once</span> = gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic
@@ -415,13 +415,13 @@ Required packages(<code>archlinux</code>):
 </ul>
 </div>
 
-<div id="outline-container-org20b7365" class="outline-3">
-<h3 id="org20b7365"><code>~/.config/hypr/hypr.d/variables.conf</code></h3>
-<div class="outline-text-3" id="text-org20b7365">
+<div id="outline-container-orgeabd640" class="outline-3">
+<h3 id="orgeabd640"><code>~/.config/hypr/hypr.d/variables.conf</code></h3>
+<div class="outline-text-3" id="text-orgeabd640">
 </div>
 <ul class="org-ul">
-<li><a id="orgbbd01a1"></a>Applications<br />
-<div class="outline-text-4" id="text-orgbbd01a1">
+<li><a id="org7832d6b"></a>Applications<br />
+<div class="outline-text-4" id="text-org7832d6b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$terminal</span> = alacritty --config-file ~/.config/alacritty/alacritty-hyprland.toml
 <span style="color: #b8860b;">$fileManager</span> = thunar
@@ -435,8 +435,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="orgff94015"></a>Environment Variables<br />
-<div class="outline-text-4" id="text-orgff94015">
+<li><a id="orgdfa8593"></a>Environment Variables<br />
+<div class="outline-text-4" id="text-orgdfa8593">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">env</span> = QT_QPA_PLATFORM,wayland
 <span style="color: #b8860b;">env</span> = QT_QPA_PLATFORMTHEME,qt5ct <span style="color: #b22222;"># </span><span style="color: #b22222;">change to qt6ct if you have that</span>
@@ -456,8 +456,8 @@ Required packages(<code>archlinux</code>):
 </div>
 </li>
 
-<li><a id="org004dd19"></a>Wallpapers<br />
-<div class="outline-text-4" id="text-org004dd19">
+<li><a id="org5f59da2"></a>Wallpapers<br />
+<div class="outline-text-4" id="text-org5f59da2">
 <p>
 This will set the wallpaper for each workspaces. The one I used is stored at my gitlab <a href="https://gitlab.com/alexforsale/wallpapers">repository</a>.
 </p>
@@ -482,9 +482,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </ul>
 </div>
 
-<div id="outline-container-org19e9437" class="outline-3">
-<h3 id="org19e9437"><code>~/.config/hypr/hypr.d/input.conf</code></h3>
-<div class="outline-text-3" id="text-org19e9437">
+<div id="outline-container-org98bbcad" class="outline-3">
+<h3 id="org98bbcad"><code>~/.config/hypr/hypr.d/input.conf</code></h3>
+<div class="outline-text-3" id="text-org98bbcad">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">input</span> {
 <span style="color: #b8860b;">kb_layout</span> = us
@@ -515,9 +515,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 
-<div id="outline-container-org63467a9" class="outline-3">
-<h3 id="org63467a9"><code>~/.config/hypr/hypr.d/general.conf</code></h3>
-<div class="outline-text-3" id="text-org63467a9">
+<div id="outline-container-org4144a7a" class="outline-3">
+<h3 id="org4144a7a"><code>~/.config/hypr/hypr.d/general.conf</code></h3>
+<div class="outline-text-3" id="text-org4144a7a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">general</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -543,9 +543,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 
-<div id="outline-container-orgdf72c3c" class="outline-3">
-<h3 id="orgdf72c3c"><code>~/.config/hypr/hypr.d/decoration.conf</code></h3>
-<div class="outline-text-3" id="text-orgdf72c3c">
+<div id="outline-container-orgfbaabc6" class="outline-3">
+<h3 id="orgfbaabc6"><code>~/.config/hypr/hypr.d/decoration.conf</code></h3>
+<div class="outline-text-3" id="text-orgfbaabc6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">decoration</span> {
     <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -585,9 +585,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 
-<div id="outline-container-orgc310272" class="outline-3">
-<h3 id="orgc310272"><code>~/.config/hypr/hypr.d/animations.conf</code></h3>
-<div class="outline-text-3" id="text-orgc310272">
+<div id="outline-container-org6947fdf" class="outline-3">
+<h3 id="org6947fdf"><code>~/.config/hypr/hypr.d/animations.conf</code></h3>
+<div class="outline-text-3" id="text-org6947fdf">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">animations</span> {
 <span style="color: #b8860b;">enabled</span> = true
@@ -627,9 +627,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-org00e40fc" class="outline-3">
-<h3 id="org00e40fc"><code>~/.config/hypr/hypr.d/dwindle.conf</code></h3>
-<div class="outline-text-3" id="text-org00e40fc">
+<div id="outline-container-orge6cc47d" class="outline-3">
+<h3 id="orge6cc47d"><code>~/.config/hypr/hypr.d/dwindle.conf</code></h3>
+<div class="outline-text-3" id="text-orge6cc47d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">dwindle</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more</span>
@@ -642,9 +642,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-org3ee0ee6" class="outline-3">
-<h3 id="org3ee0ee6"><code>~/.config/hypr/hypr.d/master.conf</code></h3>
-<div class="outline-text-3" id="text-org3ee0ee6">
+<div id="outline-container-org82a606c" class="outline-3">
+<h3 id="org82a606c"><code>~/.config/hypr/hypr.d/master.conf</code></h3>
+<div class="outline-text-3" id="text-org82a606c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">master</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Master-Layout/ for more</span>
@@ -653,9 +653,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-org306db14" class="outline-3">
-<h3 id="org306db14"><code>~/.config/hypr/hypr.d/gestures.conf</code></h3>
-<div class="outline-text-3" id="text-org306db14">
+<div id="outline-container-org2354c91" class="outline-3">
+<h3 id="org2354c91"><code>~/.config/hypr/hypr.d/gestures.conf</code></h3>
+<div class="outline-text-3" id="text-org2354c91">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">gestures</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -672,9 +672,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-org453da8b" class="outline-3">
-<h3 id="org453da8b"><code>~/.config/hypr/hypr.d/groups.conf</code></h3>
-<div class="outline-text-3" id="text-org453da8b">
+<div id="outline-container-org0adcd2d" class="outline-3">
+<h3 id="org0adcd2d"><code>~/.config/hypr/hypr.d/groups.conf</code></h3>
+<div class="outline-text-3" id="text-org0adcd2d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">group</span> {
 <span style="color: #b8860b;">insert_after_current</span> = true
@@ -703,9 +703,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-org776a3c1" class="outline-3">
-<h3 id="org776a3c1"><code>~/.config/hypr/hypr.d/binds.conf</code></h3>
-<div class="outline-text-3" id="text-org776a3c1">
+<div id="outline-container-org599637b" class="outline-3">
+<h3 id="org599637b"><code>~/.config/hypr/hypr.d/binds.conf</code></h3>
+<div class="outline-text-3" id="text-org599637b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">binds</span> {
 <span style="color: #b8860b;">workspace_back_and_forth</span> = false
@@ -717,9 +717,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 
-<div id="outline-container-org18c2e8f" class="outline-3">
-<h3 id="org18c2e8f"><code>~/.config/hypr/hypr.d/misc.conf</code></h3>
-<div class="outline-text-3" id="text-org18c2e8f">
+<div id="outline-container-org231a201" class="outline-3">
+<h3 id="org231a201"><code>~/.config/hypr/hypr.d/misc.conf</code></h3>
+<div class="outline-text-3" id="text-org231a201">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">misc</span> {
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
@@ -744,9 +744,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-orgeaffc05" class="outline-3">
-<h3 id="orgeaffc05"><code>~/.config/hypr/hypr.d/devices.conf</code></h3>
-<div class="outline-text-3" id="text-orgeaffc05">
+<div id="outline-container-orgb5b7114" class="outline-3">
+<h3 id="orgb5b7114"><code>~/.config/hypr/hypr.d/devices.conf</code></h3>
+<div class="outline-text-3" id="text-orgb5b7114">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">device</span> {
 <span style="color: #b8860b;">name</span> = epic-mouse-v1
@@ -756,13 +756,13 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </div>
-<div id="outline-container-orgd915e9a" class="outline-3">
-<h3 id="orgd915e9a"><code>~/.config/hypr/hypr.d/windowrule.conf</code></h3>
-<div class="outline-text-3" id="text-orgd915e9a">
+<div id="outline-container-orgeb3b8a6" class="outline-3">
+<h3 id="orgeb3b8a6"><code>~/.config/hypr/hypr.d/windowrule.conf</code></h3>
+<div class="outline-text-3" id="text-orgeb3b8a6">
 </div>
 <ul class="org-ul">
-<li><a id="org29ddd4e"></a>For all windows<br />
-<div class="outline-text-4" id="text-org29ddd4e">
+<li><a id="org734f242"></a>For all windows<br />
+<div class="outline-text-4" id="text-org734f242">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span> = noblur,.*
 <span style="color: #b8860b;">windowrulev2</span> = suppressevent maximize, class:.* <span style="color: #b22222;"># </span><span style="color: #b22222;">You'll probably like this.</span>
@@ -772,8 +772,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org06bb41c"></a><code>pavucontrol</code><br />
-<div class="outline-text-4" id="text-org06bb41c">
+<li><a id="org73d82d9"></a><code>pavucontrol</code><br />
+<div class="outline-text-4" id="text-org73d82d9">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:^(pavucontrol)$
 <span style="color: #b8860b;">windowrulev2</span> = size 50%,class:^(pavucontrol)$
@@ -781,8 +781,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </li>
-<li><a id="orge1f9461"></a><code>pwvucontrol</code><br />
-<div class="outline-text-4" id="text-orge1f9461">
+<li><a id="org2b7103e"></a><code>pwvucontrol</code><br />
+<div class="outline-text-4" id="text-org2b7103e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:^(com.saivert.pwvucontrol)$
 <span style="color: #b8860b;">windowrulev2</span> = size 50%,class:^(com.saivert.pwvucontrol)$
@@ -790,8 +790,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </li>
-<li><a id="org09d3ae8"></a><code>polkit-kde-agent</code><br />
-<div class="outline-text-4" id="text-org09d3ae8">
+<li><a id="org6cf7487"></a><code>polkit-kde-agent</code><br />
+<div class="outline-text-4" id="text-org6cf7487">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(org.kde.polkit-kde-authentication-agent-1)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(org.kde.polkit-kde-authentication-agent-1)
@@ -800,8 +800,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org9991a7c"></a><code>blueman</code><br />
-<div class="outline-text-4" id="text-org9991a7c">
+<li><a id="orge968039"></a><code>blueman</code><br />
+<div class="outline-text-4" id="text-orge968039">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(blueman)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(blueman)
@@ -811,8 +811,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org962ef77"></a><code>thunderbird</code><br />
-<div class="outline-text-4" id="text-org962ef77">
+<li><a id="org1a821b0"></a><code>thunderbird</code><br />
+<div class="outline-text-4" id="text-org1a821b0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(status)
 <span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(.*)(Reminders)
@@ -827,8 +827,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org3b3bf09"></a><code>firefox</code><br />
-<div class="outline-text-4" id="text-org3b3bf09">
+<li><a id="orgfc8ab8b"></a><code>firefox</code><br />
+<div class="outline-text-4" id="text-orgfc8ab8b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = idleinhibit always, class:firefox title:(.*)(- YouTube)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:firefox title:(.*)(- YouTube)
@@ -837,8 +837,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orgdeffbd0"></a><code>Qtpass</code><br />
-<div class="outline-text-4" id="text-orgdeffbd0">
+<li><a id="orgb427d36"></a><code>Qtpass</code><br />
+<div class="outline-text-4" id="text-orgb427d36">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(QtPass)
 </pre>
@@ -846,8 +846,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orgebb1d19"></a><code>zoom</code><br />
-<div class="outline-text-4" id="text-orgebb1d19">
+<li><a id="orgecf3818"></a><code>zoom</code><br />
+<div class="outline-text-4" id="text-orgecf3818">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(zoom)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(zoom)
@@ -859,17 +859,19 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orgd3294a6"></a><code>file-roller</code><br />
-<div class="outline-text-4" id="text-orgd3294a6">
+<li><a id="orgb2394e4"></a><code>file-roller</code><br />
+<div class="outline-text-4" id="text-orgb2394e4">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(file-roller)
+<span style="color: #b8860b;">windowrulev2</span> = float, class:(org.gnome.FileRoller)
+<span style="color: #b8860b;">windowrulev2</span> = float, title:(Compress)
 </pre>
 </div>
 </div>
 </li>
 
-<li><a id="org9561bcf"></a><code>ncmpcpp</code><br />
-<div class="outline-text-4" id="text-org9561bcf">
+<li><a id="org2a25a0b"></a><code>ncmpcpp</code><br />
+<div class="outline-text-4" id="text-org2a25a0b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(ncmpcpp)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(ncmpcpp)
@@ -879,8 +881,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orgf15c897"></a><code>khal</code><br />
-<div class="outline-text-4" id="text-orgf15c897">
+<li><a id="org12207d1"></a><code>khal</code><br />
+<div class="outline-text-4" id="text-org12207d1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(khal)
 <span style="color: #b8860b;">windowrulev2</span> = size 40%, class:(khal)
@@ -890,8 +892,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org4356550"></a><code>astroid</code><br />
-<div class="outline-text-4" id="text-org4356550">
+<li><a id="org4b5927f"></a><code>astroid</code><br />
+<div class="outline-text-4" id="text-org4b5927f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 4, class:(astroid)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(astroid)
@@ -900,8 +902,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orga3b7547"></a><code>vlc</code><br />
-<div class="outline-text-4" id="text-orga3b7547">
+<li><a id="org965458f"></a><code>vlc</code><br />
+<div class="outline-text-4" id="text-org965458f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 7,class:(vlc)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1,class:(vlc)
@@ -911,16 +913,16 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org4000989"></a><code>remmina</code><br />
-<div class="outline-text-4" id="text-org4000989">
+<li><a id="org0efc971"></a><code>remmina</code><br />
+<div class="outline-text-4" id="text-org0efc971">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, workspace 8, class:(org.remmina.Remmina)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org9c48080"></a>libvirt / virt-manager<br />
-<div class="outline-text-4" id="text-org9c48080">
+<li><a id="org97a73e4"></a>libvirt / virt-manager<br />
+<div class="outline-text-4" id="text-org97a73e4">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, workspace 9, class:(virt-manager), initialTitle:(QEMU/KVM - Connection Details)
 <span style="color: #b8860b;">windowrulev2</span> = float, workspace 9, class:(virt-manager), initialTitle:(.*on QEMU/KVM)
@@ -928,8 +930,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </li>
-<li><a id="orgef47e35"></a><code>transmission</code><br />
-<div class="outline-text-4" id="text-orgef47e35">
+<li><a id="orgd410f98"></a><code>transmission</code><br />
+<div class="outline-text-4" id="text-orgd410f98">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 9,class:^(com.transmissionbt.transmission).*
 <span style="color: #b8860b;">windowrulev2</span> = float,title:(Torrent.*)
@@ -938,8 +940,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org2ffe169"></a>dialogs<br />
-<div class="outline-text-4" id="text-org2ffe169">
+<li><a id="org363306c"></a>dialogs<br />
+<div class="outline-text-4" id="text-org363306c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span>=float,title:^(Open File)(.*)$
 <span style="color: #b8860b;">windowrule</span>=float,title:^(Select a File)(.*)$
@@ -953,8 +955,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orgaa86ae6"></a><code>thunar</code><br />
-<div class="outline-text-4" id="text-orgaa86ae6">
+<li><a id="orga612d81"></a><code>thunar</code><br />
+<div class="outline-text-4" id="text-orga612d81">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span> = center, title:^(Open File)(.*)$
 <span style="color: #b8860b;">windowrule</span> = center, title:^(Select a File)(.*)$
@@ -970,8 +972,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orgfbab917"></a>no tearing<br />
-<div class="outline-text-4" id="text-orgfbab917">
+<li><a id="org9649ae9"></a>no tearing<br />
+<div class="outline-text-4" id="text-org9649ae9">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = noshadow,floating:0
 </pre>
@@ -979,8 +981,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org617bc03"></a><code>htop</code><br />
-<div class="outline-text-4" id="text-org617bc03">
+<li><a id="org231f720"></a><code>htop</code><br />
+<div class="outline-text-4" id="text-org231f720">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(htop)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 40%, class:(htop)
@@ -990,8 +992,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org1de3a57"></a><code>nmtui</code><br />
-<div class="outline-text-4" id="text-org1de3a57">
+<li><a id="org8b3e41e"></a><code>nmtui</code><br />
+<div class="outline-text-4" id="text-org8b3e41e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(nmtui)
 </pre>
@@ -999,8 +1001,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org4c1a66b"></a><code>vim</code><br />
-<div class="outline-text-4" id="text-org4c1a66b">
+<li><a id="org5f2c84c"></a><code>vim</code><br />
+<div class="outline-text-4" id="text-org5f2c84c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(vim)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(vim)
@@ -1009,8 +1011,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="org63b4284"></a><code>Emacs</code> (in terminal mode)<br />
-<div class="outline-text-4" id="text-org63b4284">
+<li><a id="org050ff72"></a><code>Emacs</code> (in terminal mode)<br />
+<div class="outline-text-4" id="text-org050ff72">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = maximize, class:(nw-emacs)
 </pre>
@@ -1018,8 +1020,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </li>
 
-<li><a id="orge20d639"></a><code>showmethekey</code><br />
-<div class="outline-text-4" id="text-orge20d639">
+<li><a id="org1844822"></a><code>showmethekey</code><br />
+<div class="outline-text-4" id="text-org1844822">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(one.alynx.showmethekey), title:(Show Me The Key)
 <span style="color: #b8860b;">windowrulev2</span> = nofocus, class:(showmethekey-gtk), title:(Floating Window - Show Me The Key)
@@ -1033,16 +1035,16 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </li>
-<li><a id="org734e079"></a><code>screenkey</code><br />
-<div class="outline-text-4" id="text-org734e079">
+<li><a id="orgbb7e6c6"></a><code>screenkey</code><br />
+<div class="outline-text-4" id="text-orgbb7e6c6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(screenkey)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org7894b22"></a>steam<br />
-<div class="outline-text-4" id="text-org7894b22">
+<li><a id="org8b7cc22"></a>steam<br />
+<div class="outline-text-4" id="text-org8b7cc22">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(steam) initialTitle:(.*)
 <span style="color: #b8860b;">windowrulev2</span> = float, class:(steam) initialTitle:(.*)
@@ -1052,8 +1054,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgc374c6c"></a>Mount &amp; Blade Warband<br />
-<div class="outline-text-5" id="text-orgc374c6c">
+<li><a id="org5c503c9"></a>Mount &amp; Blade Warband<br />
+<div class="outline-text-5" id="text-org5c503c9">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(mb_warband_linux) initialTitle:(mb_warband_linux)
 </pre>
@@ -1062,8 +1064,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </li>
 </ul>
 </li>
-<li><a id="orgf76954f"></a>easyeffect<br />
-<div class="outline-text-4" id="text-orgf76954f">
+<li><a id="org12392ec"></a>easyeffect<br />
+<div class="outline-text-4" id="text-org12392ec">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, title:(Easy Effects)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 60%, title:(Easy Effects)
@@ -1071,8 +1073,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </div>
 </div>
 </li>
-<li><a id="orgdb0ad53"></a>layer<br />
-<div class="outline-text-4" id="text-orgdb0ad53">
+<li><a id="org15f7dc0"></a>layer<br />
+<div class="outline-text-4" id="text-org15f7dc0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">layerrule</span> = xray 1, .*
 <span style="color: #b22222;"># </span><span style="color: #b22222;">layerrule = noanim, .*</span>
@@ -1124,13 +1126,13 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 </li>
 </ul>
 </div>
-<div id="outline-container-org6b17fbe" class="outline-3">
-<h3 id="org6b17fbe"><code>~/.config/hypr/hypr.d/workspaces.conf</code></h3>
-<div class="outline-text-3" id="text-org6b17fbe">
+<div id="outline-container-org13f6961" class="outline-3">
+<h3 id="org13f6961"><code>~/.config/hypr/hypr.d/workspaces.conf</code></h3>
+<div class="outline-text-3" id="text-org13f6961">
 </div>
 <ul class="org-ul">
-<li><a id="org25e7ecf"></a>Normal Workspaces<br />
-<div class="outline-text-4" id="text-org25e7ecf">
+<li><a id="org814dbb1"></a>Normal Workspaces<br />
+<div class="outline-text-4" id="text-org814dbb1">
 <p>
 These workspaces are just standard workspaces, the way I set them is to have dedicated workspaces for each applications, such as web browsers, terminal emulators, etc.
 </p>
@@ -1149,8 +1151,8 @@ These workspaces are just standard workspaces, the way I set them is to have ded
 </div>
 </div>
 </li>
-<li><a id="orgbfb3a3d"></a>Special workspaces<br />
-<div class="outline-text-4" id="text-orgbfb3a3d">
+<li><a id="org7ac3284"></a>Special workspaces<br />
+<div class="outline-text-4" id="text-org7ac3284">
 <p>
 In other window managers, a special workspace is often called <i>scratchpad</i>. The difference is in <i>Hyprland</i> we can have up to 97 of them, each with different names. The way I use it is to have one special workspace for an application, usually one that needs to always run in the background, like a music player, calculator and other. What I like from <i>Hyprland</i> (though I'm sure other <i>WM</i> also have), is the ability to only start the application when the workspace is opened. See the keybindings section for the detail.
 </p>
@@ -1173,13 +1175,13 @@ Also to conserve resource, I tend to only have terminal based application in the
 </li>
 </ul>
 </div>
-<div id="outline-container-orgc577590" class="outline-3">
-<h3 id="orgc577590"><code>~/.config/hypr/hypr.d/keybindings.conf</code></h3>
-<div class="outline-text-3" id="text-orgc577590">
+<div id="outline-container-orgacac2ba" class="outline-3">
+<h3 id="orgacac2ba"><code>~/.config/hypr/hypr.d/keybindings.conf</code></h3>
+<div class="outline-text-3" id="text-orgacac2ba">
 </div>
 <ul class="org-ul">
-<li><a id="org41b29b4"></a>Set the <code>mainMod</code> variable<br />
-<div class="outline-text-4" id="text-org41b29b4">
+<li><a id="orga935744"></a>Set the <code>mainMod</code> variable<br />
+<div class="outline-text-4" id="text-orga935744">
 <p>
 <code>Super</code>, (or <code>WIN</code>) key, is a more common mod key for window manager anyway.
 </p>
@@ -1191,8 +1193,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </li>
 
-<li><a id="org301542b"></a>Apps keybindings<br />
-<div class="outline-text-4" id="text-org301542b">
+<li><a id="org4a65846"></a>Apps keybindings<br />
+<div class="outline-text-4" id="text-org4a65846">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, Return, exec, $terminal
@@ -1234,8 +1236,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </li>
 
-<li><a id="orgcd45c41"></a>window<br />
-<div class="outline-text-4" id="text-orgcd45c41">
+<li><a id="orgf9d92be"></a>window<br />
+<div class="outline-text-4" id="text-orgf9d92be">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, F, fullscreen, 0
 <span style="color: #b8860b;">bind</span> = $mainMod Shift, F, fullscreen, 1
@@ -1280,8 +1282,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </li>
 
-<li><a id="orgeb7c995"></a>Mouse<br />
-<div class="outline-text-4" id="text-orgeb7c995">
+<li><a id="orga25b550"></a>Mouse<br />
+<div class="outline-text-4" id="text-orga25b550">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Move/resize windows with mainMod + LMB/RMB and dragging</span>
 <span style="color: #b8860b;">bindm</span> = $mainMod, mouse:272, movewindow
@@ -1290,8 +1292,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </div>
 </li>
-<li><a id="orge0aa802"></a>Media keys<br />
-<div class="outline-text-4" id="text-orge0aa802">
+<li><a id="orgdf6adeb"></a>Media keys<br />
+<div class="outline-text-4" id="text-orgdf6adeb">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">binde</span> = , XF86AudioRaiseVolume, exec, ~/.local/bin/dunst-volume -i 1
 <span style="color: #b22222;"># </span><span style="color: #b22222;">binde = , XF86AudioLowerVolume, exec, pactl set-sink-volume @DEFAULT_SINK@ -1%</span>
@@ -1323,8 +1325,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </div>
 </li>
-<li><a id="orgf4e2cc5"></a><code>dunst</code><br />
-<div class="outline-text-4" id="text-orgf4e2cc5">
+<li><a id="org9382612"></a><code>dunst</code><br />
+<div class="outline-text-4" id="text-org9382612">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, grave, exec, dunstctl history-pop
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, grave, exec, dunstctl context
@@ -1334,10 +1336,10 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </div>
 </li>
-<li><a id="org2cef1e9"></a>Groups<br />
+<li><a id="org699d40c"></a>Groups<br />
 <ul class="org-ul">
-<li><a id="orgeee45d3"></a>Group management<br />
-<div class="outline-text-5" id="text-orgeee45d3">
+<li><a id="org9210e30"></a>Group management<br />
+<div class="outline-text-5" id="text-org9210e30">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, G, submap, group
 <span style="color: #b8860b;">submap</span> = group
@@ -1389,8 +1391,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </div>
 </li>
-<li><a id="org547f26a"></a>Window Resize<br />
-<div class="outline-text-5" id="text-org547f26a">
+<li><a id="orgf1a5955"></a>Window Resize<br />
+<div class="outline-text-5" id="text-orgf1a5955">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Resize</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, R, submap, resize
@@ -1414,8 +1416,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </li>
 </ul>
 </li>
-<li><a id="org31aeed5"></a>Hyprland<br />
-<div class="outline-text-4" id="text-org31aeed5">
+<li><a id="org71424c0"></a>Hyprland<br />
+<div class="outline-text-4" id="text-org71424c0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, P, pseudo, <span style="color: #b22222;"># </span><span style="color: #b22222;">dwindle</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, S, togglesplit, <span style="color: #b22222;"># </span><span style="color: #b22222;">dwindle</span>
@@ -1424,8 +1426,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org388ebf2"></a>Master layout<br />
-<div class="outline-text-5" id="text-org388ebf2">
+<li><a id="org015d952"></a>Master layout<br />
+<div class="outline-text-5" id="text-org015d952">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">master</span>
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, TAB, layoutmsg, swapwithmaster auto
@@ -1442,8 +1444,8 @@ Also to conserve resource, I tend to only have terminal based application in the
 </li>
 </ul>
 </li>
-<li><a id="org772a5a0"></a>Workspaces<br />
-<div class="outline-text-4" id="text-org772a5a0">
+<li><a id="org5974fb3"></a>Workspaces<br />
+<div class="outline-text-4" id="text-org5974fb3">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Switch workspaces with mainMod + [0-9]</span>
 <span style="color: #b8860b;">bind</span> = $mainMod, 1, workspace, 1
@@ -1474,8 +1476,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org1502a53"></a>Workspace movement<br />
-<div class="outline-text-5" id="text-org1502a53">
+<li><a id="org3e8d066"></a>Workspace movement<br />
+<div class="outline-text-5" id="text-org3e8d066">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Move active window to a workspace with mainMod + SHIFT + [0-9]</span>
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, 1, movetoworkspace, 1
@@ -1510,8 +1512,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org900ba35"></a>Laptops<br />
-<div class="outline-text-5" id="text-org900ba35">
+<li><a id="org4b4ddeb"></a>Laptops<br />
+<div class="outline-text-5" id="text-org4b4ddeb">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">lid switch</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">trigger when the switch is toggled</span>
@@ -1524,8 +1526,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org18f1fce"></a>special workspace<br />
-<div class="outline-text-5" id="text-org18f1fce">
+<li><a id="org4bd1998"></a>special workspace<br />
+<div class="outline-text-5" id="text-org4bd1998">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">0 is fn+m (music) in my laptop</span>
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, 0, togglespecialworkspace, music
@@ -1549,8 +1551,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgb6ba166"></a>mouse<br />
-<div class="outline-text-5" id="text-orgb6ba166">
+<li><a id="org85a6ac3"></a>mouse<br />
+<div class="outline-text-5" id="text-org85a6ac3">
 <div class="org-src-container">
 <pre class="src src-conf">
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Scroll through existing workspaces with mainMod + scroll</span>
@@ -1565,25 +1567,25 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </ul>
 </div>
 </div>
-<div id="outline-container-org0cef9b4" class="outline-2">
-<h2 id="org0cef9b4">waybar</h2>
-<div class="outline-text-2" id="text-org0cef9b4">
+<div id="outline-container-orge4b37c9" class="outline-2">
+<h2 id="orge4b37c9">waybar</h2>
+<div class="outline-text-2" id="text-orge4b37c9">
 </div>
-<div id="outline-container-org93f888b" class="outline-3">
-<h3 id="org93f888b"><code>~/.config/waybar/config</code></h3>
-<div class="outline-text-3" id="text-org93f888b">
+<div id="outline-container-org90012cd" class="outline-3">
+<h3 id="org90012cd"><code>~/.config/waybar/config</code></h3>
+<div class="outline-text-3" id="text-org90012cd">
 </div>
 <ul class="org-ul">
-<li><a id="org70ccf90"></a>start config<br />
-<div class="outline-text-4" id="text-org70ccf90">
+<li><a id="orgcff28fd"></a>start config<br />
+<div class="outline-text-4" id="text-orgcff28fd">
 <div class="org-src-container">
 <pre class="src src-js">{
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org59bff5e"></a>General<br />
-<div class="outline-text-4" id="text-org59bff5e">
+<li><a id="org66703b9"></a>General<br />
+<div class="outline-text-4" id="text-org66703b9">
 <div class="org-src-container">
 <pre class="src src-js">
 <span style="color: #bc8f8f;">"layer"</span>: <span style="color: #bc8f8f;">"top"</span>, <span style="color: #b22222;">// </span><span style="color: #b22222;">Waybar at top layer</span>
@@ -1597,8 +1599,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgb20c0c1"></a>Left Modules<br />
-<div class="outline-text-4" id="text-orgb20c0c1">
+<li><a id="org89a545f"></a>Left Modules<br />
+<div class="outline-text-4" id="text-org89a545f">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-left"</span>: [
   <span style="color: #bc8f8f;">"custom/launcher"</span>,
@@ -1611,8 +1613,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org0b544a6"></a>Center Modules<br />
-<div class="outline-text-4" id="text-org0b544a6">
+<li><a id="org52b181c"></a>Center Modules<br />
+<div class="outline-text-4" id="text-org52b181c">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-center"</span>: [
   <span style="color: #bc8f8f;">"hyprland/window"</span>
@@ -1621,8 +1623,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org7956a0f"></a>Right Modules<br />
-<div class="outline-text-4" id="text-org7956a0f">
+<li><a id="org1d7ec2c"></a>Right Modules<br />
+<div class="outline-text-4" id="text-org1d7ec2c">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"modules-right"</span>: [
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"mpd",</span>
@@ -1647,10 +1649,10 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org222acf4"></a>Modules Configuration<br />
+<li><a id="orgb55a8aa"></a>Modules Configuration<br />
 <ul class="org-ul">
-<li><a id="org451b9ab"></a>mpris<br />
-<div class="outline-text-5" id="text-org451b9ab">
+<li><a id="orgef587dc"></a>mpris<br />
+<div class="outline-text-5" id="text-orgef587dc">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"mpris"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{player_icon} {title}"</span>,
@@ -1667,8 +1669,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org152fe5a"></a>backlight<br />
-<div class="outline-text-5" id="text-org152fe5a">
+<li><a id="org5904131"></a>backlight<br />
+<div class="outline-text-5" id="text-org5904131">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"backlight"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61829; {percent}%"</span>,
@@ -1680,8 +1682,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org1be8cec"></a>hyprland/workspaces<br />
-<div class="outline-text-5" id="text-org1be8cec">
+<li><a id="org9373f2d"></a>hyprland/workspaces<br />
+<div class="outline-text-5" id="text-org9373f2d">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/workspaces"</span>: {
   <span style="color: #bc8f8f;">"num-tags"</span>: 6,
@@ -1704,8 +1706,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgcce02cf"></a>hyprland/languages<br />
-<div class="outline-text-5" id="text-orgcce02cf">
+<li><a id="org7c4bf06"></a>hyprland/languages<br />
+<div class="outline-text-5" id="text-org7c4bf06">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/language"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1716,8 +1718,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orga60c3e0"></a>hyprland/window<br />
-<div class="outline-text-5" id="text-orga60c3e0">
+<li><a id="org8cad7cd"></a>hyprland/window<br />
+<div class="outline-text-5" id="text-org8cad7cd">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/window"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{title}"</span>,
@@ -1732,8 +1734,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org812e9ec"></a>hyprland/submap<br />
-<div class="outline-text-5" id="text-org812e9ec">
+<li><a id="org0031a8a"></a>hyprland/submap<br />
+<div class="outline-text-5" id="text-org0031a8a">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"hyprland/submap"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{}"</span>,
@@ -1744,8 +1746,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org88d1246"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-org88d1246">
+<li><a id="org68fa183"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org68fa183">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"keyboard-state"</span>: {
   <span style="color: #bc8f8f;">"numlock"</span>: <span style="color: #5f9ea0;">false</span>,
@@ -1760,8 +1762,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org56ad46b"></a>mpd<br />
-<div class="outline-text-5" id="text-org56ad46b">
+<li><a id="org843bf37"></a>mpd<br />
+<div class="outline-text-5" id="text-org843bf37">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"mpd"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) &#11816;{songPosition}|{queueLength}&#11817; {volume}% &#61441;",</span>
@@ -1794,8 +1796,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org7ed3127"></a>idle_inhibitor<br />
-<div class="outline-text-5" id="text-org7ed3127">
+<li><a id="org09fd219"></a>idle_inhibitor<br />
+<div class="outline-text-5" id="text-org09fd219">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"idle_inhibitor"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon}"</span>,
@@ -1808,8 +1810,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgca76e0e"></a>tray<br />
-<div class="outline-text-5" id="text-orgca76e0e">
+<li><a id="orge9aedf4"></a>tray<br />
+<div class="outline-text-5" id="text-orge9aedf4">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"tray"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"icon-size": 21,</span>
@@ -1819,8 +1821,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org21da910"></a>clock<br />
-<div class="outline-text-5" id="text-org21da910">
+<li><a id="org5d9f801"></a>clock<br />
+<div class="outline-text-5" id="text-org5d9f801">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"clock#date"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"timezone": "America/New_York",</span>
@@ -1838,8 +1840,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org74b7982"></a>cpu<br />
-<div class="outline-text-5" id="text-org74b7982">
+<li><a id="orgcfef5b2"></a>cpu<br />
+<div class="outline-text-5" id="text-orgcfef5b2">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"cpu"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{usage}% &#62171;"</span>,
@@ -1851,8 +1853,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org16f726a"></a>memory<br />
-<div class="outline-text-5" id="text-org16f726a">
+<li><a id="org50983e1"></a>memory<br />
+<div class="outline-text-5" id="text-org50983e1">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"memory"</span>: {
   <span style="color: #bc8f8f;">"interval"</span>: 30,
@@ -1863,8 +1865,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgb8cf154"></a>temperature<br />
-<div class="outline-text-5" id="text-orgb8cf154">
+<li><a id="org622d464"></a>temperature<br />
+<div class="outline-text-5" id="text-org622d464">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"temperature"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"thermal-zone": 2,</span>
@@ -1878,8 +1880,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgd986ac2"></a>battery<br />
-<div class="outline-text-5" id="text-orgd986ac2">
+<li><a id="orgd1c32c8"></a>battery<br />
+<div class="outline-text-5" id="text-orgd1c32c8">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"battery"</span>: {
   <span style="color: #bc8f8f;">"states"</span>: {
@@ -1902,8 +1904,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org7183a41"></a>network<br />
-<div class="outline-text-5" id="text-org7183a41">
+<li><a id="org6590ce5"></a>network<br />
+<div class="outline-text-5" id="text-org6590ce5">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"network"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"interface": "wlp2*", // (Optional) To force the use of this interface</span>
@@ -1919,8 +1921,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org8d5af7a"></a>wireplumber<br />
-<div class="outline-text-5" id="text-org8d5af7a">
+<li><a id="orgf0ebc29"></a>wireplumber<br />
+<div class="outline-text-5" id="text-orgf0ebc29">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"wireplumber"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon} {volume}%"</span>,
@@ -1934,8 +1936,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgc33b2db"></a>pulseaudio<br />
-<div class="outline-text-5" id="text-orgc33b2db">
+<li><a id="org8f9bdd2"></a>pulseaudio<br />
+<div class="outline-text-5" id="text-org8f9bdd2">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"pulseaudio"</span>: {
   <span style="color: #b22222;">// </span><span style="color: #b22222;">"scroll-step": 1, // %, can be a float</span>
@@ -1960,8 +1962,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orge2d03e0"></a>custom/pacman<br />
-<div class="outline-text-5" id="text-orge2d03e0">
+<li><a id="orgd8624c5"></a>custom/pacman<br />
+<div class="outline-text-5" id="text-orgd8624c5">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/pacman"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61538; {} update available"</span>,
@@ -1974,8 +1976,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org24f28cc"></a>custom/launcher<br />
-<div class="outline-text-5" id="text-org24f28cc">
+<li><a id="org4c7e554"></a>custom/launcher<br />
+<div class="outline-text-5" id="text-org4c7e554">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/launcher"</span>:{
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#62211; "</span>,
@@ -1987,8 +1989,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgd19cb32"></a>custom/power<br />
-<div class="outline-text-5" id="text-orgd19cb32">
+<li><a id="orga5a1cce"></a>custom/power<br />
+<div class="outline-text-5" id="text-orga5a1cce">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/power"</span>:{
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"&#61752; "</span>,
@@ -1999,8 +2001,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org10cc6f5"></a>custom/media<br />
-<div class="outline-text-5" id="text-org10cc6f5">
+<li><a id="orgd13e467"></a>custom/media<br />
+<div class="outline-text-5" id="text-orgd13e467">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #bc8f8f;">"custom/media"</span>: {
   <span style="color: #bc8f8f;">"format"</span>: <span style="color: #bc8f8f;">"{icon} {}"</span>,
@@ -2020,8 +2022,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </li>
 </ul>
 </li>
-<li><a id="orgd5558f6"></a>End config<br />
-<div class="outline-text-4" id="text-orgd5558f6">
+<li><a id="org1d84f54"></a>End config<br />
+<div class="outline-text-4" id="text-org1d84f54">
 <div class="org-src-container">
 <pre class="src src-js">}
 </pre>
@@ -2030,13 +2032,13 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </li>
 </ul>
 </div>
-<div id="outline-container-org1982046" class="outline-3">
-<h3 id="org1982046"><code>~/.config/waybar/style.css</code></h3>
-<div class="outline-text-3" id="text-org1982046">
+<div id="outline-container-org6b57fd6" class="outline-3">
+<h3 id="org6b57fd6"><code>~/.config/waybar/style.css</code></h3>
+<div class="outline-text-3" id="text-org6b57fd6">
 </div>
 <ul class="org-ul">
-<li><a id="org3b29a31"></a>definitions<br />
-<div class="outline-text-4" id="text-org3b29a31">
+<li><a id="orgc6e46ee"></a>definitions<br />
+<div class="outline-text-4" id="text-orgc6e46ee">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b22222;">/* </span><span style="color: #b22222;">Nord</span><span style="color: #b22222;"> */</span>
 <span style="color: #00008b;">@define-color</span> background <span style="color: #ffffff; background-color: #2e3440;">rgba(46, 52, 64, 1)</span>;
@@ -2089,8 +2091,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgb3954d3"></a>global<br />
-<div class="outline-text-4" id="text-orgb3954d3">
+<li><a id="org430c034"></a>global<br />
+<div class="outline-text-4" id="text-org430c034">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">*</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">`otf-font-awesome` is required to be installed for icons</span><span style="color: #b22222;"> */</span>
@@ -2104,8 +2106,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org16574ea"></a>keyframes<br />
-<div class="outline-text-4" id="text-org16574ea">
+<li><a id="org62b9453"></a>keyframes<br />
+<div class="outline-text-4" id="text-org62b9453">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #00008b;">@keyframes</span> blink {
     <span style="color: #0000ff;">to</span> {
@@ -2117,8 +2119,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org98591fa"></a>window<br />
-<div class="outline-text-4" id="text-org98591fa">
+<li><a id="org28dfa32"></a>window<br />
+<div class="outline-text-4" id="text-org28dfa32">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">window#waybar</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @background2;</span><span style="color: #b22222;"> */</span>
@@ -2153,8 +2155,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgdf07f51"></a>button<br />
-<div class="outline-text-4" id="text-orgdf07f51">
+<li><a id="org0c5be42"></a>button<br />
+<div class="outline-text-4" id="text-org0c5be42">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">button</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">Use box-shadow instead of border so the text isn't offset</span><span style="color: #b22222;"> */</span>
@@ -2173,8 +2175,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org213824c"></a>tooltip<br />
-<div class="outline-text-4" id="text-org213824c">
+<li><a id="orgacc85b3"></a>tooltip<br />
+<div class="outline-text-4" id="text-orgacc85b3">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">tooltip</span> {
     <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@background</span>;
@@ -2192,10 +2194,10 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org3809e9d"></a>modules<br />
+<li><a id="orgdd1dcb2"></a>modules<br />
 <ul class="org-ul">
-<li><a id="org1e5ba25"></a>cpu<br />
-<div class="outline-text-5" id="text-org1e5ba25">
+<li><a id="orgec111ad"></a>cpu<br />
+<div class="outline-text-5" id="text-orgec111ad">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#cpu</span> {
       <span style="color: #4169e1;">margin-top</span>: 6px;
@@ -2212,8 +2214,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org054f130"></a>memory<br />
-<div class="outline-text-5" id="text-org054f130">
+<li><a id="orgb084ed2"></a>memory<br />
+<div class="outline-text-5" id="text-orgb084ed2">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#memory</span> {
       <span style="color: #4169e1;">margin-top</span>: 6px;
@@ -2230,8 +2232,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgf49da19"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-orgf49da19">
+<li><a id="org40e378b"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org40e378b">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#keyboard-state</span> {
       <span style="color: #4169e1;">margin-top</span>: 6px;
@@ -2248,8 +2250,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org4a374c8"></a>temperature<br />
-<div class="outline-text-5" id="text-org4a374c8">
+<li><a id="orgc3f7a8b"></a>temperature<br />
+<div class="outline-text-5" id="text-orgc3f7a8b">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#temperature</span> {
       <span style="color: #4169e1;">margin-top</span>: 6px;
@@ -2266,8 +2268,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org6d1c2df"></a>modules-left<br />
-<div class="outline-text-5" id="text-org6d1c2df">
+<li><a id="org42a69e0"></a>modules-left<br />
+<div class="outline-text-5" id="text-org42a69e0">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">.modules-left &gt; widget:first-child &gt; #workspaces</span> {
     <span style="color: #4169e1;">margin-left</span>: 0;
@@ -2276,8 +2278,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org8b492cd"></a>modules-right<br />
-<div class="outline-text-5" id="text-org8b492cd">
+<li><a id="org5b9464c"></a>modules-right<br />
+<div class="outline-text-5" id="text-org5b9464c">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">.modules-right &gt; widget:last-child &gt; #workspaces</span> {
     <span style="color: #4169e1;">margin-right</span>: 0;
@@ -2286,8 +2288,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org66e6daf"></a>mpris<br />
-<div class="outline-text-5" id="text-org66e6daf">
+<li><a id="org63a1987"></a>mpris<br />
+<div class="outline-text-5" id="text-org63a1987">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#mpris</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">padding: 0 4px;</span><span style="color: #b22222;"> */</span>
@@ -2307,8 +2309,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgcd35717"></a>idle_inhibitor<br />
-<div class="outline-text-5" id="text-orgcd35717">
+<li><a id="org446b472"></a>idle_inhibitor<br />
+<div class="outline-text-5" id="text-org446b472">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#idle_inhibitor</span> {
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@blue</span>;
@@ -2321,8 +2323,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgd01cfee"></a>backlight<br />
-<div class="outline-text-5" id="text-orgd01cfee">
+<li><a id="orge989aa1"></a>backlight<br />
+<div class="outline-text-5" id="text-orge989aa1">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#backlight</span>{
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @yellow;</span><span style="color: #b22222;"> */</span>
@@ -2340,8 +2342,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgb81cd0a"></a>pulseaudio<br />
-<div class="outline-text-5" id="text-orgb81cd0a">
+<li><a id="org5348aaf"></a>pulseaudio<br />
+<div class="outline-text-5" id="text-org5348aaf">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#pulseaudio</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2;</span><span style="color: #b22222;"> */</span>
@@ -2360,8 +2362,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org2f899ea"></a>wireplumber<br />
-<div class="outline-text-5" id="text-org2f899ea">
+<li><a id="org94d9fbc"></a>wireplumber<br />
+<div class="outline-text-5" id="text-org94d9fbc">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#wireplumber</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">background-color: @magenta2;</span><span style="color: #b22222;"> */</span>
@@ -2371,8 +2373,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgae01e10"></a>keyboard-state<br />
-<div class="outline-text-5" id="text-orgae01e10">
+<li><a id="org15c1f67"></a>keyboard-state<br />
+<div class="outline-text-5" id="text-org15c1f67">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#keyboard-state</span> {
     <span style="color: #4169e1;">background</span>: <span style="color: #00008b;">@green</span>;
@@ -2382,8 +2384,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org41d604a"></a>battery<br />
-<div class="outline-text-5" id="text-org41d604a">
+<li><a id="orgcf7b00b"></a>battery<br />
+<div class="outline-text-5" id="text-orgcf7b00b">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#battery</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @battery;</span><span style="color: #b22222;"> */</span>
@@ -2436,8 +2438,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgc13886e"></a>custom/pacman<br />
-<div class="outline-text-5" id="text-orgc13886e">
+<li><a id="org2d509e3"></a>custom/pacman<br />
+<div class="outline-text-5" id="text-org2d509e3">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#custom-pacman</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @black;</span><span style="color: #b22222;"> */</span>
@@ -2456,8 +2458,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org13a7d20"></a>clock<br />
-<div class="outline-text-5" id="text-org13a7d20">
+<li><a id="org2c70da4"></a>clock<br />
+<div class="outline-text-5" id="text-org2c70da4">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#clock.date</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @date;</span><span style="color: #b22222;"> */</span>
@@ -2489,8 +2491,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgfd4f91b"></a>network<br />
-<div class="outline-text-5" id="text-orgfd4f91b">
+<li><a id="orgc215a76"></a>network<br />
+<div class="outline-text-5" id="text-orgc215a76">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#network</span> {
     <span style="color: #b22222;">/* </span><span style="color: #b22222;">color: @network;</span><span style="color: #b22222;"> */</span>
@@ -2528,8 +2530,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgbd95e91"></a>custom-launcher<br />
-<div class="outline-text-5" id="text-orgbd95e91">
+<li><a id="orgf73e5c7"></a>custom-launcher<br />
+<div class="outline-text-5" id="text-orgf73e5c7">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#custom-launcher</span> {
       <span style="color: #4169e1;">font-size</span>: 24px;
@@ -2546,8 +2548,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgb5711d2"></a>custom-power<br />
-<div class="outline-text-5" id="text-orgb5711d2">
+<li><a id="orgb19b9b9"></a>custom-power<br />
+<div class="outline-text-5" id="text-orgb19b9b9">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#custom-power</span> {
       <span style="color: #4169e1;">font-size</span>: 24px;
@@ -2566,8 +2568,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </li>
 </ul>
 </li>
-<li><a id="org20538f6"></a>workspaces<br />
-<div class="outline-text-4" id="text-org20538f6">
+<li><a id="orgd80e677"></a>workspaces<br />
+<div class="outline-text-4" id="text-orgd80e677">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#workspaces</span> {
       <span style="color: #4169e1;">margin-top</span>: 6px;
@@ -2636,8 +2638,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org60c6008"></a>mode<br />
-<div class="outline-text-4" id="text-org60c6008">
+<li><a id="org783b701"></a>mode<br />
+<div class="outline-text-4" id="text-org783b701">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#mode</span> {
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@black</span>;
@@ -2646,8 +2648,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="orgbe9115a"></a>submap<br />
-<div class="outline-text-4" id="text-orgbe9115a">
+<li><a id="org3da796a"></a>submap<br />
+<div class="outline-text-4" id="text-org3da796a">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#submap</span> {
     <span style="color: #4169e1;">color</span>: <span style="color: #00008b;">@yellow</span>;
@@ -2656,8 +2658,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </li>
-<li><a id="org45876d1"></a>tray<br />
-<div class="outline-text-4" id="text-org45876d1">
+<li><a id="org4b26e06"></a>tray<br />
+<div class="outline-text-4" id="text-org4b26e06">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #0000ff;">#tray</span> {
       <span style="color: #4169e1;">margin-top</span>: 6px;
@@ -2686,9 +2688,9 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb7ceb68" class="outline-2">
-<h2 id="orgb7ceb68">hyprpaper</h2>
-<div class="outline-text-2" id="text-orgb7ceb68">
+<div id="outline-container-org027165d" class="outline-2">
+<h2 id="org027165d">hyprpaper</h2>
+<div class="outline-text-2" id="text-org027165d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/linux-friends-4k.png
 <span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/keyboard.png
@@ -2709,9 +2711,9 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </div>
-<div id="outline-container-org94a5ed7" class="outline-2">
-<h2 id="org94a5ed7">hyprshade</h2>
-<div class="outline-text-2" id="text-org94a5ed7">
+<div id="outline-container-orgd8c0e73" class="outline-2">
+<h2 id="orgd8c0e73">hyprshade</h2>
+<div class="outline-text-2" id="text-orgd8c0e73">
 <div class="org-src-container">
 <pre class="src src-toml">[[<span style="color: #228b22;">shades</span>]]
 <span style="color: #b8860b;">name</span> = <span style="color: #bc8f8f;">"vibrance"</span>
@@ -2725,9 +2727,9 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </div>
-<div id="outline-container-org7c3df38" class="outline-2">
-<h2 id="org7c3df38">hyprlock</h2>
-<div class="outline-text-2" id="text-org7c3df38">
+<div id="outline-container-org151b907" class="outline-2">
+<h2 id="org151b907">hyprlock</h2>
+<div class="outline-text-2" id="text-org151b907">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 
@@ -2821,9 +2823,9 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </div>
-<div id="outline-container-org5899f76" class="outline-2">
-<h2 id="org5899f76">hypridle</h2>
-<div class="outline-text-2" id="text-org5899f76">
+<div id="outline-container-org0cb6695" class="outline-2">
+<h2 id="org0cb6695">hypridle</h2>
+<div class="outline-text-2" id="text-org0cb6695">
 <div class="org-src-container">
 <pre class="src src-conf-unix"><span style="color: #228b22;">general</span> {
   <span style="color: #b8860b;">lock_cmd</span> = pidof hyprlock || hyprlock       <span style="color: #b22222;"># </span><span style="color: #b22222;">avoid starting multiple hyprlock instances.</span>
@@ -2850,13 +2852,13 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </div>
-<div id="outline-container-org067dd20" class="outline-2">
-<h2 id="org067dd20">Alacritty</h2>
-<div class="outline-text-2" id="text-org067dd20">
+<div id="outline-container-org837cddd" class="outline-2">
+<h2 id="org837cddd">Alacritty</h2>
+<div class="outline-text-2" id="text-org837cddd">
 </div>
-<div id="outline-container-org5d6e16c" class="outline-3">
-<h3 id="org5d6e16c">~/.config/alacritty/alacritty-hyprland.toml</h3>
-<div class="outline-text-3" id="text-org5d6e16c">
+<div id="outline-container-org35a8e31" class="outline-3">
+<h3 id="org35a8e31">~/.config/alacritty/alacritty-hyprland.toml</h3>
+<div class="outline-text-3" id="text-org35a8e31">
 <div class="org-src-container">
 <pre class="src src-toml">[<span style="color: #228b22;">general</span>]
 <span style="color: #b8860b;">import</span> = [<span style="color: #bc8f8f;">"~/.config/alacritty/themes/nord.toml"</span>]
@@ -2903,9 +2905,9 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </div>
-<div id="outline-container-orgfe405c7" class="outline-3">
-<h3 id="orgfe405c7">nord theme</h3>
-<div class="outline-text-3" id="text-orgfe405c7">
+<div id="outline-container-org5076dd4" class="outline-3">
+<h3 id="org5076dd4">nord theme</h3>
+<div class="outline-text-3" id="text-org5076dd4">
 <div class="org-src-container">
 <pre class="src src-toml"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Colors (Nord)</span>
@@ -2941,9 +2943,9 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 </div>
 </div>
 </div>
-<div id="outline-container-org36a14bd" class="outline-2">
-<h2 id="org36a14bd">Swappy</h2>
-<div class="outline-text-2" id="text-org36a14bd">
+<div id="outline-container-org833aeb6" class="outline-2">
+<h2 id="org833aeb6">Swappy</h2>
+<div class="outline-text-2" id="text-org833aeb6">
 <p>
 Wayland native snapshot editing tools.
 </p>
@@ -2963,13 +2965,13 @@ Wayland native snapshot editing tools.
 </div>
 </div>
 
-<div id="outline-container-orgcfb874a" class="outline-2">
-<h2 id="orgcfb874a">Rofi configuration</h2>
-<div class="outline-text-2" id="text-orgcfb874a">
+<div id="outline-container-org0553b2b" class="outline-2">
+<h2 id="org0553b2b">Rofi configuration</h2>
+<div class="outline-text-2" id="text-org0553b2b">
 </div>
-<div id="outline-container-org55f0f5d" class="outline-3">
-<h3 id="org55f0f5d">hyprland-menu</h3>
-<div class="outline-text-3" id="text-org55f0f5d">
+<div id="outline-container-org4ef4da3" class="outline-3">
+<h3 id="org4ef4da3">hyprland-menu</h3>
+<div class="outline-text-3" id="text-org4ef4da3">
 <p>
 This is the theme used when running <code>rofi -show drun</code>.
 </p>
@@ -3037,9 +3039,9 @@ This is the theme used when running <code>rofi -show drun</code>.
 </div>
 </div>
 </div>
-<div id="outline-container-org9c71d1d" class="outline-3">
-<h3 id="org9c71d1d">hyprland-logout</h3>
-<div class="outline-text-3" id="text-org9c71d1d">
+<div id="outline-container-org75d295d" class="outline-3">
+<h3 id="org75d295d">hyprland-logout</h3>
+<div class="outline-text-3" id="text-org75d295d">
 <div class="org-src-container">
 <pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #b22222;">/* </span><span style="color: #b22222;">-*-css -*-</span><span style="color: #b22222;"> */</span>
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
@@ -3066,9 +3068,9 @@ This is the theme used when running <code>rofi -show drun</code>.
 </div>
 </div>
 </div>
-<div id="outline-container-org56560a9" class="outline-3">
-<h3 id="org56560a9">hyprland-clipboard</h3>
-<div class="outline-text-3" id="text-org56560a9">
+<div id="outline-container-orgf131be5" class="outline-3">
+<h3 id="orgf131be5">hyprland-clipboard</h3>
+<div class="outline-text-3" id="text-orgf131be5">
 <div class="org-src-container">
 <pre class="src src-css"><span class="linenr"> 1: </span><span style="color: #b22222;">/* </span><span style="color: #b22222;">-*-css -*-</span><span style="color: #b22222;"> */</span>
 <span class="linenr"> 2: </span><span style="color: #00008b;">@theme</span> <span style="color: #bc8f8f;">"nord"</span>
@@ -3097,7 +3099,7 @@ This is the theme used when running <code>rofi -show drun</code>.
 <div id="postamble" class="status">
 <p class="date">Date: 2024-03-23 Sat 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-03-01 Sat 13:38</p>
+<p class="date">Created: 2025-03-01 Sat 15:03</p>
 </div>
 </body>
 </html>
