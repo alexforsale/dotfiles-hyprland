@@ -467,7 +467,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 :END:
 *** For all windows
 #+begin_src conf
-  windowrule = noblur,.*
+  windowrule = noblur,class:.*
   windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
   windowrulev2 = opacity 0.99, class:.*
 #+end_src
@@ -647,7 +647,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 #+begin_src conf
   windowrulev2 = opacity 1, class:(steam) initialTitle:(.*)
   windowrulev2 = float, class:(steam) initialTitle:(.*)
-  windowrule=immediate,.*\.exe
+  windowrule=immediate,class:.*\.exe
   windowrulev2=immediate,class:(steam_app)
 #+end_src
 **** Mount & Blade Warband
