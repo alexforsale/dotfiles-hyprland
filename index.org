@@ -2139,6 +2139,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
   # [shell]
   # program = "/bin/bash"
   # args = ["-l"]
+  [env]
+  TERM = "xterm-256color"
   [[hints.enabled]]
   command = "xdg-open"
   hyperlinks = true
