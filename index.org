@@ -2324,6 +2324,6 @@ This is the theme used when running ~rofi -show drun~.
   }
 #+end_src
 * Local variables :noexport:
-local variables:
-eval: (rainbow-mode +1)
-end:
+# local variables:
+# eval: (rainbow-mode +1)
+# end:
