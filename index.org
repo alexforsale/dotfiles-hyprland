@@ -134,7 +134,7 @@ Bus 001 Device 003: ID 2a7a:9597  CASUE USB KB
 #+end_quote
 *** Additional GTK Settings
 #+begin_src conf
-  exec-once = gsettings set org.gnome.desktop.interface font-name "JetBrainsMonoNL Nerd Font Mono 10"
+  exec-once = gsettings set org.gnome.desktop.interface font-name "JetBrainsMonoNL Nerd Font Mono 8"
   exec-once = gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic
   exec-once = gsettings set org.gnome.desktop.interface cursor-size 24
   exec-once = gsettings set org.gnome.desktop.interface gtk-theme Breeze
@@ -401,8 +401,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   col.border_locked_inactive = 0x66775500
   groupbar {
   enabled = true
-  font_family = "JetBrainsMonoNL Nerd Font Mono 10"
-  font_size = 10
+  font_family = "JetBrainsMonoNL Nerd Font Mono 8"
+  font_size = 8
   gradients = true
   height = 14
   priority = 3
@@ -1465,7 +1465,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
       border: none;
       border-radius: 10px;
       font-family: FontAwesome, JetBrainsMonoNL Nerd Font Mono;
-      font-size: 11px;
+      font-size: 8px;
       min-height: 10px;
   }
 #+end_src
