@@ -249,8 +249,8 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
     gaps_out = 5
     gaps_workspaces = 50
     border_size = 1
-    col.active_border = rgba(0DB7D4FF)
-    col.inactive_border = rgba(31313600)
+    col.active_border = rgb(268bd2)
+    col.inactive_border = rgb(6c7c80)
     #col.nogroup_border=0xff89dceb
     #col.nogroup_border_active=0xfff9e2af
 
