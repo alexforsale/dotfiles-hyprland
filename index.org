@@ -881,12 +881,19 @@ Also to conserve resource, I tend to only have terminal based application in the
 *** Groups 
 **** Group management
 #+begin_src conf
+  bind = $mainMod, bracketleft, changegroupactive, b
+  bind = $mainMod, bracketright, changegroupactive, f
+
+  bind = $mainMod, T, togglegroup
+
   bind = $mainMod, G, submap, group
   submap = group
   bind = , T, togglegroup
   bind = $mainMod Control, F, changegroupactive, f
   bind = $mainMod Control, B, changegroupactive, b
 
+  bind = $mainMod, bracketleft, changegroupactive, b
+  bind = $mainMod, bracketright, changegroupactive, f
   # bind = $mainMod Alt, L, lockactivegroup
   bind = $mainMod, G, lockgroups, toggle
   bind = $mainMod Alt, G, lockactivegroup, toggle
