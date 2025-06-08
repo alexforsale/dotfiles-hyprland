@@ -449,7 +449,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   misc {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
     vfr = 1
-    vrr = 1
+    vrr = 3
     focus_on_activate = false
     animate_manual_resizes = false
     animate_mouse_windowdragging = false
