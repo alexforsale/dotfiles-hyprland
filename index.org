@@ -606,12 +606,14 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 *** =thunar=
 #+begin_src conf
   windowrule = center, title:^(Open File)(.*)$
+  windowrule = center, title:^(Rename.*)(.*)$
   windowrule = center, title:^(Select a File)(.*)$
   windowrule = center, title:^(Choose wallpaper)(.*)$
   windowrule = center, title:^(Open Folder)(.*)$
   windowrule = center, title:^(Save As)(.*)$
   windowrule = center, title:^(Library)(.*)$
   windowrule = center, title:^(File Upload)(.*)$
+  windowrulev2 = float, title:(Rename.*)
   windowrulev2 = float, title:(File Operation Progress)
   windowrulev2 = float, class:(thunar),title:(Confirm to replace files)
 #+end_src
