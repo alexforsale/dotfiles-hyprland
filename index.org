@@ -744,16 +744,16 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 
 These workspaces are just standard workspaces, the way I set them is to have dedicated workspaces for each applications, such as web browsers, terminal emulators, etc.
 #+begin_src conf
-  workspace = 1, name:terminal, monitor: #, on-created-empty:alacritty
-  workspace = 2, name:code, monitor: #, on-created-empty:emacsclient -c -a emacs
-  workspace = 3, name:web, monitor: #, on-created-empty:firefox
-  workspace = 4, name:message, monitor:
-  workspace = 5, name:file, monitor:HDMI-A-1, monitor:DP-1, default:true
-  workspace = 6, name:office, monitor:HDMI-A-1
-  workspace = 7, name:fun, monitor:HDMI-A-1
-  workspace = 8, name:remote, monitor:HDMI-A-1
-  workspace = 9, name:torrent, monitor:HDMI-A-1
-  workspace = 10, name:zoom, monitor:HDMI-A-1
+  workspace = 1, name:terminal
+  workspace = 2, name:code
+  workspace = 3, name:web
+  workspace = 4, name:message
+  workspace = 5, name:file
+  workspace = 6, name:office
+  workspace = 7, name:fun
+  workspace = 8, name:remote
+  workspace = 9, name:torrent
+  workspace = 10, name:zoom
 #+end_src
 *** Special workspaces
 In other window managers, a special workspace is often called /scratchpad/. The difference is in /Hyprland/ we can have up to 97 of them, each with different names. The way I use it is to have one special workspace for an application, usually one that needs to always run in the background, like a music player, calculator and other. What I like from /Hyprland/ (though I'm sure other /WM/ also have), is the ability to only start the application when the workspace is opened. See the keybindings section for the detail.
