@@ -777,7 +777,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod Alt, Q, exec, hyprlock
   bind = $mainMod, D, exec, $menu
   bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
-  bind = $mainMod, Comma, exec, rofi -show emoji
+  bind = $mainMod, Comma, exec, rofi -theme hyprland-emoji -show emoji
   bind = $mainMod Shift, V, exec, pwvucontrol
   bind = $mainMod Alt, V, exec, easyeffects
   #bind = $mainMod Alt, B, exec, blueman-manager
@@ -2351,6 +2351,29 @@ This is the theme used when running ~rofi -show drun~.
       cycle: true;
       layout: vertical;
   }
+#+end_src
+** hyprland-emoji
+:PROPERTIES:
+:header-args: :tangle .config/rofi/themes/hyprland-emoji.rasi :mkdirp t
+:END:
+#+begin_src css
+  /* -*-css -*- */
+  @theme "nord"
+
+  window {
+      location: southwest;
+      anchor: center;
+      width: 70%;
+      x-offset: 1%;
+      y-offset: -2%;
+      /* padding-right: 25px; */
+  }
+
+  listview {
+      columns: 4;
+      lines: 4;
+  }
+
 #+end_src
 * Local variables :noexport:
 # local variables:
