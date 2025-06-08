@@ -782,7 +782,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod Alt, P, exec, rofi-pass
   # bind = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort -theme calculator
   bind = $mainMod Shift, P, exec, rofi-rbw
-  bind = $mainMod Alt, b, exec, $browser
+  bind = $mainMod Alt, f, exec, $browser
   bind = $mainMod Alt, S, exec, [workspace 10; silent; float] showmethekey-gtk
   bind = $mainMod Alt, A, exec, hyprshade toggle
 
