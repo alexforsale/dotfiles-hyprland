@@ -105,6 +105,7 @@ These are the monitors I used across all my machines.
   exec-once = udiskie -t
   exec-once = ~/.local/bin/toggleLeds
   exec-once = ~/.local/bin/conky-start &
+  exec-once = $terminal --class ncmpcpp -e ncmpcpp
 #+end_src
 
 Required packages(=archlinux=):
@@ -556,6 +557,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   windowrulev2 = float,class:(ncmpcpp)
   windowrulev2 = center,class:(ncmpcpp)
   windowrulev2 = size 50%,class:(ncmpcpp)
+  windowrulev2 = workspace special:music,class:(ncmpcpp)
 #+end_src
 
 *** =khal=
@@ -782,7 +784,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod Alt, V, exec, easyeffects
   #bind = $mainMod Alt, B, exec, blueman-manager
 
-  # bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp
+  bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp
   # bind = $mainMod Alt, H, exec, alacritty --class htop -e htop
   # bind = $mainMod Alt, W, exec, [float] alacritty --class nmtui -e nmtui
   # bind = $mainMod Alt, K, exec, alacritty --class khal -e khal interactive
