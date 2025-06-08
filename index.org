@@ -897,7 +897,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod Alt, grave, exec, dunstctl history-pop
   bind = $mainMod SHIFT, grave, exec, dunstctl context
   bind = $mainMod, grave, exec, dunstctl action
-  bind = $mainMod, grave, exec, dunstctl close
+  bind = $mainMod Control, grave, exec, dunstctl close
 #+end_src
 *** Groups 
 **** Group management
