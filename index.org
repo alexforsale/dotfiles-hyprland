@@ -20,6 +20,7 @@
 #+HTML_HEAD: <style> p{max-width:800px;}</style>
 #+HTML_HEAD: <style> li{max-width:800px;}</style>
 
+This is my /hyprland/ configuration alongside with other configuration for various applications I use.
 * Hyprland
 ** =~/.config/hypr/hypland.conf=
 :PROPERTIES:
