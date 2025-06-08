@@ -189,10 +189,10 @@ Required packages(=archlinux=):
 #+end_src
 
 *** Wallpapers
-This will set the wallpaper for each workspaces. The one I used is stored at my gitlab [[https://gitlab.com/alexforsale/wallpapers][repository]].
 :PROPERTIES:
 :ID:       0aa9f011-8ece-41b9-bb18-7ab04c0f436c
 :END:
+This will set the wallpaper for each workspaces. The one I used is stored at my gitlab [[https://gitlab.com/alexforsale/wallpapers][repository]].
 #+begin_src conf
   $w1 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/linux-friends-4k.png"
   $w2 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/linux-friends-4k.png"
