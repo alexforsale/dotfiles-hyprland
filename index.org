@@ -320,6 +320,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 #+begin_src conf
   animations {
     enabled = true
+    workspace_wraparound = true
 
     # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
 
@@ -404,10 +405,11 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   group {
     insert_after_current = true
     focus_removed_window = true
-    col.border_active = 0x66ffff00
-    col.border_inactive = 0x66777700
-    col.border_locked_active = 0x66ff5500
-    col.border_locked_inactive = 0x66775500
+    col.border_active = rgb(268bd2)
+    col.border_inactive = rgb(6c7c80)
+    col.border_locked_active = rgb(d33682)
+    col.border_locked_inactive = rgb(b58900)
+    drag_into_group = 2
     groupbar {
       enabled = true
       font_family = "JetBrainsMonoNL Nerd Font Mono 8"
@@ -417,11 +419,11 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
       priority = 3
       render_titles = true
       scrolling = true
-      text_color = 0xffeceff4 # white
-      col.active = 0x665e81ac
-      col.inactive = 0x662e3440
-      col.locked_active = 0x66ebcb8b
-      col.locked_inactive = 0x66d08770
+      text_color = rgb(fdf6e3)
+      col.active = rgb(268bd2)
+      col.inactive = rgb(6c7c80)
+      col.locked_active = rgb(dc322f)
+      col.locked_inactive = rgb(073642)
     }
   }
 #+end_src
