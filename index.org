@@ -260,6 +260,12 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 
     # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
     allow_tearing = true
+    snap {
+      enabled = true
+      window_gap = 5
+      monitor_gap = 30
+      #respect_gaps = true
+    }
   }
 #+end_src
 
