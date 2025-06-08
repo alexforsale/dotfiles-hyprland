@@ -868,10 +868,18 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = , XF86AudioPrev, exec, playerctl previous
 
   # for keyboard with no fn keys
+  binde = $mainMod, F9, exec, ~/.local/bin/dunst-volume -i 1 # volume up
+  binde = $mainMod, F8, exec, ~/.local/bin/dunst-volume -d 1 # volume down
+  bind = $mainMod, F7, exec, ~/.local/bin/dunst-volume -t # volume toggle
+  binde = $mainMod Shift, F3, exec, ~/.local/bin/dunst-backlight +1% # brightness increase
+  bind = $mainMod Shift, F2, exec, ~/.local/bin/dunst-backlight 1%- # brightness decrease
   bind = $mainMod Control, Up, exec, playerctl play-pause
+  binde = $mainMod, F11, exec, playerctl play-pause
   bind = $mainMod Control, Down, exec, playerctl stop
-  bind = $mainMod Control, Right, exec, playerctl next
-  bind = $mainMod Control, Left, exec, playerctl previous
+  binde = $mainMod Control, Right, exec, playerctl next
+  binde = $mainMod, F12, exec, playerctl next
+  binde = $mainMod Control, Left, exec, playerctl previous
+  binde = $mainMod, F10, exec, playerctl previous
 
   # binde = , XF86MonBrightnessUp, exec, brightnessctl set +1%
   binde = , XF86MonBrightnessUp, exec, ~/.local/bin/dunst-backlight +1%
