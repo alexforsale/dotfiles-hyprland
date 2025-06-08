@@ -279,20 +279,22 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
       # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
       rounding = 20
+      active_opacity = 0.9
+      inactive_opacity = 0.25
+      fullscreen_opacity = 1
 
       blur {
-      enabled = true
-      xray = true
-      special = false
-      new_optimizations = true
-      size = 14
-      passes = 4
-      brightness = 1
-      noise = 0.01
-      contrast = 1
-      popups = true
-      popups_ignorealpha = 0.6
-
+        enabled = true
+        xray = true
+        special = false
+        new_optimizations = true
+        size = 14
+        passes = 4
+        brightness = 1
+        noise = 0.01
+        contrast = 1
+        popups = true
+        popups_ignorealpha = 0.6
       }
 
       shadow {
@@ -304,7 +306,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
           color = rgba(0000002A)
       }
 
-      dim_inactive = false
+      dim_inactive = true
       dim_strength = 0.1
       dim_special = 0
   }
