@@ -49,6 +49,7 @@ Enable the =rainbow-mode= minor-mode for /Emacs/ in this file.
   source = ./hypr.d/windowrule.conf
   source = ./hypr.d/workspaces.conf
   source = ./hypr.d/keybindings.conf
+  source = ./hypr.d/xwayland.conf
 #+end_src
 I split the configuration file into sections, based on the section from the [[https://wiki.hyprland.org/Configuring/Variables/][configuration variables]].
 ** =~/.config/hypr/hypr.d/monitors.conf=
@@ -1077,6 +1078,16 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
   # Scroll through existing workspaces with mainMod + scroll
   bind = $mainMod, mouse_down, workspace, e+1
   bind = $mainMod, mouse_up, workspace, e-1
+#+end_src
+** =~~/.config/hypr/hypr.d/xwayland.conf~=
+:PROPERTIES:
+:header-args: :tangle .config/hypr/hypr.d/xwayland.conf :mkdirp t
+:END:
+
+#+begin_src conf
+  xwayland {
+    enabled = true
+  }
 #+end_src
 * waybar
 ** =~/.config/waybar/config=
