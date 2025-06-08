@@ -736,6 +736,9 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 :header-args: :tangle .config/hypr/hypr.d/workspaces.conf :mkdirp t
 :END:
 *** Normal Workspaces
+#+caption: hyprpaper workspaces
+[[./assets/img/workspaces.mp4][file:./assets/img/workspaces.mp4]]
+
 These workspaces are just standard workspaces, the way I set them is to have dedicated workspaces for each applications, such as web browsers, terminal emulators, etc.
 #+begin_src conf
   workspace = 1, name:terminal, monitor: #, on-created-empty:alacritty
