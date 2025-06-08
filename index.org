@@ -740,7 +740,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 :END:
 *** Normal Workspaces
 #+caption: hyprpaper workspaces
-[[./assets/img/workspaces.mp4][file:./assets/img/workspaces.mp4]]
+[[./assets/img/workspaces.gif][file:./assets/img/workspaces.gif]]
 
 These workspaces are just standard workspaces, the way I set them is to have dedicated workspaces for each applications, such as web browsers, terminal emulators, etc.
 #+begin_src conf
