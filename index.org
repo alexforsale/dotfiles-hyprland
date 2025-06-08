@@ -2352,14 +2352,6 @@ This is the theme used when running ~rofi -show drun~.
       layout: vertical;
   }
 #+end_src
-* Scripts
-** hypr-trans
-:PROPERTIES:
-:header-args: :tangle .local/bin/hyprtrans :mkdirp t :shebang /bin/sh
-:END:
-#+begin_src sh
-  hyprctl dispatch setprop active $1
-#+end_src
 * Local variables :noexport:
 # local variables:
 # eval: (rainbow-mode +1)
