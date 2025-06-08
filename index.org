@@ -33,8 +33,8 @@ Enable the =rainbow-mode= minor-mode for /Emacs/ in this file.
 *** Modular configuration files
 #+begin_src conf
   source = ./hypr.d/monitors.conf
-  source = ./hypr.d/autostart.conf
   source = ./hypr.d/variables.conf
+  source = ./hypr.d/autostart.conf
   source = ./hypr.d/input.conf
   source = ./hypr.d/general.conf
   source = ./hypr.d/groups.conf
