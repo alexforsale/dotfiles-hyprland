@@ -752,7 +752,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   workspace = special:khal, on-created-empty:[tiled] $terminal --class khal -e khal interactive
   workspace = special:proc, on-created-empty:[tiled] $terminal --class htop -e htop
   workspace = special:emacs, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term
-  workspace = special:notmuch, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term -e '(notmuch)'
+  workspace = special:mail, on-created-empty:[tiled] thunderbird
   workspace = special:dired, on-created-empty:[tiled] $terminal --class emacsclient -e $editor_term -e '(dired (getenv "HOME"))'
   workspace = special:keys, on-created-empty:[float] showmethekey-gtk
   workspace = special:nvim, on-created-empty:$terminal --class vim -e nvim
@@ -1064,7 +1064,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
   # 3 is for terminal emacsclient
   bind = $mainMod Alt, 3, togglespecialworkspace, emacs
   # 4 is for terminal notmuch (using emacsclient)
-  bind = $mainMod Alt, 4, togglespecialworkspace, notmuch
+  bind = $mainMod Alt, 4, togglespecialworkspace, mail
   # 5 is for dired
   bind = $mainMod Alt, 5, togglespecialworkspace, dired
   # 6 is for nvim
