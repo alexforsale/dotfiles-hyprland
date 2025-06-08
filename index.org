@@ -104,7 +104,7 @@ These are the monitors I used across all my machines.
   exec-once = kdeconnect-indicator
   exec-once = udiskie -t
   exec-once = ~/.local/bin/toggleLeds
-  exec-once = ~/.local/bin/conky-start &
+  # exec-once = ~/.local/bin/conky-start &
   exec-once = $terminal --class ncmpcpp -e ncmpcpp
 #+end_src
 
@@ -672,6 +672,15 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
 **** Mount & Blade Warband
 #+begin_src conf
   windowrulev2 = opacity 1, class:(mb_warband_linux) initialTitle:(mb_warband_linux)
+#+end_src
+*** conky
+#+begin_src conf
+  # windowrulev2 = noinitialfocus, class:(Conky)
+  windowrulev2 = nofocus, class:(Conky)
+  windowrulev2 = pseudo, class:(Conky)
+  windowrulev2 = pin, class:(Conky)
+  # windowrulev2 = suppressevent activate activatefocus, class:(Conky)
+  windowrulev2 = opacity 1 override 0.5, class:(Conky)
 #+end_src
 *** easyeffect
 #+begin_src conf
