@@ -451,7 +451,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
     vfr = 1
     vrr = 3
     focus_on_activate = false
-    animate_manual_resizes = false
+    animate_manual_resizes = true
     animate_mouse_windowdragging = false
     enable_swallow = false
     swallow_regex = (foot|kitty|allacritty|Alacritty)
