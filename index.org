@@ -103,6 +103,7 @@ These are the monitors I used across all my machines.
   exec-once = kdeconnect-indicator
   exec-once = udiskie -t
   exec-once = ~/.local/bin/toggleLeds
+  exec-once = ~/.local/bin/conky-start &
 #+end_src
 
 Required packages(=archlinux=):
