@@ -36,7 +36,9 @@ Enable the =rainbow-mode= minor-mode for /Emacs/ in this file.
   source = ./hypr.d/monitors.conf
   source = ./hypr.d/variables.conf
   source = ./hypr.d/autostart.conf
+  source = ./hypr.d/ecosystem.conf
   source = ./hypr.d/input.conf
+  source = ./hypr.d/cursor.conf
   source = ./hypr.d/general.conf
   source = ./hypr.d/groups.conf
   source = ./hypr.d/decoration.conf
@@ -86,7 +88,7 @@ These are the monitors I used across all my machines.
   exec-once = dbus-update-activation-environment --systemd --all &
   exec-once = /usr/lib/polkit-kde-authentication-agent-1 &
   exec-once = gnome-keyring-daemon --components=pkcs11,secrets,ssh -r -d &
-  exec-once = dbus-launch --sh-syntax --exit-with-session dunst -conf ~/.config/dunst/dunstrc &
+  exec-once = dunst -conf ~/.config/dunst/dunstrc &
   exec-once = pgrep hypridle || hypridle
   exec-once = waybar &
   exec-once = hyprpaper &
@@ -141,7 +143,7 @@ Bus 001 Device 003: ID 2a7a:9597  CASUE USB KB
   exec-once = gsettings set org.gnome.desktop.interface font-name "JetBrainsMonoNL Nerd Font Mono 8"
   exec-once = gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Classic
   exec-once = gsettings set org.gnome.desktop.interface cursor-size 24
-  exec-once = gsettings set org.gnome.desktop.interface gtk-theme Breeze
+  exec-once = gsettings set org.gnome.desktop.interface gtk-theme Adapta-Nord
   exec-once = gsettings set org.gnome.desktop.interface gtk-key-theme Emacs
   exec-once = gsettings set org.gnome.desktop.interface icon-theme Papirus
   exec-once = gsettings set org.gnome.desktop.interface color-scheme \'prefer-dark\'
@@ -163,9 +165,9 @@ Required packages(=archlinux=):
 :END:
 *** Applications
 #+begin_src conf
-  $terminal = alacritty --config-file ~/.config/alacritty/alacritty-hyprland.toml
+  $terminal = alacritty
   $fileManager = thunar
-  $menu = rofi -show drun -theme hyprland-menu
+  $menu = wofi -c ~/.config/wofi/config -s ~/.config/wofi/style.css --show drun
   $editor = emacsclient -c -a emacs
   $editor_term = emacsclient -t -a ""
   $mail = thunderbird
@@ -204,6 +206,28 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   $w10 = hyprctl hyprpaper wallpaper ",~/.local/share/wallpapers/nord/nord_valley.png"
 #+end_src
 
+** =~/.config/hypr/hypr.d/ecosystem.conf=
+:PROPERTIES:
+:header-args: :tangle .config/hypr/hypr.d/ecosystem.conf :mkdirp t
+:END:
+
+#+begin_src conf
+  ecosystem {
+    no_update_news = true
+    no_donation_nag = true
+  }
+#+end_src
+** =~/.config/hypr/hypr.d/cursor.conf=
+:PROPERTIES:
+:header-args: :tangle .config/hypr/hypr.d/cursor.conf :mkdirp t
+:END:
+
+#+begin_src conf
+  cursor {
+    inactive_timeout = 2
+    hide_on_key_press = true
+  }
+#+end_src
 ** =~/.config/hypr/hypr.d/input.conf=
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/input.conf :mkdirp t
@@ -217,10 +241,10 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
     kb_options =
     kb_rules =
 
-    numlock_by_default = false
+    numlock_by_default = true
 
-    repeat_rate = 35
-    repeat_delay = 250
+    repeat_rate = 25
+    repeat_delay = 450
 
     follow_mouse = 1
 
@@ -279,7 +303,7 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
       # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
       rounding = 20
-      active_opacity = 0.9
+      active_opacity = 0.96
       inactive_opacity = 0.25
       fullscreen_opacity = 1
 
@@ -787,11 +811,12 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, E, exec, $fileManager
   bind = $mainMod, F4, exec, hyprctl kill
   bind = ALT, F4, killactive,
-  bind = $mainMod, Q, exec, ~/.local/bin/rofi-logout hyprland-logout
+  bind = $mainMod, Q, exec, wofi-power-menu --config ~/.config/wofi-power-menu.toml
   bind = $mainMod Alt, Q, exec, hyprlock
   bind = $mainMod, D, exec, $menu
-  bind = $mainMod, C, exec, cliphist list | rofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
-  bind = $mainMod, Comma, exec, rofi -theme hyprland-emoji -show emoji
+  bind = $mainMod, C, exec, cliphist list | wofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
+  bind = $mainMod, Comma, exec, wofi-emoji
+  bind = $mainMod, Period, exec, wofi-symbol
   bind = $mainMod Shift, V, exec, pwvucontrol
   bind = $mainMod Alt, V, exec, easyeffects
   #bind = $mainMod Alt, B, exec, blueman-manager
@@ -805,9 +830,9 @@ Also to conserve resource, I tend to only have terminal based application in the
   # bind = $mainMod Alt, E, exec, emacsclient -c -a emacs -e '(dired (getenv "HOME"))'
   bind = $mainMod Alt, N, exec, $editor
   bind = $mainMod Alt, T, exec, $mail
-  bind = $mainMod Alt, P, exec, rofi-pass
-  bind = $mainMod Alt, C, exec, rofi -show calc -modi calc -no-show-match -no-sort
-  bind = $mainMod Shift, P, exec, rofi-rbw
+  bind = $mainMod Alt, P, exec, wofi-pass
+  bind = $mainMod Alt, C, exec, wofi-calc
+  #bind = $mainMod Shift, P, exec, rofi-rbw
   bind = $mainMod Alt, f, exec, $browser
   bind = $mainMod Alt, S, exec, [workspace 10; silent; float] showmethekey-gtk
   bind = $mainMod Alt, A, exec, hyprshade toggle
@@ -2260,147 +2285,145 @@ Wayland native snapshot editing tools.
   fill_shape=false
 #+end_src
 
-* Rofi configuration
-** hyprland-menu
+* Wofi
+** config
 :PROPERTIES:
-:header-args: :tangle .config/rofi/themes/hyprland-menu.rasi :mkdirp t
+:header-args: :tangle .config/wofi/config :mkdirp t
 :END:
-This is the theme used when running ~rofi -show drun~.
 
-#+begin_src css -n
-  /* -*-css -*- */
-  @theme "nord"
-
-  window {
-      transparency: "real";
-      location: northwest;
-      anchor: center;
-      width: 25%;
-      x-offset: 0%;
-      y-offset: 0%;
-      fullscreen: false;
-      margin: 0px;
-      padding: 0px;
-  }
-
-  listview {
-      columns: 1;
-      lines: 6;
-      spacing: 5px;
-      cycle: true;
-      dynamic: true;
-      scrollbar: false;
-      layout: vertical;
-      reverse: false;
-      fixed-height: true;
-      fixed-width: true;
-  }
-
-  element {
-      spacing: 10px;
-      margin: 0px;
-      padding: 6px;
-      border: 0px solid;
-      border-radius: 0px;
-      cursor: pointer;
-  }
-
-  element-icon {
-      background: transparent;
-      text-color: inherit;
-      size: 16px;
-      cursor: inherit;
-  }
-
-  element-text {
-      background: transparent;
-      text-color: inherit;
-      highlight: inherit;
-      cursor: inherit;
-      /* vertical-align: 0.5; */
-      /* horizontal-align: 0.5; */
-  }
-
-  textbox {
-      vertical-align: 0.5;
-      horizontal-align: 0.0;
-      highlight: none;
-  }
+#+begin_src conf
+  insensitive = true
+  term=alacritty
+  key_up=Up,Ctrl-p,Ctrl-k
+  key_down=Down,Ctrl-n,Ctrl-j
+  key_left=Left,Ctrl-b
+  key_right=Right,Ctrl-f
+  key_pgup=Page_Up,Alt-v
+  key_pgdn=Page_Down,Alt-f
+  key_exit=Escape,Ctrl-g,Ctrl-bracketleft
+  matching=fuzzy
+  allow_image=true
+  allow_markup=true
+  gtk_dark=true
+  dynamic_lines=false
+  close_on_focus_loss=true
+  single_click=true
+  height=30%
+  width=30%
+  columns=1
 #+end_src
-** hyprland-logout
+** style
 :PROPERTIES:
-:header-args: :tangle .config/rofi/themes/hyprland-logout.rasi :mkdirp t
-:END:
-#+begin_src css -n
-  /* -*-css -*- */
-  @theme "nord"
-
-  window {
-      location: northeast;
-      anchor:   center;
-      transparency: "screenshot";
-      width: 10%;
-      padding: 10px;
-      border:  0px;
-      border-radius: 6px;
-      x-offset: -1%;
-      y-offset: 1%;
-      spacing: 0;
-      children: [mainbox];
-  }
-
-  listview {
-      columns: 1;
-      lines: 4;
-  }
-#+end_src
-** hyprland-clipboard
-:PROPERTIES:
-:header-args: :tangle .config/rofi/themes/hyprland-clipboard.rasi :mkdirp t
+:header-args: :tangle .config/wofi/style.css :mkdirp t
 :END:
 
-#+begin_src css -n
-  /* -*-css -*- */
-  @theme "nord"
-
-  window {
-      location: center;
-      anchor: center;
-      width: 40%;
-      x-offset: 1%;
-      y-offset: -2%;
-      /* padding-right: 25px; */
-  }
-
-  listview {
-      lines: 4;
-      dynamic: true;
-      cycle: true;
-      layout: vertical;
-  }
-#+end_src
-** hyprland-emoji
-:PROPERTIES:
-:header-args: :tangle .config/rofi/themes/hyprland-emoji.rasi :mkdirp t
-:END:
 #+begin_src css
-  /* -*-css -*- */
-  @theme "nord"
+  @define-color color0  #073642;
+  @define-color color1  #dc322f;
+  @define-color color2  #859900;
+  @define-color color3  #b58900;
+  @define-color color4  #268bd2;
+  @define-color color5  #d33682;
+  @define-color color6  #2aa198;
+  @define-color color7  #eee8d5;
+  @define-color color8  #6c7c80;
+  @define-color color9  #dc322f;
+  @define-color color10  #859900;
+  @define-color color11  #b58900;
+  @define-color color12  #268bd2;
+  @define-color color13  #d33682;
+  @define-color color14  #2aa198;
+  @define-color color15  #eee8d5;
+  @define-color color16 #3b4252;
+  @define-color color17 #2e3440;
+  @define-color color18 #434c5e;
+  @define-color color19 #4c566a;
+  @define-color color20 #434c5e;
+  @define-color color21 #d8dee9;
+  @define-color color22 #e5e9f0;
+  @define-color color23 #eceff4;
+  @define-color color24 #8fbcbb;
+  @define-color color25 #88c0d0;
+  @define-color color26 #81a1c1;
+  @define-color color27 #5e81ac;
+  @define-color color28 #bf616a;
+  @define-color color29 #d08770;
+  @define-color color30 #ebcb8b;
+  @define-color color31 #a3be8c;
+  @define-color color32 #b48ead;
 
   window {
-      location: southwest;
-      anchor: center;
-      width: 70%;
-      x-offset: 1%;
-      y-offset: -2%;
-      /* padding-right: 25px; */
+      margin: 0px;
+      /* border: 1px solid #928374; */
+      border: 1px solid @color18;
+      background-color: @color17;
   }
 
-  listview {
-      columns: 4;
-      lines: 4;
+  #input {
+      margin: 5px;
+      border: none;
+      color: @color23;
+      background-color: @color16;
   }
 
+  #inner-box {
+      margin: 5px;
+      border: none;
+      background-color: @color16;
+  }
+
+  #outer-box {
+      margin: 5px;
+      border: none;
+      background-color: @color16;
+  }
+
+  #scroll {
+      margin: 0px;
+      border: none;
+  }
+
+  #text {
+      margin: 5px;
+      border: none;
+      color: @color23;
+  }
+
+  #entry:selected {
+      background-color: @color29;
+  }
+#+end_src
+** wofi scripts
+*** wofi-power-menu
+:PROPERTIES:
+:header-args: :tangle .config/wofi-power-menu.toml :mkdirp t
+:END:
+
+https://github.com/szaffarano/wofi-power-menu
+#+name: configuration
+#+begin_src toml
+  [wofi]
+    extra_args = "--allow-markup --columns=1 --hide-scroll -W 15% --location=top_right --hide-search -x -30"
+
+  [menu.shutdown]
+    cmd = "systemctl poweroff"
+
+  [menu.reboot]
+    cmd = "systemctl reboot"
+
+  [menu.suspend]
+    enabled = "false"
+
+  [menu.hibernate]
+    enabled = "false"
+    cmd = "systemctl hybernate"
+
+  [menu.logout]
+    cmd = "hyprctl dispatch exit"
+
+  [menu.lock-screen]
+    cmd = "hyprlock"
+    requires_confirmation = "false"
 #+end_src
 * screen-record
 :PROPERTIES:
