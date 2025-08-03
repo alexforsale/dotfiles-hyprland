@@ -1108,12 +1108,15 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 #+end_src
 **** special workspace
 #+begin_src conf
+  bind = $mainMod, minus, togglespecialworkspace, music
+  bind = $mainMod Alt, minus, togglespecialworkspace, music
   # 0 is fn+m (music) in my laptop
-  bind = $mainMod Alt, 0, togglespecialworkspace, music
+  #bind = $mainMod Alt, 0, togglespecialworkspace, music
   # 1 is for htop
   bind = $mainMod Alt, 1, togglespecialworkspace, proc
   # 2 is fn+k (khal)
   bind = $mainMod Alt, 2, togglespecialworkspace, khal
+  bind = $mainMod Alt, k, togglespecialworkspace, khal
   # 3 is for terminal emacsclient
   bind = $mainMod Alt, 3, togglespecialworkspace, emacs
   # 4 is for terminal notmuch (using emacsclient)
