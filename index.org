@@ -1152,19 +1152,19 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 :PROPERTIES:
 :header-args: :tangle .config/waybar/config :mkdirp t
 :END:
-*** start config
+*** start config :noexport:
 #+begin_src js
   {
 #+end_src
 *** General
 #+begin_src js
-
   "layer": "top", // Waybar at top layer
   "output": ["eDP-1", "DP-1", "DP-2", "DP-3", "DP-4", "DP-5", "HDMI-A-1"],
   "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 34, // Waybar height (to be removed for auto height)
+  //"height": 34, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
+  //"start_hidden": "true",
   // Choose the order of the modules
 #+end_src
 *** Left Modules
@@ -1201,6 +1201,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
     "custom/pacman",
     "clock#date",
     "clock#time",
+    "wireplumber",
     "tray",
     "custom/power"
   ],
@@ -1232,8 +1233,8 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 **** hyprland/workspaces
 #+begin_src js
   "hyprland/workspaces": {
-    "num-tags": 6,
-    // "format": "{id}: {icon}",
+    //"num-tags": 6,
+    "format": "{id}",
     // "format-icons": {
     //   "1": "",
     //   "2": "",
@@ -1419,7 +1420,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
     "format-icons": ["󰕿", "󰖀", "󰕾"],
     "format-muted": "",
     "on-click": "helvum",
-    "on-click-right": "pavucontrol",
+    "on-click-right": "pwvucontrol",
     "scroll-step": 0.2
   },
 #+end_src
@@ -1487,7 +1488,7 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   }
 #+end_src
-*** End config
+*** End config :noexport:
 #+begin_src js
   }
 #+end_src
@@ -1759,7 +1760,15 @@ I set the bindings for workspace to have multiple bindings, the first one is to 
 #+begin_src css
   #wireplumber {
       /* background-color: @magenta2; */
-      color: @black;
+  	margin-top: 6px;
+  	margin-left: 8px;
+  	padding-left: 10px;
+  	padding-right: 10px;
+  	margin-bottom: 0px;
+  	border-radius: 10px;
+  	transition: none;
+  	color: @black;
+  	background: @blue;
   }
 #+end_src
 **** keyboard-state
