@@ -829,6 +829,8 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, W, exec, ~/.local/bin/hyprland-wofi-windowcd
   #bind = $mainMod Alt, B, exec, blueman-manager
 
+  bind = $mainMod, Print, exec, ~/.local/bin/screen-record
+
   bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp
   # bind = $mainMod Alt, H, exec, alacritty --class htop -e htop
   # bind = $mainMod Alt, W, exec, [float] alacritty --class nmtui -e nmtui
@@ -2319,7 +2321,7 @@ Wayland native snapshot editing tools.
   key_left=Left,Ctrl-b
   key_right=Right,Ctrl-f
   key_pgup=Page_Up,Alt-v
-  key_pgdn=Page_Down,Alt-f
+  key_pgdn=Page_Down,Ctrl-f
   key_exit=Escape,Ctrl-g,Ctrl-bracketleft
   matching=fuzzy
   allow_image=true
@@ -2444,6 +2446,16 @@ https://github.com/szaffarano/wofi-power-menu
   [menu.lock-screen]
     cmd = "hyprlock"
     requires_confirmation = "false"
+#+end_src
+*** wofi-windowcd
+:PROPERTIES:
+:header-args: :tangle .local/bin/wofi-windowcd :mkdirp t :shebang #/bin/sh
+:END:
+
+#+begin_src sh
+  WINDOW=$(hyprctl clients |grep "class: "|awk '{gsub("class: ", "");print}'|wofi --show dmenu)
+
+  [ -n "${WINDOW}" ] && hyprctl dispatch focuswindow "${WINDOW}"
 #+end_src
 * screen-record
 :PROPERTIES:
