@@ -813,6 +813,7 @@ Also to conserve resource, I tend to only have terminal based application in the
 *** Apps keybindings
 #+begin_src conf
   # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+  bind = $mainMod Shift, Return, exec, $terminal -e tmux new -A -s main
   bind = $mainMod, Return, exec, $terminal
   bind = $mainMod, E, exec, $fileManager
   bind = $mainMod, F4, exec, hyprctl kill
