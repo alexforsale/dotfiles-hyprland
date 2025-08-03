@@ -826,6 +826,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, Period, exec, wofi-symbol
   bind = $mainMod, V, exec, pwvucontrol
   bind = $mainMod Alt, V, exec, easyeffects
+  bind = $mainMod, W, exec, ~/.local/bin/hyprland-wofi-windowcd
   #bind = $mainMod Alt, B, exec, blueman-manager
 
   bind = $mainMod Alt, M, exec, [workspace special:music; silent; tiled] alacritty --class ncmpcpp -e ncmpcpp
