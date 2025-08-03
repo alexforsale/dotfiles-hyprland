@@ -713,6 +713,10 @@ This will set the wallpaper for each workspaces. The one I used is stored at my 
   windowrulev2 = float, title:(Easy Effects)
   windowrulev2 = size 100% 60%, title:(Easy Effects)
 #+end_src
+*** pavucontrol
+#+begin_src conf
+  windowrulev2 = float, class:(.*)(pavucontrol)
+#+end_src
 *** layer
 #+begin_src conf
   layerrule = xray 1, .*
@@ -819,7 +823,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, C, exec, cliphist list | wofi -dmenu -p "Clipboard:" -theme "hyprland-clipboard" | cliphist decode | wl-copy
   bind = $mainMod, Comma, exec, wofi-emoji
   bind = $mainMod, Period, exec, wofi-symbol
-  bind = $mainMod Shift, V, exec, pwvucontrol
+  bind = $mainMod, V, exec, pwvucontrol
   bind = $mainMod Alt, V, exec, easyeffects
   #bind = $mainMod Alt, B, exec, blueman-manager
 
