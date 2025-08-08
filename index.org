@@ -2334,6 +2334,7 @@ Wayland native snapshot editing tools.
   height=30%
   width=30%
   columns=1
+  prompt=PROMPT
 #+end_src
 ** style
 :PROPERTIES:
