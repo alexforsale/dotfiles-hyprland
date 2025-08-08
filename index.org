@@ -2459,7 +2459,7 @@ https://github.com/szaffarano/wofi-power-menu
 #+end_src
 * screen-record
 :PROPERTIES:
-:header-args: :tangle .local/bin/screen-record :mkdirp t :shebang /bin/sh
+:header-args: :tangle .local/bin/screen-record :mkdirp t :shebang #!/bin/sh
 :END:
 
 A simple shell script wrapping [[https://github.com/ammen99/wf-recorder][wf-recorder]].
