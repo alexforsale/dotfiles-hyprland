@@ -827,6 +827,7 @@ Also to conserve resource, I tend to only have terminal based application in the
   bind = $mainMod, V, exec, pwvucontrol
   bind = $mainMod Alt, V, exec, easyeffects
   bind = $mainMod, W, exec, ~/.local/bin/hyprland-wofi-windowcd
+  bind = $mainMod, S, exec, ~/.local/bin/browser-search
   #bind = $mainMod Alt, B, exec, blueman-manager
 
   bind = $mainMod, Print, exec, ~/.local/bin/screen-record
