@@ -477,6 +477,20 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
   bind = $mainMod, grave, exec, dunstctl action
   bind = $mainMod Control, grave, exec, dunstctl close
 #+end_src
+**** builtin zoom
+With mouse
+#+begin_src conf
+  bind = $mainMod Control, mouse_down, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '.float * 1.1')
+  bind = $mainMod Control, mouse_up, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '(.float * 0.9) | if . < 1 then 1 else . end')
+#+end_src
+
+With keyboard
+#+begin_src conf
+  binde = $mainMod Control, equal, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '.float * 1.1')
+  binde = $mainMod Control, minus, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '(.float * 0.9) | if . < 1 then 1 else . end')
+  binde = $mainMod Control, KP_ADD, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '.float * 1.1')
+  binde = $mainMod Control, KP_SUBTRACT, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '(.float * 0.9) | if . < 1 then 1 else . end')
+#+end_src
 *** decorations
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/decorations.conf :mkdirp t
