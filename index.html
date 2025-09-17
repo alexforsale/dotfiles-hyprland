@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-17 Wed 10:42 -->
+<!-- 2025-09-17 Wed 10:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hyprland and Hyprland-related configuration files</title>
@@ -30,57 +30,57 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org60d3e98">Hyprland</a>
+<li><a href="#orgdec2211">Hyprland</a>
 <ul>
-<li><a href="#org1fa336d"><code>~/.config/hypr/hypland.conf</code></a>
+<li><a href="#orgd1f71a5"><code>~/.config/hypr/hypland.conf</code></a>
 <ul>
-<li><a href="#org8a53789">Modular Configuration</a></li>
-<li><a href="#org1b0beed">variables</a></li>
-<li><a href="#org785de92">general</a></li>
-<li><a href="#org20e425d">workspaces</a></li>
-<li><a href="#org9b1ed82">keybindings</a></li>
-<li><a href="#org86663dc">decorations</a></li>
-<li><a href="#org21a6bfd">animation</a></li>
-<li><a href="#org3a527e5">autostart</a></li>
-<li><a href="#orgc3093a2">input</a></li>
-<li><a href="#org9668f54">devices</a></li>
-<li><a href="#org3221a33">groups</a></li>
-<li><a href="#org11164f2">misc</a></li>
-<li><a href="#org370a0b2">binds</a></li>
-<li><a href="#orgc558798">xwayland</a></li>
-<li><a href="#org4c14392">ecosystem</a></li>
-<li><a href="#org0897211">cursor</a></li>
-<li><a href="#org12dae67">dwindle</a></li>
-<li><a href="#orgf992db4">master</a></li>
-<li><a href="#org381c6a8">gestures</a></li>
-<li><a href="#org62c3735">windowrule</a></li>
-<li><a href="#org4df77b0">Layer</a></li>
+<li><a href="#orga14e84a">Modular Configuration</a></li>
+<li><a href="#orge3e712d">variables</a></li>
+<li><a href="#org60ba07d">general</a></li>
+<li><a href="#org93f8540">workspaces</a></li>
+<li><a href="#org8fbaf94">keybindings</a></li>
+<li><a href="#org2b916b2">decorations</a></li>
+<li><a href="#orgee42f3f">animation</a></li>
+<li><a href="#org628634f">autostart</a></li>
+<li><a href="#orga3c5e11">input</a></li>
+<li><a href="#org8ea8b63">devices</a></li>
+<li><a href="#org55cf362">groups</a></li>
+<li><a href="#org1c597d7">misc</a></li>
+<li><a href="#org6381b51">binds</a></li>
+<li><a href="#org498b07f">xwayland</a></li>
+<li><a href="#org98a39bd">ecosystem</a></li>
+<li><a href="#orgde644f4">cursor</a></li>
+<li><a href="#org03f6f56">dwindle</a></li>
+<li><a href="#org4dbe232">master</a></li>
+<li><a href="#org594a7c3">gestures</a></li>
+<li><a href="#orgd397488">windowrule</a></li>
+<li><a href="#org01d791d">Layer</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org5aeac81">hyprpaper</a></li>
-<li><a href="#orgb221798">hyprshade</a></li>
-<li><a href="#org82e7c7c">hyprlock</a></li>
-<li><a href="#orgb48444e">hypridle</a></li>
-<li><a href="#orge9a6d0f">screen-record</a></li>
+<li><a href="#org0d64a8a">hyprpaper</a></li>
+<li><a href="#org6e653e8">hyprshade</a></li>
+<li><a href="#org480a524">hyprlock</a></li>
+<li><a href="#orgd1da8a7">hypridle</a></li>
+<li><a href="#org9cc9d46">screen-record</a></li>
 </ul>
 </div>
 </div>
 <p>
 This is my <i>hyprland</i> configuration alongside with other configuration for various applications I use.
 </p>
-<div id="outline-container-org60d3e98" class="outline-2">
-<h2 id="org60d3e98">Hyprland</h2>
-<div class="outline-text-2" id="text-org60d3e98">
+<div id="outline-container-orgdec2211" class="outline-2">
+<h2 id="orgdec2211">Hyprland</h2>
+<div class="outline-text-2" id="text-orgdec2211">
 </div>
-<div id="outline-container-org1fa336d" class="outline-3">
-<h3 id="org1fa336d"><code>~/.config/hypr/hypland.conf</code></h3>
-<div class="outline-text-3" id="text-org1fa336d">
+<div id="outline-container-orgd1f71a5" class="outline-3">
+<h3 id="orgd1f71a5"><code>~/.config/hypr/hypland.conf</code></h3>
+<div class="outline-text-3" id="text-orgd1f71a5">
 </div>
-<div id="outline-container-org8a53789" class="outline-4">
-<h4 id="org8a53789">Modular Configuration</h4>
-<div class="outline-text-4" id="text-org8a53789">
+<div id="outline-container-orga14e84a" class="outline-4">
+<h4 id="orga14e84a">Modular Configuration</h4>
+<div class="outline-text-4" id="text-orga14e84a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">source</span> = ./hypr.d/variables.conf
 <span style="color: #b8860b;">source</span> = ./hypr.d/general.conf
@@ -106,9 +106,9 @@ This is my <i>hyprland</i> configuration alongside with other configuration for 
 </div>
 </div>
 </div>
-<div id="outline-container-org1b0beed" class="outline-4">
-<h4 id="org1b0beed">variables</h4>
-<div class="outline-text-4" id="text-org1b0beed">
+<div id="outline-container-orge3e712d" class="outline-4">
+<h4 id="orge3e712d">variables</h4>
+<div class="outline-text-4" id="text-orge3e712d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$terminal</span> = kitty
 <span style="color: #b8860b;">$fileManager</span> = thunar
@@ -137,8 +137,8 @@ This is my <i>hyprland</i> configuration alongside with other configuration for 
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org95c55ba"></a>wallpapers<br />
-<div class="outline-text-5" id="text-org95c55ba">
+<li><a id="org94981fe"></a>wallpapers<br />
+<div class="outline-text-5" id="text-org94981fe">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$w1</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/Minimal-Nord.png"</span>
 <span style="color: #b8860b;">$w2</span> = hyprctl hyprpaper wallpaper <span style="color: #bc8f8f;">",~/.local/share/wallpapers/nord/linux-friends-4k.png"</span>
@@ -154,8 +154,8 @@ This is my <i>hyprland</i> configuration alongside with other configuration for 
 </div>
 </div>
 </li>
-<li><a id="orgfbe069f"></a>colors<br />
-<div class="outline-text-5" id="text-orgfbe069f">
+<li><a id="orgadac0dc"></a>colors<br />
+<div class="outline-text-5" id="text-orgadac0dc">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">$color00</span> = rgba(46,52,64,1)
 <span style="color: #b8860b;">$color01</span> = rgba(59,66,82,1)
@@ -179,9 +179,9 @@ This is my <i>hyprland</i> configuration alongside with other configuration for 
 </li>
 </ul>
 </div>
-<div id="outline-container-org785de92" class="outline-4">
-<h4 id="org785de92">general</h4>
-<div class="outline-text-4" id="text-org785de92">
+<div id="outline-container-org60ba07d" class="outline-4">
+<h4 id="org60ba07d">general</h4>
+<div class="outline-text-4" id="text-org60ba07d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">general</span> {
   <span style="color: #b8860b;">gaps_in</span> = 5
@@ -211,15 +211,15 @@ This is my <i>hyprland</i> configuration alongside with other configuration for 
 </div>
 </div>
 </div>
-<div id="outline-container-org20e425d" class="outline-4">
-<h4 id="org20e425d">workspaces</h4>
-<div class="outline-text-4" id="text-org20e425d">
+<div id="outline-container-org93f8540" class="outline-4">
+<h4 id="org93f8540">workspaces</h4>
+<div class="outline-text-4" id="text-org93f8540">
 </div>
 <ul class="org-ul">
-<li><a id="org339d0ab"></a>normal workspaces<br />
-<div class="outline-text-5" id="text-org339d0ab">
+<li><a id="orgd242151"></a>normal workspaces<br />
+<div class="outline-text-5" id="text-orgd242151">
 
-<div id="orgfafa66e" class="figure">
+<div id="orged47444" class="figure">
 <p><a href="./assets/img/workspaces.gif"><img src="./assets/img/workspaces.gif" alt="workspaces.gif" /></a>
 </p>
 <p><span class="figure-number">Figure 1: </span>hyprpaper workspaces</p>
@@ -243,8 +243,8 @@ These workspaces are just standard workspaces, the way I set them is to have ded
 </div>
 </div>
 </li>
-<li><a id="org19c7b9c"></a>special workspaces<br />
-<div class="outline-text-5" id="text-org19c7b9c">
+<li><a id="orgf9c8828"></a>special workspaces<br />
+<div class="outline-text-5" id="text-orgf9c8828">
 <p>
 In other window managers, a special workspace is often called <i>scratchpad</i>. The difference is in <i>Hyprland</i> we can have up to 97 of them, each with different names. The way I use it is to have one special workspace for an application, usually one that needs to always run in the background, like a music player, calculator and other. What I like from <i>Hyprland</i> (though I'm sure other <i>WM</i> also have), is the ability to only start the application when the workspace is opened. See the keybindings section for the detail.
 </p>
@@ -262,15 +262,15 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </li>
 </ul>
 </div>
-<div id="outline-container-org9b1ed82" class="outline-4">
-<h4 id="org9b1ed82">keybindings</h4>
-<div class="outline-text-4" id="text-org9b1ed82">
+<div id="outline-container-org8fbaf94" class="outline-4">
+<h4 id="org8fbaf94">keybindings</h4>
+<div class="outline-text-4" id="text-org8fbaf94">
 </div>
 <ul class="org-ul">
-<li><a id="org0305621"></a>Application<br />
+<li><a id="orgcc1c1e1"></a>Application<br />
 <ul class="org-ul">
-<li><a id="org484c7bb"></a>builtin functions<br />
-<div class="outline-text-6" id="text-org484c7bb">
+<li><a id="orgbb10551"></a>builtin functions<br />
+<div class="outline-text-6" id="text-orgbb10551">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, F4, killactive,
 <span style="color: #b8860b;">bind</span> = Alt, F4, killactive,
@@ -282,104 +282,104 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </li>
 </ul>
 </li>
-<li><a id="org6eee55b"></a>lock<br />
-<div class="outline-text-5" id="text-org6eee55b">
+<li><a id="org4d7ba4d"></a>lock<br />
+<div class="outline-text-5" id="text-org4d7ba4d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, Q, exec, hyprlock
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgd36cfd1"></a>clipboard<br />
-<div class="outline-text-5" id="text-orgd36cfd1">
+<li><a id="org2e60e0f"></a>clipboard<br />
+<div class="outline-text-5" id="text-org2e60e0f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, C, exec, cliphist list | wofi -dmenu -p <span style="color: #bc8f8f;">"Clipboard:"</span> -theme <span style="color: #bc8f8f;">"hyprland-clipboard"</span> | cliphist decode | wl-copy
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org1f61a12"></a>emoji<br />
-<div class="outline-text-5" id="text-org1f61a12">
+<li><a id="org6845bd0"></a>emoji<br />
+<div class="outline-text-5" id="text-org6845bd0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, Comma, exec, wofi-emoji
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgfe616c3"></a>symbol<br />
-<div class="outline-text-5" id="text-orgfe616c3">
+<li><a id="org1d3e97f"></a>symbol<br />
+<div class="outline-text-5" id="text-org1d3e97f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, Period, exec, wofi-symbol
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org0b1ffba"></a>pwvucontrol<br />
-<div class="outline-text-5" id="text-org0b1ffba">
+<li><a id="org0a10618"></a>pwvucontrol<br />
+<div class="outline-text-5" id="text-org0a10618">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, V, exec, pwvucontrol
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org9b94ef6"></a>easyeffects<br />
-<div class="outline-text-5" id="text-org9b94ef6">
+<li><a id="orgae0f976"></a>easyeffects<br />
+<div class="outline-text-5" id="text-orgae0f976">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, V, exec, easyeffects
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org44643c7"></a>editor<br />
-<div class="outline-text-5" id="text-org44643c7">
+<li><a id="orge9980ed"></a>editor<br />
+<div class="outline-text-5" id="text-orge9980ed">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, N, exec, $editor
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org45e79a5"></a>pass<br />
-<div class="outline-text-5" id="text-org45e79a5">
+<li><a id="orgd04384b"></a>pass<br />
+<div class="outline-text-5" id="text-orgd04384b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, P, exec, wofi-pass
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org91f4c54"></a>calculator<br />
-<div class="outline-text-5" id="text-org91f4c54">
+<li><a id="org9e3ef44"></a>calculator<br />
+<div class="outline-text-5" id="text-org9e3ef44">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, C, exec, wofi-calc
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org77262a5"></a>browser<br />
-<div class="outline-text-5" id="text-org77262a5">
+<li><a id="orgc63ecd8"></a>browser<br />
+<div class="outline-text-5" id="text-orgc63ecd8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, f, exec, $browser
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orge518b09"></a>tesseract<br />
-<div class="outline-text-5" id="text-orge518b09">
+<li><a id="org42cce6f"></a>tesseract<br />
+<div class="outline-text-5" id="text-org42cce6f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = SuperShift,T,exec,grim -g <span style="color: #bc8f8f;">"$(slurp -d -c D1E5F4BB -b 1B232866 -s 00000000)"</span> <span style="color: #bc8f8f;">"tmp.png"</span> &amp;&amp; tesseract -l eng <span style="color: #bc8f8f;">"tmp.png"</span> - | wl-copy &amp;&amp; rm <span style="color: #bc8f8f;">"tmp.png"</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org44f77ba"></a>file manager<br />
-<div class="outline-text-5" id="text-org44f77ba">
+<li><a id="orgb67c167"></a>file manager<br />
+<div class="outline-text-5" id="text-orgb67c167">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, E, exec, $fileManager
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org2e0bbf3"></a>terminal<br />
-<div class="outline-text-5" id="text-org2e0bbf3">
+<li><a id="orgeb243cb"></a>terminal<br />
+<div class="outline-text-5" id="text-orgeb243cb">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, Return, exec, $terminal
 <span style="color: #b8860b;">bind</span> = $mainMod Shift, Return, exec, $terminal -e tmux new -A -s main
@@ -387,24 +387,24 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="orgbe8b945"></a>wofi-power-menu<br />
-<div class="outline-text-5" id="text-orgbe8b945">
+<li><a id="org635128e"></a>wofi-power-menu<br />
+<div class="outline-text-5" id="text-org635128e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, Q, exec, wofi-power-menu
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgb444753"></a>menu<br />
-<div class="outline-text-5" id="text-orgb444753">
+<li><a id="org32052ee"></a>menu<br />
+<div class="outline-text-5" id="text-org32052ee">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, D, exec, $menu
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgb30ba25"></a>window<br />
-<div class="outline-text-5" id="text-orgb30ba25">
+<li><a id="orgdeb110f"></a>window<br />
+<div class="outline-text-5" id="text-orgdeb110f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Move focus with mainMod + arrow keys
 </span><span style="color: #b8860b;">bind</span> = $mainMod, left, movefocus, l
@@ -448,8 +448,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="org9669eaa"></a>workspaces<br />
-<div class="outline-text-5" id="text-org9669eaa">
+<li><a id="org89f5a23"></a>workspaces<br />
+<div class="outline-text-5" id="text-org89f5a23">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Switch workspaces with mainMod + [0-9]
 </span><span style="color: #b8860b;">bind</span> = $mainMod, 1, workspace, 1
@@ -490,8 +490,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org93ef3ec"></a>workspaces with mouse<br />
-<div class="outline-text-6" id="text-org93ef3ec">
+<li><a id="org31f134f"></a>workspaces with mouse<br />
+<div class="outline-text-6" id="text-org31f134f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Scroll through existing workspaces with mainMod + scroll
 </span><span style="color: #b8860b;">bind</span> = $mainMod, mouse_down, workspace, e+1
@@ -506,8 +506,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </li>
 </ul>
 </li>
-<li><a id="org97956cd"></a>monitor<br />
-<div class="outline-text-5" id="text-org97956cd">
+<li><a id="org89154f5"></a>monitor<br />
+<div class="outline-text-5" id="text-org89154f5">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, H, focusmonitor, l
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, J, focusmonitor, d
@@ -525,8 +525,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="orga605016"></a>laptops<br />
-<div class="outline-text-5" id="text-orga605016">
+<li><a id="org91e14e5"></a>laptops<br />
+<div class="outline-text-5" id="text-org91e14e5">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">lid switch
 </span><span style="color: #b22222;"># </span><span style="color: #b22222;">trigger when the switch is toggled
@@ -539,10 +539,10 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="org120f8d5"></a>special workspaces<br />
+<li><a id="org9344bb1"></a>special workspaces<br />
 <ul class="org-ul">
-<li><a id="org6d6d1c2"></a>music<br />
-<div class="outline-text-6" id="text-org6d6d1c2">
+<li><a id="org34184ba"></a>music<br />
+<div class="outline-text-6" id="text-org34184ba">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, minus, togglespecialworkspace, music
 <span style="color: #b8860b;">bind</span> = $mainMod Alt, minus, togglespecialworkspace, music
@@ -552,8 +552,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </li>
 </ul>
 </li>
-<li><a id="org95e572f"></a>groups<br />
-<div class="outline-text-5" id="text-org95e572f">
+<li><a id="org2938d58"></a>groups<br />
+<div class="outline-text-5" id="text-org2938d58">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod, bracketleft, changegroupactive, b
 <span style="color: #b8860b;">bind</span> = $mainMod, bracketright, changegroupactive, f
@@ -612,8 +612,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="org4dadaac"></a>multimedia keys<br />
-<div class="outline-text-5" id="text-org4dadaac">
+<li><a id="orgaaee467"></a>multimedia keys<br />
+<div class="outline-text-5" id="text-orgaaee467">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Laptop multimedia keys for volume and LCD brightness
 </span><span style="color: #b8860b;">bindel</span> = , XF86AudioRaiseVolume, exec, ~/.local/bin/dunst-volume -i 1
@@ -633,8 +633,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="org2554abc"></a>For keyboard with no multimedia keys<br />
-<div class="outline-text-5" id="text-org2554abc">
+<li><a id="orgc7dcbc6"></a>For keyboard with no multimedia keys<br />
+<div class="outline-text-5" id="text-orgc7dcbc6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bindel</span> = $mainMod, F9, exec, ~/.local/bin/dunst-volume -i 1 <span style="color: #b22222;"># </span><span style="color: #b22222;">volume up
 </span><span style="color: #b8860b;">bindel</span> = $mainMod, F8, exec, ~/.local/bin/dunst-volume -d 1 <span style="color: #b22222;"># </span><span style="color: #b22222;">volume down
@@ -652,8 +652,8 @@ In other window managers, a special workspace is often called <i>scratchpad</i>.
 </div>
 </div>
 </li>
-<li><a id="orgbd700d8"></a>Screenshot<br />
-<div class="outline-text-5" id="text-orgbd700d8">
+<li><a id="org3416f8b"></a>Screenshot<br />
+<div class="outline-text-5" id="text-org3416f8b">
 <p>
 All the screenshot functionalities provided by <code>grimshot</code> and will save the output to a file but also save it into the copy ring.
 </p>
@@ -666,8 +666,8 @@ All the screenshot functionalities provided by <code>grimshot</code> and will sa
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org7b32668"></a>screen-record<br />
-<div class="outline-text-6" id="text-org7b32668">
+<li><a id="org3c6c0d0"></a>screen-record<br />
+<div class="outline-text-6" id="text-org3c6c0d0">
 <p>
 Pressing the keybinding once will record, pressing once again will stop. The saved <code>.gif</code> will be under the <code>~/Videos</code> directory.
 </p>
@@ -679,8 +679,8 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
 </li>
 </ul>
 </li>
-<li><a id="org53a070f"></a>dunst<br />
-<div class="outline-text-5" id="text-org53a070f">
+<li><a id="org3c1e2e0"></a>dunst<br />
+<div class="outline-text-5" id="text-org3c1e2e0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Alt, grave, exec, dunstctl history-pop
 <span style="color: #b8860b;">bind</span> = $mainMod SHIFT, grave, exec, dunstctl context
@@ -690,11 +690,34 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
 </div>
 </div>
 </li>
+<li><a id="org5249c7c"></a>builtin zoom<br />
+<div class="outline-text-5" id="text-org5249c7c">
+<p>
+With mouse
+</p>
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b8860b;">bind</span> = $mainMod Control, mouse_down, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq <span style="color: #bc8f8f;">'.float * 1.1'</span>)
+<span style="color: #b8860b;">bind</span> = $mainMod Control, mouse_up, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq <span style="color: #bc8f8f;">'(.float * 0.9) | if . &lt; 1 then 1 else . end'</span>)
+</pre>
+</div>
+
+<p>
+With keyboard
+</p>
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b8860b;">binde</span> = $mainMod Control, equal, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq <span style="color: #bc8f8f;">'.float * 1.1'</span>)
+<span style="color: #b8860b;">binde</span> = $mainMod Control, minus, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq <span style="color: #bc8f8f;">'(.float * 0.9) | if . &lt; 1 then 1 else . end'</span>)
+<span style="color: #b8860b;">binde</span> = $mainMod Control, KP_ADD, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq <span style="color: #bc8f8f;">'.float * 1.1'</span>)
+<span style="color: #b8860b;">binde</span> = $mainMod Control, KP_SUBTRACT, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq <span style="color: #bc8f8f;">'(.float * 0.9) | if . &lt; 1 then 1 else . end'</span>)
+</pre>
+</div>
+</div>
+</li>
 </ul>
 </div>
-<div id="outline-container-org86663dc" class="outline-4">
-<h4 id="org86663dc">decorations</h4>
-<div class="outline-text-4" id="text-org86663dc">
+<div id="outline-container-org2b916b2" class="outline-4">
+<h4 id="org2b916b2">decorations</h4>
+<div class="outline-text-4" id="text-org2b916b2">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">decoration</span> {
   <span style="color: #b8860b;">rounding</span> = 5 
@@ -743,9 +766,9 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
 </div>
 </div>
 </div>
-<div id="outline-container-org21a6bfd" class="outline-4">
-<h4 id="org21a6bfd">animation</h4>
-<div class="outline-text-4" id="text-org21a6bfd">
+<div id="outline-container-orgee42f3f" class="outline-4">
+<h4 id="orgee42f3f">animation</h4>
+<div class="outline-text-4" id="text-orgee42f3f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">animations</span> {
   <span style="color: #b8860b;">enabled</span> = true
@@ -784,9 +807,9 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
 </div>
 </div>
 </div>
-<div id="outline-container-org3a527e5" class="outline-4">
-<h4 id="org3a527e5">autostart</h4>
-<div class="outline-text-4" id="text-org3a527e5">
+<div id="outline-container-org628634f" class="outline-4">
+<h4 id="org628634f">autostart</h4>
+<div class="outline-text-4" id="text-org628634f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">exec-once</span> = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORMTHEME SSH_AUTH_SOCK
 <span style="color: #b8860b;">exec-once</span> = dbus-update-activation-environment --systemd --all &amp;
@@ -813,9 +836,9 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
 </div>
 </div>
 </div>
-<div id="outline-container-orgc3093a2" class="outline-4">
-<h4 id="orgc3093a2">input</h4>
-<div class="outline-text-4" id="text-orgc3093a2">
+<div id="outline-container-orga3c5e11" class="outline-4">
+<h4 id="orga3c5e11">input</h4>
+<div class="outline-text-4" id="text-orga3c5e11">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">input</span> {
   <span style="color: #b8860b;">kb_layout</span> = us
@@ -825,9 +848,9 @@ Pressing the keybinding once will record, pressing once again will stop. The sav
 </div>
 </div>
 </div>
-<div id="outline-container-org9668f54" class="outline-4">
-<h4 id="org9668f54">devices</h4>
-<div class="outline-text-4" id="text-org9668f54">
+<div id="outline-container-org8ea8b63" class="outline-4">
+<h4 id="org8ea8b63">devices</h4>
+<div class="outline-text-4" id="text-org8ea8b63">
 <p>
 This fixes my USB keyboard back light button which by default mapped to <code>Scroll Lock</code>. I don't find other uses for the key so it's only mapped when the specific device connected.
 </p>
@@ -849,9 +872,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org3221a33" class="outline-4">
-<h4 id="org3221a33">groups</h4>
-<div class="outline-text-4" id="text-org3221a33">
+<div id="outline-container-org55cf362" class="outline-4">
+<h4 id="org55cf362">groups</h4>
+<div class="outline-text-4" id="text-org55cf362">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">group</span> {
   <span style="color: #b8860b;">insert_after_current</span> = true
@@ -884,9 +907,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org11164f2" class="outline-4">
-<h4 id="org11164f2">misc</h4>
-<div class="outline-text-4" id="text-org11164f2">
+<div id="outline-container-org1c597d7" class="outline-4">
+<h4 id="org1c597d7">misc</h4>
+<div class="outline-text-4" id="text-org1c597d7">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">misc</span> {
   <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more
@@ -911,9 +934,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org370a0b2" class="outline-4">
-<h4 id="org370a0b2">binds</h4>
-<div class="outline-text-4" id="text-org370a0b2">
+<div id="outline-container-org6381b51" class="outline-4">
+<h4 id="org6381b51">binds</h4>
+<div class="outline-text-4" id="text-org6381b51">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">binds</span> {
   <span style="color: #b8860b;">workspace_back_and_forth</span> = false
@@ -924,9 +947,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc558798" class="outline-4">
-<h4 id="orgc558798">xwayland</h4>
-<div class="outline-text-4" id="text-orgc558798">
+<div id="outline-container-org498b07f" class="outline-4">
+<h4 id="org498b07f">xwayland</h4>
+<div class="outline-text-4" id="text-org498b07f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">xwayland</span> {
   <span style="color: #b8860b;">enabled</span> = true
@@ -935,9 +958,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org4c14392" class="outline-4">
-<h4 id="org4c14392">ecosystem</h4>
-<div class="outline-text-4" id="text-org4c14392">
+<div id="outline-container-org98a39bd" class="outline-4">
+<h4 id="org98a39bd">ecosystem</h4>
+<div class="outline-text-4" id="text-org98a39bd">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">ecosystem</span> {
   <span style="color: #b8860b;">no_update_news</span> = true
@@ -947,9 +970,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org0897211" class="outline-4">
-<h4 id="org0897211">cursor</h4>
-<div class="outline-text-4" id="text-org0897211">
+<div id="outline-container-orgde644f4" class="outline-4">
+<h4 id="orgde644f4">cursor</h4>
+<div class="outline-text-4" id="text-orgde644f4">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">cursor</span> {
   <span style="color: #b8860b;">inactive_timeout</span> = 2
@@ -959,9 +982,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org12dae67" class="outline-4">
-<h4 id="org12dae67">dwindle</h4>
-<div class="outline-text-4" id="text-org12dae67">
+<div id="outline-container-org03f6f56" class="outline-4">
+<h4 id="org03f6f56">dwindle</h4>
+<div class="outline-text-4" id="text-org03f6f56">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">dwindle</span> {
   <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
@@ -974,9 +997,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgf992db4" class="outline-4">
-<h4 id="orgf992db4">master</h4>
-<div class="outline-text-4" id="text-orgf992db4">
+<div id="outline-container-org4dbe232" class="outline-4">
+<h4 id="org4dbe232">master</h4>
+<div class="outline-text-4" id="text-org4dbe232">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">master</span> {
   <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
@@ -985,9 +1008,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org381c6a8" class="outline-4">
-<h4 id="org381c6a8">gestures</h4>
-<div class="outline-text-4" id="text-org381c6a8">
+<div id="outline-container-org594a7c3" class="outline-4">
+<h4 id="org594a7c3">gestures</h4>
+<div class="outline-text-4" id="text-org594a7c3">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #228b22;">gestures</span> {
   <span style="color: #b22222;"># </span><span style="color: #b22222;">See https://wiki.hyprland.org/Configuring/Variables/ for more
@@ -1004,13 +1027,13 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org62c3735" class="outline-4">
-<h4 id="org62c3735">windowrule</h4>
-<div class="outline-text-4" id="text-org62c3735">
+<div id="outline-container-orgd397488" class="outline-4">
+<h4 id="orgd397488">windowrule</h4>
+<div class="outline-text-4" id="text-orgd397488">
 </div>
 <ul class="org-ul">
-<li><a id="orgf8c0086"></a>For all windows<br />
-<div class="outline-text-5" id="text-orgf8c0086">
+<li><a id="org6b45e72"></a>For all windows<br />
+<div class="outline-text-5" id="text-org6b45e72">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span> = noblur,class:.*
 <span style="color: #b8860b;">windowrulev2</span> = suppressevent maximize, class:.* <span style="color: #b22222;"># </span><span style="color: #b22222;">You'll probably like this.
@@ -1019,8 +1042,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org5553246"></a><code>pavucontrol</code><br />
-<div class="outline-text-5" id="text-org5553246">
+<li><a id="org651b66b"></a><code>pavucontrol</code><br />
+<div class="outline-text-5" id="text-org651b66b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:^(pavucontrol)$
 <span style="color: #b8860b;">windowrulev2</span> = size 50%,class:^(pavucontrol)$
@@ -1028,8 +1051,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org49978b2"></a><code>pwvucontrol</code><br />
-<div class="outline-text-5" id="text-org49978b2">
+<li><a id="org95bda1e"></a><code>pwvucontrol</code><br />
+<div class="outline-text-5" id="text-org95bda1e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:^(com.saivert.pwvucontrol)$
 <span style="color: #b8860b;">windowrulev2</span> = size 50%,class:^(com.saivert.pwvucontrol)$
@@ -1037,8 +1060,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org8a7a204"></a><code>polkit-kde-agent</code><br />
-<div class="outline-text-5" id="text-org8a7a204">
+<li><a id="org5a80c98"></a><code>polkit-kde-agent</code><br />
+<div class="outline-text-5" id="text-org5a80c98">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(org.kde.polkit-kde-authentication-agent-1)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(org.kde.polkit-kde-authentication-agent-1)
@@ -1046,8 +1069,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgd7d5a83"></a><code>blueman</code><br />
-<div class="outline-text-5" id="text-orgd7d5a83">
+<li><a id="org85c094f"></a><code>blueman</code><br />
+<div class="outline-text-5" id="text-org85c094f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(blueman)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(blueman)
@@ -1056,8 +1079,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgcf1d516"></a><code>thunderbird</code><br />
-<div class="outline-text-5" id="text-orgcf1d516">
+<li><a id="org8c44f30"></a><code>thunderbird</code><br />
+<div class="outline-text-5" id="text-org8c44f30">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(status)
 <span style="color: #b8860b;">windowrulev2</span> = float,class:(thunderbird),title:(.*)(Reminders)
@@ -1071,8 +1094,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orga91e6cb"></a><code>firefox</code><br />
-<div class="outline-text-5" id="text-orga91e6cb">
+<li><a id="org88ac932"></a><code>firefox</code><br />
+<div class="outline-text-5" id="text-org88ac932">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = idleinhibit always, class:firefox title:(.*)(- YouTube)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:firefox title:(.*)(- YouTube)
@@ -1080,16 +1103,16 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org6c5b82b"></a><code>Qtpass</code><br />
-<div class="outline-text-5" id="text-org6c5b82b">
+<li><a id="org4704e54"></a><code>Qtpass</code><br />
+<div class="outline-text-5" id="text-org4704e54">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(QtPass)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org84a75a1"></a><code>zoom</code><br />
-<div class="outline-text-5" id="text-org84a75a1">
+<li><a id="org46b2202"></a><code>zoom</code><br />
+<div class="outline-text-5" id="text-org46b2202">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(zoom)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(zoom)
@@ -1100,8 +1123,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgfd4a275"></a><code>file-roller</code><br />
-<div class="outline-text-5" id="text-orgfd4a275">
+<li><a id="org2f13e54"></a><code>file-roller</code><br />
+<div class="outline-text-5" id="text-org2f13e54">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(file-roller)
 <span style="color: #b8860b;">windowrulev2</span> = float, class:(org.gnome.FileRoller)
@@ -1110,8 +1133,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org3c74964"></a><code>ncmpcpp</code><br />
-<div class="outline-text-5" id="text-org3c74964">
+<li><a id="orgafddf2d"></a><code>ncmpcpp</code><br />
+<div class="outline-text-5" id="text-orgafddf2d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float,class:(ncmpcpp)
 <span style="color: #b8860b;">windowrulev2</span> = center,class:(ncmpcpp)
@@ -1121,8 +1144,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org48f1273"></a><code>khal</code><br />
-<div class="outline-text-5" id="text-org48f1273">
+<li><a id="org034bb11"></a><code>khal</code><br />
+<div class="outline-text-5" id="text-org034bb11">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(khal)
 <span style="color: #b8860b;">windowrulev2</span> = size 40%, class:(khal)
@@ -1131,8 +1154,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgb51f520"></a><code>astroid</code><br />
-<div class="outline-text-5" id="text-orgb51f520">
+<li><a id="orgdc85e10"></a><code>astroid</code><br />
+<div class="outline-text-5" id="text-orgdc85e10">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 4, class:(astroid)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(astroid)
@@ -1140,8 +1163,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org6c58f9b"></a><code>vlc</code><br />
-<div class="outline-text-5" id="text-org6c58f9b">
+<li><a id="org9d5a2a0"></a><code>vlc</code><br />
+<div class="outline-text-5" id="text-org9d5a2a0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 7,class:(vlc)
 <span style="color: #b8860b;">windowrulev2</span> = opacity 1,class:(vlc)
@@ -1150,16 +1173,16 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org2ff541c"></a><code>remmina</code><br />
-<div class="outline-text-5" id="text-org2ff541c">
+<li><a id="org8b94ce0"></a><code>remmina</code><br />
+<div class="outline-text-5" id="text-org8b94ce0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, workspace 8, class:(org.remmina.Remmina)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="orgca3b735"></a><code>libvirt</code> / <code>virt-manager</code><br />
-<div class="outline-text-5" id="text-orgca3b735">
+<li><a id="orgf09ee16"></a><code>libvirt</code> / <code>virt-manager</code><br />
+<div class="outline-text-5" id="text-orgf09ee16">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, workspace 9, class:(virt-manager), initialTitle:(QEMU/KVM - Connection Details)
 <span style="color: #b8860b;">windowrulev2</span> = float, workspace 9, class:(virt-manager), initialTitle:(.*on QEMU/KVM)
@@ -1167,8 +1190,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgad4ccf8"></a><code>transmission</code><br />
-<div class="outline-text-5" id="text-orgad4ccf8">
+<li><a id="org8724a3b"></a><code>transmission</code><br />
+<div class="outline-text-5" id="text-org8724a3b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = workspace 8,class:^(com.transmissionbt.transmission).*
 <span style="color: #b8860b;">windowrulev2</span> = float,title:(Torrent.*)
@@ -1176,8 +1199,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgb4ee297"></a>dialogs<br />
-<div class="outline-text-5" id="text-orgb4ee297">
+<li><a id="org363615e"></a>dialogs<br />
+<div class="outline-text-5" id="text-org363615e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span>=float,title:^(Open File)(.*)$
 <span style="color: #b8860b;">windowrule</span>=float,title:^(Select a File)(.*)$
@@ -1190,8 +1213,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgd4e673a"></a><code>thunar</code><br />
-<div class="outline-text-5" id="text-orgd4e673a">
+<li><a id="orgcdf525f"></a><code>thunar</code><br />
+<div class="outline-text-5" id="text-orgcdf525f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrule</span> = center, title:^(Open File)(.*)$
 <span style="color: #b8860b;">windowrule</span> = center, title:^(Rename.*)(.*)$
@@ -1208,16 +1231,16 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org4754efa"></a>no tearing<br />
-<div class="outline-text-5" id="text-org4754efa">
+<li><a id="org64e168f"></a>no tearing<br />
+<div class="outline-text-5" id="text-org64e168f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = noshadow,floating:0
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org60d63e5"></a><code>htop</code><br />
-<div class="outline-text-5" id="text-org60d63e5">
+<li><a id="org4b1d670"></a><code>htop</code><br />
+<div class="outline-text-5" id="text-org4b1d670">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(htop)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 40%, class:(htop)
@@ -1226,16 +1249,16 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org53c804b"></a><code>nmtui</code><br />
-<div class="outline-text-5" id="text-org53c804b">
+<li><a id="orgb263c1b"></a><code>nmtui</code><br />
+<div class="outline-text-5" id="text-orgb263c1b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(nmtui)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org0be0d46"></a><code>vim</code><br />
-<div class="outline-text-5" id="text-org0be0d46">
+<li><a id="org96505a1"></a><code>vim</code><br />
+<div class="outline-text-5" id="text-org96505a1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(vim)
 <span style="color: #b8860b;">windowrulev2</span> = maximize, class:(vim)
@@ -1243,16 +1266,16 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org13408ae"></a><code>Emacs</code> (in terminal mode)<br />
-<div class="outline-text-5" id="text-org13408ae">
+<li><a id="orgcc948f1"></a><code>Emacs</code> (in terminal mode)<br />
+<div class="outline-text-5" id="text-orgcc948f1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = maximize, class:(nw-emacs)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org7410796"></a><code>showmethekey</code><br />
-<div class="outline-text-5" id="text-org7410796">
+<li><a id="org3b30b53"></a><code>showmethekey</code><br />
+<div class="outline-text-5" id="text-org3b30b53">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(one.alynx.showmethekey), title:(Show Me The Key)
 <span style="color: #b8860b;">windowrulev2</span> = nofocus, class:(showmethekey-gtk), title:(Floating Window - Show Me The Key)
@@ -1266,16 +1289,16 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="orgfe0331d"></a><code>screenkey</code><br />
-<div class="outline-text-5" id="text-orgfe0331d">
+<li><a id="org5b532cd"></a><code>screenkey</code><br />
+<div class="outline-text-5" id="text-org5b532cd">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, class:(screenkey)
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org56af509"></a><code>steam</code><br />
-<div class="outline-text-5" id="text-org56af509">
+<li><a id="orge95d534"></a><code>steam</code><br />
+<div class="outline-text-5" id="text-orge95d534">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = opacity 1, class:(steam) initialTitle:(.*)
 <span style="color: #b8860b;">windowrulev2</span> = float, class:(steam) initialTitle:(.*)
@@ -1285,8 +1308,8 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </li>
-<li><a id="org9802b4b"></a><code>easyeffect</code><br />
-<div class="outline-text-5" id="text-org9802b4b">
+<li><a id="org9ca23de"></a><code>easyeffect</code><br />
+<div class="outline-text-5" id="text-org9ca23de">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">windowrulev2</span> = float, title:(Easy Effects)
 <span style="color: #b8860b;">windowrulev2</span> = size 100% 60%, title:(Easy Effects)
@@ -1296,9 +1319,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </li>
 </ul>
 </div>
-<div id="outline-container-org4df77b0" class="outline-4">
-<h4 id="org4df77b0">Layer</h4>
-<div class="outline-text-4" id="text-org4df77b0">
+<div id="outline-container-org01d791d" class="outline-4">
+<h4 id="org01d791d">Layer</h4>
+<div class="outline-text-4" id="text-org01d791d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">layerrule</span> = xray 1, .*
 <span style="color: #b22222;"># </span><span style="color: #b22222;">layerrule = noanim, .*
@@ -1350,9 +1373,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org5aeac81" class="outline-2">
-<h2 id="org5aeac81">hyprpaper</h2>
-<div class="outline-text-2" id="text-org5aeac81">
+<div id="outline-container-org0d64a8a" class="outline-2">
+<h2 id="org0d64a8a">hyprpaper</h2>
+<div class="outline-text-2" id="text-org0d64a8a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/Minimal-Nord.png
 <span style="color: #b8860b;">preload</span> = ~/.local/share/wallpapers/nord/linux-friends-4k.png
@@ -1378,9 +1401,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb221798" class="outline-2">
-<h2 id="orgb221798">hyprshade</h2>
-<div class="outline-text-2" id="text-orgb221798">
+<div id="outline-container-org6e653e8" class="outline-2">
+<h2 id="org6e653e8">hyprshade</h2>
+<div class="outline-text-2" id="text-org6e653e8">
 <div class="org-src-container">
 <pre class="src src-toml">[[<span style="color: #228b22;">shades</span>]]
 <span style="color: #b8860b;">name</span> = <span style="color: #bc8f8f;">"vibrance"</span>
@@ -1394,9 +1417,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-org82e7c7c" class="outline-2">
-<h2 id="org82e7c7c">hyprlock</h2>
-<div class="outline-text-2" id="text-org82e7c7c">
+<div id="outline-container-org480a524" class="outline-2">
+<h2 id="org480a524">hyprlock</h2>
+<div class="outline-text-2" id="text-org480a524">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-
 </span>
@@ -1490,9 +1513,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb48444e" class="outline-2">
-<h2 id="orgb48444e">hypridle</h2>
-<div class="outline-text-2" id="text-orgb48444e">
+<div id="outline-container-orgd1da8a7" class="outline-2">
+<h2 id="orgd1da8a7">hypridle</h2>
+<div class="outline-text-2" id="text-orgd1da8a7">
 <div class="org-src-container">
 <pre class="src src-conf-unix"><span style="color: #228b22;">general</span> {
   <span style="color: #b8860b;">lock_cmd</span> = pidof hyprlock || hyprlock       <span style="color: #b22222;"># </span><span style="color: #b22222;">avoid starting multiple hyprlock instances.
@@ -1519,9 +1542,9 @@ The device name can be found using <code>hyprctl devices</code> under the <code>
 </div>
 </div>
 </div>
-<div id="outline-container-orge9a6d0f" class="outline-2">
-<h2 id="orge9a6d0f">screen-record</h2>
-<div class="outline-text-2" id="text-orge9a6d0f">
+<div id="outline-container-org9cc9d46" class="outline-2">
+<h2 id="org9cc9d46">screen-record</h2>
+<div class="outline-text-2" id="text-org9cc9d46">
 <p>
 A simple shell script wrapping <a href="https://github.com/ammen99/wf-recorder">wf-recorder</a>.
 </p>
@@ -1550,7 +1573,7 @@ wf-recorder -F <span style="color: #b8860b;">fps</span>=30 -c gif -f $<span styl
 <div id="postamble" class="status">
 <p class="date">Date: 2024-03-23 Sat 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-09-17 Wed 10:42</p>
+<p class="date">Created: 2025-09-17 Wed 10:51</p>
 </div>
 </body>
 </html>
