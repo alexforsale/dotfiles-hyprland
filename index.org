@@ -491,6 +491,11 @@ With keyboard
   binde = $mainMod Control, KP_ADD, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '.float * 1.1')
   binde = $mainMod Control, KP_SUBTRACT, exec, hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '(.float * 0.9) | if . < 1 then 1 else . end')
 #+end_src
+**** set opacity
+#+begin_src conf
+  binde = $mainMod, F2, exec, ~/.local/bin/hypr-set-opacicty --decrease
+  binde = $mainMod, F3, exec, ~/.local/bin/hypr-set-opacicty --increase
+#+end_src
 *** decorations
 :PROPERTIES:
 :header-args: :tangle .config/hypr/hypr.d/decorations.conf :mkdirp t
@@ -563,6 +568,7 @@ With keyboard
     bezier = easeOutExpo, 0.16, 1, 0.3, 1
     bezier = softAcDecel, 0.26, 0.26, 0.15, 1
     bezier = md2, 0.4, 0, 0.2, 1 # use with .2s duration
+    bezier = easeInCirc, 0.55, 0, 1, 0.45
 
     animation = windows, 1, 3, md3_decel, popin 60%
     animation = windowsIn, 1, 3, md3_decel, popin 60%
@@ -574,9 +580,9 @@ With keyboard
     animation = layersOut, 1, 1.6, menu_accel
     animation = fadeLayersIn, 1, 2, menu_decel
     animation = fadeLayersOut, 1, 4.5, menu_accel
-    animation = workspaces, 1, 7, menu_decel, slide
+    animation = workspaces, 1, 8, menu_decel, slidefade
 
-    animation = specialWorkspace, 1, 3, md3_decel, slidevert
+    animation = specialWorkspace, 1, 5, md3_decel, slidefadevert
   }
 #+end_src
 *** autostart
@@ -1185,6 +1191,56 @@ A simple shell script wrapping [[https://github.com/ammen99/wf-recorder][wf-reco
 
   dateTime=$(date +%m-%d-%Y-%H:%M:%S)
   wf-recorder -F fps=30 -c gif -f $HOME/Videos/screen-record-$dateTime.gif
+#+end_src
+* set-opacity
+:PROPERTIES:
+:header-args: :tangle .local/bin/hypr-set-opacicty :mkdirp t :shebang #!/bin/sh
+:END:
+
+#+begin_src sh
+  #!/use/bin/env bash
+  set -x
+
+  MEMORY_FILE="/tmp/hypr_alpha_memory.json"
+  OPACITY_STEP=0.05
+  MIN_OPACITY=0.1
+  MAX_OPACITY=1.0
+  DEFAULT_ALPHA=1.0
+
+  touch $MEMORY_FILE
+  [[ ! -s $MEMORY_FILE ]] && echo "{}" > "$MEMORY_FILE"
+
+  ADDR=$(hyprctl activewindow -j | jq -r '.address')
+
+  DIRECTION="$1"
+  [[ -z "$ADDR" || "$ADDR" == "null" ]] && exit 1
+
+  [[ -z "$ADDR" || "$ADDR" == "null" ]] && exit 1
+
+  CURRENT_ALPHA=$(cat "$MEMORY_FILE" | jq -r --arg addr "$ADDR" '.[$addr] // 1.0')
+  case "$DIRECTION" in
+      --increase)
+          NEW_ALPHA=$(echo "$CURRENT_ALPHA + $OPACITY_STEP" | bc)
+          (( $(echo "$NEW_ALPHA > $MAX_OPACITY" | bc -l) )) && NEW_ALPHA=$MAX_OPACITY
+          ;;
+      --decrease)
+          NEW_ALPHA=$(echo "$CURRENT_ALPHA - $OPACITY_STEP" | bc)
+          (( $(echo "$NEW_ALPHA < $MIN_OPACITY" | bc -l) )) && NEW_ALPHA=$MIN_OPACITY
+          ;;
+      --reset)
+          NEW_ALPHA=$DEFAULT_ALPHA
+          ;;
+      ,*)
+          exit 1
+          ;;
+  esac
+
+  for PROP in alpha alphainactive alphafullscreen alphaoverride; do
+      hyprctl dispatch setprop "address:$ADDR" "$PROP" "$NEW_ALPHA"
+  done
+
+  TMP=$(mktemp)
+  cat "$MEMORY_FILE" | jq --arg addr "$ADDR" --argjson val "$NEW_ALPHA" '. + {($addr): $val}' > "$TMP" && mv "$TMP" "$MEMORY_FILE"
 #+end_src
 * Local variables :noexport:
 # local variables:
